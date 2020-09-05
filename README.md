@@ -29,7 +29,7 @@ $ ./script.sh -d [DB-NAME]
 1. Run this to make `./script` command executable:
 ```bash
 $ sudo git clone https://github.com/nemo256/DashRecours /var/www/html/project_dir  # for linux users
-$ cd project_dir]  # this working directory
+$ cd project_dir  # this working directory
 $ sudo chmod +x script.sh
 ```
 2. This will generate the database with its tables and populate them:
