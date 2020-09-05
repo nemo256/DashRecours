@@ -26,7 +26,7 @@ $ ./script.sh -d [DB-NAME]
 > `PHP` version 5 is required
 1. Run this to make `./script` command executable:
 ```bash
-$ sudo git clone https://github.com/nemo256/DashRecours /var/www/html/project_dir
+$ sudo git clone https://github.com/nemo256/DashRecours /var/www/html/project_dir  # for linux users
 $ cd project_dir]  # this working directory
 $ sudo chmod +x script.sh
 ```
@@ -43,7 +43,11 @@ for more information on using the script!
 ## Issues you might run into
 
 For linux users that may have to change ownership of this project for files and images to be copied correctly!
--`$ sudo chown -R www-data:www-data /var/www/html/[Project_dir]`
+```bash
+$ sudo chown -R www-data:www-data /var/www/html/project_dir
+```
 
 Please make sure you have mysql running on your computer before running:
--`$ sudo ./script.sh`
+```bash
+$ sudo ./script.sh
+```
