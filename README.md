@@ -2,7 +2,9 @@
 
 Website to manage recourse in a university
 
-##### Badges
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/swellaby/opensource/12)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/symfony/symfony)
+![Mozilla Add-on](https://img.shields.io/amo/dw/dustman)
 
 Dashboard recours is a website that can manage recours concerning IT department in a univerity!
 
@@ -14,7 +16,7 @@ Dashboard recours is a website that can manage recours concerning IT department 
 $ ./script.sh -u [MYSQL-username] -p [MYSQL-password] -d [DB-NAME]
 ```
 
-### Don't have mysql password? (default username = root)
+## Don't have mysql password? (default username = root)
 
 **_NOTE: if [DB-NAME] is not specified 'PFE' is the default value!_**
 ```bash
