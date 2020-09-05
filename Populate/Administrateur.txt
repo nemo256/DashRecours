@@ -1,0 +1,3 @@
+127,dummyAdmin,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,dummyPoste,dummyPic.png
+128,dummyAdmin,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,dummyPoste,dummyPic.png
+129,dummyAdmin,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,dummyPoste,dummyPic.png

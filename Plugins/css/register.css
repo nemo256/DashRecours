@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #d1d1e1;
+}
+.register-page {
+  background-color: #d1d1e1;
+}
+.card {
+  border-size: 50px;
+  border-radius: 15px;
+}
+.form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 14px;
+  border-size: 20px;
+}
+.form-control:focus {
+  border-size: 19px;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+.form button{
+  background-color: #0026a9;
+  margin-top: 6px;
+  widows: 100px;
+}
+.form button:hover {
+  background-color: #001269;
+}
+.sep {
+  margin-top: 14px;
+}
