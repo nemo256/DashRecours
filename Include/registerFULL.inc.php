@@ -35,7 +35,6 @@ if (isset($_POST['submit']))
 
     $user = new etudiant($info);
   }
-
   else if ($info['type'] == "Enseignant")
   {
     require_once ('../Classes/Enseignant.php');
@@ -46,7 +45,6 @@ if (isset($_POST['submit']))
 
     $user = new enseignant($info);
   }
-
   else if ($info['type'] == "Administrateur")
   {
     require_once ('../Classes/Administrateur.php');
@@ -56,7 +54,6 @@ if (isset($_POST['submit']))
 
     $user = new administrateur($info);
   }
-
   else
     redirect (
       $GLOBALS['MSG']['CT'], 

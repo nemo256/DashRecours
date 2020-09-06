@@ -415,7 +415,19 @@ if (isset($userInfo))
               <input type="text" name="matricule" class="form-control" placeholder="Matricule" value="<?=$viewUser['matricule']?>">
             </div>
           </div>
-          <div class="col-sm-6">
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <i class="fas fa-user mr-2"></i><label>Type Utilisateur<span class="text-red ml-1">*</span></label>
+            <select id="select1" class="form-control select2bs4 " disabled>
+              <option value="Etudiant" <?php if ($type == 'Etudiant') echo 'selected'; ?>>Etudiant</option>
+              <option value="Enseignant" <?php if ($type == 'Enseignant') echo 'selected'; ?>>Enseignant</option>
+            </select>
+            <input type="hidden" name="TU" value="<?=$type?>">
+          </div>
+        </div>
+        <div class="col-sm-6">
           <i class="fas fa-venus-mars mr-1"></i>
           <label class="mb-3">
             Sexe<span class="text-red ml-1">*</span>
@@ -440,8 +452,8 @@ if (isset($userInfo))
               </label>
             </div>
           </div>
-          </div>
         </div>
+      </div>
 
 <?php if ($type == 'Etudiant'): ?>
         <div class="row">

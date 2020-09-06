@@ -25,8 +25,6 @@ if (isset($_POST['updatePR']))
   $photo = new file($info, 'file', '20000000');
   $info['photo'] = $photo->getFileName();
 
-  $user->update($info['photo']);
-
   if ($_SESSION['TU'] == 'Etudiant')
   {
     require_once ('../Classes/Etudiant.php');
@@ -36,20 +34,20 @@ if (isset($_POST['updatePR']))
 
     $User = new etudiant($info);
   }
-
-  if ($_SESSION['TU'] == 'Enseignant')
+  elseif ($_SESSION['TU'] == 'Enseignant')
   {
     require_once ('../Classes/Enseignant.php');
 
     $User = new enseignant($info);
   }
-
-  if ($_SESSION['TU'] == 'Administrateur')
+  elseif ($_SESSION['TU'] == 'Administrateur')
   {
     require_once ('../Classes/Administrateur.php');
 
     $User = new administrateur($info);
   }
+
+  $user->update($info['photo']);
 
   // Moving the actual uploaded file (picture)! //
   $photo->moveFile();

@@ -4,59 +4,84 @@ session_start();
 
 if (isset($_POST['submit']))
 {
-  require_once ('../Classes/Administrateur.php');
-  require_once ('../Classes/Etudiant.php');
-  require_once ('../Classes/Enseignant.php');
+  require_once ('../Classes/Visitor.php');
 
-  $info = array (
+  $userInfo = array (
     // Session vars to be inserted later!
     'idadm' => $_SESSION['id'],
 
     'nom' => $_POST['nom'],
     'prenom' => $_POST['prenom'],
     'matricule' => $_POST['matricule'],
-    'TU' => $_POST['TU'],
+    'username' => 'AD' . $_POST['nom'] . $_POST['prenom'],
+    'email' => $_POST['nom'] . $_POST['prenom'] . '@mail.com',
+    'type' => $_POST['TU'],
     'sexe' => $_POST['sexe'],
-    'pwd' => $_POST['pwd'],
-    'pwd2' => $_POST['pwd2'],
+    'ddn' => '00-00-0000',
+    'adresse' => 'NoAddress',
+    'tel' => '000000000',
     'photo' => $_POST['photo'],
     'updatePR' => true
   );
 
-  if (isset($_POST['spc']))
-    $info['speciality'] = $_POST['spc'];
-  if (isset($_POST['groupe']))
-    $info['groupe'] = $_POST['groupe'];
-  if (isset($_POST['dep']))
+  $visInfo = array ( // `vis` references `Visitor` \ `user`
+    'username' => 'AD' . $_POST['nom'] . $_POST['prenom'],
+    'email' => $_POST['nom'] . $_POST['prenom'] . '@mail.com',
+    'pwd' => $_POST['pwd'],
+    'pwd2' => $_POST['pwd2'],
+    'location' => 'P'
+  );
+
+  $photo = new file($userInfo, 'file', '20000000');
+  $userInfo['photo'] = $photo->getFileName();
+
+  if (isset($_GET['update']))
+    $visInfo['id'] = $_GET['update'];
+
+  $vis = new visitor($visInfo);
+
+  if ($userInfo['type'] == "Etudiant")
+  {
+    require_once ('../Classes/Etudiant.php');
+
+    $userInfo['speciality'] = $_POST['spc'];
+    $userInfo['groupe'] = $_POST['groupe'];
+
+    $user = new etudiant($userInfo);
+  }
+  else if ($userInfo['type'] == "Enseignant")
+  {
+    require_once ('../Classes/Enseignant.php');
+
     $info['deplome'] = $_POST['dep'];
-  if (isset($_POST['grade']))
     $info['grade'] = $_POST['grade'];
 
-  $photo = new file($info, 'file', '20000000');
-  $info['photo'] = $photo->getFileName();
+    $user = new enseignant($userInfo);
+  }
+  else
+    redirect (
+      $GLOBALS['MSG']['CT'], 
+      'warning', 
+      $GLOBALS['LOC']['P'], 
+      '?nom='.$userInfo['nom'].'&prenom='.$userInfo['prenom'].'&sex='.$userInfo['sexe'].'&matricule='.$userInfo['matricule']
+    );
 
-  print_r($info);
+  print_r($userInfo);
 
+  // Moving the actual uploaded file (picture)! //
+  $photo->moveFile();
 
-
-//  $ET = new etudiant($info['idet']);
-//  $fileNameInfo = $ET->getInfo();
-//
-//  $fileNameInfo['module'] = $info['module'];
-//  $fileNameInfo['typeE'] = $info['typeE'];
-//
-//  // Inserting file attached here! //
-//  $attachment = new file($fileNameInfo, 'attachment', '20000000');
-//  $info['attachment'] = $attachment->getFileName();
-//
-//  if (isset($_GET['update']))
-//    $info['id'] = $_GET['update'];
-//
-//  $rec = new recours($info);
-//
-//  $attachment->moveFile();
-//
-//  isset($_GET['update']) ? $rec->update() : $rec->insert();
+  // (Updating / Inserting) infos! //
+  if (isset($_GET['update']))
+  {
+    $vis->update($userInfo['photo']);
+    $user->update();
+  }
+  else
+  {
+    $vis->insert();
+    $user->insert();
+  }
 }
 
 else if (isset($_GET['delete']))

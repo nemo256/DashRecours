@@ -25,15 +25,26 @@ class visitor extends database
       $this->info = $info;
 
       // checking all infos here //
-      $this->checkEmptyFields();
-      $this->checkUsername();
-      $this->checkEmail();
-      $this->checkPwd();
-      $this->checkPwdMatch();
-      $this->checkIfTaken();
+      if (isset($info['location']))
+      {
+        $this->checkEmptyFields($info['location']);
+        $this->checkUsername($info['location']);
+        $this->checkEmail($info['location']);
+        $this->checkPwd($info['location']);
+        $this->checkPwdMatch($info['location']);
+        $this->checkIfTaken($info['location']);
+      }
+      else
+      {
+        $this->checkEmptyFields();
+        $this->checkUsername();
+        $this->checkEmail();
+        $this->checkPwd();
+        $this->checkPwdMatch();
+        $this->checkIfTaken();
+      }
       $this->hashPwd();
     } 
-
     else
     {
       $this->info = $info;
@@ -48,13 +59,13 @@ class visitor extends database
   }
 
   // checking for any empty fields //
-  private function checkEmptyFields()
+  private function checkEmptyFields($loc = 'R')
   {
     if (empty($this->info['username']) || empty($this->info['email']) || empty($this->info['pwd']) || empty($this->info['pwd2']))
       redirect(
         $GLOBALS['MSG']['EF'], 
         'danger', 
-        $GLOBALS['LOC']['R'], 
+        $GLOBALS['LOC'][$loc], 
         '?user='.$this->info['username'].'&mail='.$this->info['email']
       );
   }
@@ -96,13 +107,13 @@ class visitor extends database
   }
 
   // checking if the username is valid //
-  private function checkUsername()
+  private function checkUsername($loc = 'R')
   {
     if (checkAlphaNum($this->info['username']))
       redirect (
         $GLOBALS['MSG']['IU'], 
         'danger', 
-        $GLOBALS['LOC']['R'], 
+        $GLOBALS['LOC'][$loc], 
         '?mail='.$this->info['email']
       );
   }
@@ -153,7 +164,7 @@ class visitor extends database
   }
 
   // checking if already registered //
-  private function checkIfTaken()
+  private function checkIfTaken($loc = 'R')
   {
     $users = $this->getUsers();
     foreach ($users as $key => $user)
@@ -163,7 +174,7 @@ class visitor extends database
         redirect (
           $GLOBALS['MSG']['UT'], 
           'danger', 
-          $GLOBALS['LOC']['R'], 
+          $GLOBALS['LOC'][$loc], 
           '?mail='.$this->info['email']
         );
 
@@ -172,7 +183,7 @@ class visitor extends database
         redirect (
           $GLOBALS['MSG']['ET'], 
           'danger', 
-          $GLOBALS['LOC']['R'], 
+          $GLOBALS['LOC'][$loc], 
           '?user='.$this->info['username']
         );
     }
@@ -196,12 +207,18 @@ class visitor extends database
     ]);
 
     // Redirecting with success message! //
-    redirect (
-      $GLOBALS['MSG']['RS'], 
-      'success', 
-      $GLOBALS['LOC']['L'], 
-      '?registeredSuccessfully'
-    );
+    if (!isset($info['location']))
+      redirect (
+        $GLOBALS['MSG']['RS'], 
+        'success', 
+        $GLOBALS['LOC']['L'], 
+        '?registeredSuccessfully'
+      );
+    else
+    {
+      $_SESSION['message'] = '<b>Registered Successfully!</b>';
+      $_SESSION['type'] = 'success';
+    }
   }
 
   // Updating a `visitor` \ `user` //

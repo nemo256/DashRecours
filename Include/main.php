@@ -42,7 +42,7 @@ $MSG = array
   'IPO'  => '<b>Invalid Poste!</b>',
   'IPN'  => '<b>Invalid Phone Number!</b>',
   'IR'   => '<b>Invalid Recours!</b>',
-  'CT'   => '<b>Please choose what type of user are you!</b>',
+  'CT'   => '<b>Please choose the type of user!</b>',
 
   // Success Messages //
   'RS'   => '<b>Registered Successfully!</b>',

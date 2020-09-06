@@ -45,7 +45,7 @@ session_start();
 
       <form class="form" action="../Include/register.inc.php" method="post">
         <div class="input-group mb-3">
-        <input type="text" name="username" class="form-control" placeholder="Username" value="<?=$_GET[user]?>">
+        <input type="text" name="username" class="form-control" placeholder="Username" value="<?=$_GET['user']?>">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -53,7 +53,7 @@ session_start();
           </div>
         </div>
         <div class="input-group mb-3">
-        <input type="text" name="email" class="form-control" placeholder="Email" value="<?=$_GET[mail]?>">
+        <input type="text" name="email" class="form-control" placeholder="Email" value="<?=$_GET['mail']?>">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
