@@ -53,7 +53,7 @@ class etudiant extends user
     return $statement->fetchALL()[0];
   }
 
-  public function destroy() {}
+  public function destroy($userID) {}
 
   // Validating special etudiant inputs! //
   // Checking for empty fields which are required! //

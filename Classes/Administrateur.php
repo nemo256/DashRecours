@@ -37,8 +37,6 @@ class administrateur extends user
     return $statement->fetchALL()[0];
   }
 
-  public function destroy() {}
-
   // Validating special administrateur inputs! //
   // Checking for empty fields which are required! //
   private function checkEmptyFieldsADM()
@@ -138,6 +136,45 @@ class administrateur extends user
         $GLOBALS['LOC']['P'], 
         '?updatedSuccessfully'
       );
+    }
+  }
+
+  public function destroy($userID)
+  {
+    if (checkNum($userID) || $_SESSION['TU'] != 'Administrateur')
+      redirect (
+        $GLOBALS['MSG']['AD'], 
+        'danger', 
+        $GLOBALS['LOC']['P'], 
+        '?accessDenied'
+      );
+    else
+    {
+      $query = "select * from users where id = ?";
+      $statement = $this->connect()->prepare($query);
+      $statement->execute([$userID]);
+      $user = $statement->fetchALL()[0];
+
+      if ($user['username'] == 'dummyUser' || empty($user['type']) || $user['type'] == 'Administrateur')
+        redirect (
+          $GLOBALS['MSG']['AD'], 
+          'danger', 
+          $GLOBALS['LOC']['P'], 
+          '?accessDenied'
+        );
+      else
+      {
+        $query = "update users set auth = 'Unauthorized' where id = ?";
+        $statement = $this->connect()->prepare($query);
+        $statement->execute([$userID]);
+
+        redirect (
+          $GLOBALS['MSG']['UD'], 
+          'success', 
+          $GLOBALS['LOC']['P'], 
+          '?delete=success'
+        );
+      }
     }
   }
 }

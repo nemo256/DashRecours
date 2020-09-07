@@ -94,9 +94,9 @@ else if (isset($_GET['delete']))
 {
   require_once ('../Classes/Administrateur.php');
 
-  $rec = new recours($_GET['delete']);
+  $adm = new administrateur($_SESSION['id']);
 
-  $rec->delete();
+  $adm->destroy($_GET['delete']);
 }
 
 else

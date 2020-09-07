@@ -52,6 +52,7 @@ $MSG = array
   'VS'   => '<b>Validated Successfully!</b>',
   'RFS'  => '<b>Refused Successfully!</b>',
   'PC'   => '<b>Password Changed Successfully!</b>',
+  'UD'   => '<b>User Deleted Successfully!</b>',
 
   // File related Messages //
   'FS'   => '<b>File is too large to be uploaded!</b>',

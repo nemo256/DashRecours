@@ -141,12 +141,12 @@ if (isset($userInfo))
                <a class="btn btn-info btn-sm" href="./profile.php?update=<?=$userInfo['id']?>">
                 <i class="fas fa-pencil-alt"></i>
                </a>
-               <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDeleteUser<?php echo $userInfo['nom']; ?>">
+               <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDeleteUser<?php echo $userInfo['id']; ?>">
                 <i class="fas fa-trash"></i>
                </button>
 
                <!-- Modal -->
-               <div class="modal fade" id="modalDeleteUser<?php echo $userInfo['nom']; ?>">
+               <div class="modal fade" id="modalDeleteUser<?php echo $userInfo['id']; ?>">
                  <div class="modal-dialog">
                    <div class="modal-content bg-danger">
                      <div class="modal-header">
@@ -160,7 +160,7 @@ if (isset($userInfo))
                      </div>
                      <div class="modal-footer justify-content-between">
                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Annuler</button>
-                       <a class="btn btn-outline-light" href="<?=$userInfo['nom']?>">Continuer</a>
+                       <a class="btn btn-outline-light" href="./Include/profileADM.inc.php?delete=<?=$userInfo['id']?>">Continuer</a>
                      </div>
                    </div>
                    <!-- /.modal-content -->

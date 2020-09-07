@@ -23,7 +23,7 @@ if ($_SESSION['TU'] == 'Etudiant')
   {
     $idrec = $_GET['view'];
 
-    if (!preg_match("/^[Z0-9]*$/", $idrec))
+    if (checkNum($idrec))
     {
       $_SESSION['message'] = '<b>Accessing that page is not permitted!</b>';
       $_SESSION['type'] = "danger";
@@ -61,7 +61,7 @@ if ($_SESSION['TU'] == 'Etudiant')
   {
     $idrec = $_GET['update'];
 
-    if (!preg_match("/^[Z0-9]*$/", $idrec))
+    if (checkNum($idrec))
     {
       $_SESSION['message'] = '<b>Accessing that page is not permitted!</b>';
       $_SESSION['type'] = "danger";
@@ -148,7 +148,7 @@ else if ($_SESSION['TU'] == 'Enseignant')
   {
     $idrec = $_GET['view'];
 
-    if (!preg_match("/^[Z0-9]*$/", $idrec))
+    if (checkNum($idrec))
     {
       $_SESSION['message'] = '<b>Accessing that page is not permitted!</b>';
       $_SESSION['type'] = "danger";
@@ -195,14 +195,14 @@ else if ($_SESSION['TU'] == 'Administrateur')
 
   // Pour la table CRUD des utilisateurs! //
   foreach ($allUsers as $key => $user)
-    if ($user['username'] != 'dummyUser' && !empty($user['type']) && $user['type'] != 'Administrateur')
+    if ($user['username'] != 'dummyUser' && !empty($user['type']) && $user['type'] != 'Administrateur' && $user['auth'] != 'Unauthorized')
       $users[$key] = $user;
 
   if (isset($_GET['view']))
   {
     $iduser = $_GET['view'];
 
-    if (!preg_match("/^[Z0-9]*$/", $iduser))
+    if (checkNum($iduser))
     {
       $_SESSION['message'] = '<b>Accessing that page is not permitted!</b>';
       $_SESSION['type'] = "danger";
@@ -237,7 +237,7 @@ else if ($_SESSION['TU'] == 'Administrateur')
   {
     $iduser = $_GET['update'];
 
-    if (!preg_match("/^[Z0-9]*$/", $iduser))
+    if (checkNum($iduser))
     {
       $_SESSION['message'] = '<b>Accessing that page is not permitted!</b>';
       $_SESSION['type'] = "danger";

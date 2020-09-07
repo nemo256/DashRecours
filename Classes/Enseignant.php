@@ -48,7 +48,7 @@ class enseignant extends user
     return $statement->fetchALL()[0];
   }
 
-  public function destroy() {}
+  public function destroy($userID) {}
 
   // Validating special enseignant inputs! //
   // Checking for empty fields which are required! //

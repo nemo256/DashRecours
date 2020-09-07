@@ -45,7 +45,7 @@ abstract class user extends database
   abstract protected function getInfo();
   abstract protected function insert();
   abstract protected function update();
-  abstract protected function destroy();
+  abstract protected function destroy($userID);
 
   // updating user //
   public function updateUsers()
