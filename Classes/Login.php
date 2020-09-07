@@ -58,6 +58,14 @@ class login extends database
     {
       if ($this->info['username'] == $row['username'] || $this->info['username'] == $row['email'])
       {
+        if ($row['auth'] == 'Unauthorized')
+          redirect (
+            $GLOBALS['MSG']['UN'], 
+            'danger', 
+            $GLOBALS['LOC']['L'], 
+            '?user='.$this->info['username']
+          );
+
         $pwdCheck = password_verify($this->info['pwd'], $row['pwd']);
         if (!$pwdCheck)
           redirect (

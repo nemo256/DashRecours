@@ -43,6 +43,7 @@ $MSG = array
   'IPN'  => '<b>Invalid Phone Number!</b>',
   'IR'   => '<b>Invalid Recours!</b>',
   'CT'   => '<b>Please choose the type of user!</b>',
+  'UN'   => '<b>Username / Email Unauthorized, contact the Administration!</b>',
 
   // Success Messages //
   'RS'   => '<b>Registered Successfully!</b>',
