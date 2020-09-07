@@ -92,7 +92,7 @@ if (isset($_POST['submit']))
 
 else if (isset($_GET['delete']))
 {
-  require_once ('../Classes/Recours.php');
+  require_once ('../Classes/Administrateur.php');
 
   $rec = new recours($_GET['delete']);
 

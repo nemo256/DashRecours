@@ -17,6 +17,7 @@ create table `users` (
   `email` text not null,
   `type` enum('Visitor', 'Etudiant', 'Enseignant', 'Administrateur'),
   `photo` text,
+  `auth` enum('Authorized', 'Unauthorized') default 'Authorized' not null,
   `pwd` longtext not null
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
