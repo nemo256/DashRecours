@@ -378,7 +378,7 @@ if (isset($userInfo))
     <!-- MU -->
 <?php if (isset($_GET['update'])): ?>
       <div class="tab-pane active" id="MU">
-      <form action="./Include/profileADM.inc.php" method="post" enctype="multipart/form-data">
+      <form action="./Include/profileADM.inc.php?update=<?=$_GET['update']?>" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">

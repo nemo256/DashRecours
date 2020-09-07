@@ -160,8 +160,10 @@ class enseignant extends user
     }
     else
     {
-      $_SESSION['message'] = '<b>Updated Successfully!</b>';
+      $_SESSION['message'] = '<b>Teacher Updated Successfully!</b>';
       $_SESSION['type'] = 'success';
+
+      header('Location: ../profile.php');
     }
   }
 }

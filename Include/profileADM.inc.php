@@ -25,10 +25,13 @@ if (isset($_POST['submit']))
   );
 
   $visInfo = array ( // `vis` references `Visitor` \ `user`
+    'nom' => $_POST['nom'],
+    'prenom' => $_POST['prenom'],
     'username' => 'AD' . $_POST['nom'] . $_POST['prenom'],
     'email' => $_POST['nom'] . $_POST['prenom'] . '@mail.com',
     'pwd' => $_POST['pwd'],
     'pwd2' => $_POST['pwd2'],
+    'photo' => $_POST['photo'],
     'location' => 'P'
   );
 
@@ -36,13 +39,13 @@ if (isset($_POST['submit']))
   $userInfo['photo'] = $photo->getFileName();
 
   if (isset($_GET['update']))
-    $visInfo['id'] = $_GET['update'];
+    $visInfo['id'] = $userInfo['id'] = $_GET['update'];
 
   $vis = new visitor($visInfo);
 
   // Getting id to be inserted on!
-  $userInfo['id'] = $vis->getId();
-  $visInfo['id'] = $vis->getId();
+  if (!isset($_GET['update']))
+    $userInfo['id'] = $userInfo['id'] = $vis->getId();
 
   if ($userInfo['type'] == "Etudiant")
   {
