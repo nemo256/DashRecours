@@ -18,7 +18,18 @@ class enseignant extends user
     if (!is_array($info))
       $this->id = $info;
     elseif (isset($info['updatePR']))
-      $this->info = $info;
+    {
+      if (isset($info['idadm']))
+      {
+        parent::__construct($info);
+
+        $this->checkEmptyFieldsENS('P');
+        $this->checkMatricule('P');
+        $this->checkDeplome('P');
+      }
+      else
+        $this->info = $info;
+    }
     else
     {
       parent::__construct($info);
@@ -41,37 +52,37 @@ class enseignant extends user
 
   // Validating special enseignant inputs! //
   // Checking for empty fields which are required! //
-  private function checkEmptyFieldsENS()
+  private function checkEmptyFieldsENS($loc = 'RF')
   {
     if (empty($this->info['matricule']) || empty($this->info['deplome']) || empty($this->info['grade']))
       redirect (
         $GLOBALS['MSG']['EF'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // Checking for valid id (matricule)! //
-  private function checkMatricule()
+  private function checkMatricule($loc = 'RF')
   {
     if (checkAlphaNum($this->info['matricule']))
       redirect (
         $GLOBALS['MSG']['IM'] . '<span class="ml-3">(Enseignant)</span>', 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // Checking for valid groupe! //
-  private function checkDeplome()
+  private function checkDeplome($loc = 'RF')
   {
     if (checkAlphaNoSpace($this->info['deplome']))
       redirect (
         $GLOBALS['MSG']['ID'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
@@ -154,3 +165,6 @@ class enseignant extends user
     }
   }
 }
+
+
+?>

@@ -222,11 +222,6 @@ class visitor extends database
         $GLOBALS['LOC']['L'], 
         '?registeredSuccessfully'
       );
-    else
-    {
-      $_SESSION['message'] = '<b>Registered Successfully!</b>';
-      $_SESSION['type'] = 'success';
-    }
   }
 
   // Updating a `visitor` \ `user` //

@@ -22,11 +22,22 @@ abstract class user extends database
     $this->info = $info;
 
     // Checking all submitted informations! //
-    $this->checkEmptyFields();
-    $this->checkName();
-    $this->checkFname();
-    $this->checkEmail();
-    $this->checkTel();
+    if (isset($info['idadm']))
+    {
+      $this->checkEmptyFields('P');
+      $this->checkName('P');
+      $this->checkFname('P');
+      $this->checkEmail('P');
+      $this->checkTel('P');
+    }
+    else
+    {
+      $this->checkEmptyFields();
+      $this->checkName();
+      $this->checkFname();
+      $this->checkEmail();
+      $this->checkTel();
+    }
   }
   
   // Sadly php does not support Constructor overloading //
@@ -51,67 +62,65 @@ abstract class user extends database
 
   // Verification methods! //
   // checking for any empty fields //
-  protected function checkEmptyFields()
+  protected function checkEmptyFields($loc = 'RF')
   {
     if (empty($this->info['nom']) || empty($this->info['prenom']) || empty($this->info['ddn']) || empty($this->info['adresse']) || empty($this->info['tel']) || empty($this->info['sexe']) || empty($this->info['type']))
       redirect (
         $GLOBALS['MSG']['EF'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // checking if the name is valid //
-  protected function checkName()
+  protected function checkName($loc = 'RF')
   {
     if (checkAlphaNoSpace($this->info['nom']))
       redirect (
         $GLOBALS['MSG']['IN'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // checking if the first name is valid //
-  protected function checkFname()
+  protected function checkFname($loc = 'RF')
   {
     if (checkAlphaNoSpace($this->info['prenom']))
       redirect (
         $GLOBALS['MSG']['IP'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // checking if the email is valid //
-  protected function checkEmail()
+  protected function checkEmail($loc = 'RF')
   {
     if (checkMail($this->info['email']))
       redirect (
         $GLOBALS['MSG']['IE'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
 
   // checking if the phone number is valid //
-  protected function checkTel()
+  protected function checkTel($loc = 'RF')
   {
     if (checkNum($this->info['tel']))
       redirect (
         $GLOBALS['MSG']['IPN'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '&nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse']
       );
   }
 }
-
-
 
 
 ?>

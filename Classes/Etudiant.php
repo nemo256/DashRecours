@@ -19,10 +19,21 @@ class etudiant extends user
       $this->id = $info;
     elseif (isset($info['updatePR']))
     {
-      $this->info = $info;
+      if (isset($info['idadm']))
+      {
+        parent::__construct($info);
 
-      $this->checkEmptyFieldsPR();
-      $this->checkGroupe();
+        $this->checkEmptyFieldsET('P');
+        $this->checkMatricule('P');
+        $this->checkGroupe('P');
+      }
+      else
+      {
+        $this->info = $info;
+
+        $this->checkEmptyFieldsPR();
+        $this->checkGroupe();
+      }
     }
     else
     {
@@ -46,13 +57,13 @@ class etudiant extends user
 
   // Validating special etudiant inputs! //
   // Checking for empty fields which are required! //
-  private function checkEmptyFieldsET()
+  private function checkEmptyFieldsET($loc = 'RF')
   {
     if (empty($this->info['matricule']) || empty($this->info['speciality']) || empty($this->info['groupe']))
       redirect (
         $GLOBALS['MSG']['EF'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
@@ -70,13 +81,13 @@ class etudiant extends user
   }
 
   // Checking for valid id (matricule)! //
-  private function checkMatricule()
+  private function checkMatricule($loc = 'RF')
   {
     if (checkAlphaNum($this->info['matricule']))
       redirect (
         $GLOBALS['MSG']['IM'], 
         'danger', 
-        $GLOBALS['LOC']['RF'], 
+        $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
       );
   }
@@ -175,3 +186,6 @@ class etudiant extends user
     }
   }
 }
+
+
+?>

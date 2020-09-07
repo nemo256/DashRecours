@@ -57,8 +57,8 @@ if (isset($_POST['submit']))
   {
     require_once ('../Classes/Enseignant.php');
 
-    $info['deplome'] = $_POST['dep'];
-    $info['grade'] = $_POST['grade'];
+    $userInfo['deplome'] = $_POST['dep'];
+    $userInfo['grade'] = $_POST['grade'];
 
     $user = new enseignant($userInfo);
   }
