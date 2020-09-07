@@ -139,10 +139,15 @@ then
     mysql -u $USER -e "use $DB_NAME" > /dev/null 2>&1
 
     echo 'Generating tables...'
-    mysql -u $USER -D $DB_NAME < ./Populate/populate.sql > /dev/null 2>&1
-    echo 'Tables Generated successfully!'
-    # FileGen! #
-    GenerateInfoFile
+    if mysql -u $USER -D $DB_NAME < ./Populate/populate.sql > /dev/null 2>&1
+    then
+      echo 'Tables Generated successfully!'
+      # FileGen! #
+      GenerateInfoFile
+    else
+      echo 'Error generating tables!'
+      exit
+    fi
   else
     DisplayError
   fi
@@ -158,10 +163,15 @@ else
     mysql -u $USER -p$PASS -e "use $DB_NAME" > /dev/null 2>&1
 
     echo 'Generating tables...'
-    mysql -u $USER -p$PASS -D $DB_NAME < ./Populate/populate.sql > /dev/null 2>&1
-    echo 'Tables Generated successfully!'
-    # FileGen! #
-    GenerateInfoFile
+    if mysql -u $USER -p$PASS -D $DB_NAME < ./Populate/populate.sql > /dev/null 2>&1
+    then
+      echo 'Tables Generated successfully!'
+      # FileGen! #
+      GenerateInfoFile
+    else
+      echo 'Error generating tables!'
+      exit
+    fi
   else
     DisplayError
   fi

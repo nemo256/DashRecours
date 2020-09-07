@@ -40,6 +40,10 @@ if (isset($_POST['submit']))
 
   $vis = new visitor($visInfo);
 
+  // Getting id to be inserted on!
+  $userInfo['id'] = $vis->getId();
+  $visInfo['id'] = $vis->getId();
+
   if ($userInfo['type'] == "Etudiant")
   {
     require_once ('../Classes/Etudiant.php');
@@ -66,8 +70,6 @@ if (isset($_POST['submit']))
       '?nom='.$userInfo['nom'].'&prenom='.$userInfo['prenom'].'&sex='.$userInfo['sexe'].'&matricule='.$userInfo['matricule']
     );
 
-  print_r($userInfo);
-
   // Moving the actual uploaded file (picture)! //
   $photo->moveFile();
 
@@ -81,6 +83,7 @@ if (isset($_POST['submit']))
   {
     $vis->insert();
     $user->insert();
+    $user->updateUsers();
   }
 }
 

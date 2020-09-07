@@ -99,12 +99,16 @@ class enseignant extends user
       $this->info['photo']
     ]);
 
-    $_SESSION['TU'] = $this->info['type'];
+    if (!isset($this->info['idadm']))
+      $_SESSION['TU'] = $this->info['type'];
 
     $_SESSION['message'] = "Registered successfully!";
     $_SESSION['type'] = "success";
 
-    header('Location: ../index.php?register=success');
+    if (!isset($this->info['idadm']))
+      header('Location: ../index.php?register=success');
+    else
+      header('Location: ../profile.php?register=success');
   }
 
   // Updating teacher infos! //
@@ -123,22 +127,30 @@ class enseignant extends user
     ]);
 
     // Redirecting with success message! //
-    if (!empty($this->info['pwd']))
-      redirect (
-        $GLOBALS['MSG']['PC'], 
-        'success', 
-        $GLOBALS['LOC']['LO'], 
-        '?passwordChanged=true'
-      );
+    if (!isset($info['idadm']))
+    {
+      if (!empty($this->info['pwd']))
+        redirect (
+          $GLOBALS['MSG']['PC'], 
+          'success', 
+          $GLOBALS['LOC']['LO'], 
+          '?passwordChanged=true'
+        );
+      else
+      {
+        $_SESSION['email'] = $this->info['email'];
+        redirect (
+          $GLOBALS['MSG']['US'], 
+          'success', 
+          $GLOBALS['LOC']['P'], 
+          '?updatedSuccessfully'
+        );
+      }
+    }
     else
     {
-      $_SESSION['email'] = $this->info['email'];
-      redirect (
-        $GLOBALS['MSG']['US'], 
-        'success', 
-        $GLOBALS['LOC']['P'], 
-        '?updatedSuccessfully'
-      );
+      $_SESSION['message'] = '<b>Updated Successfully!</b>';
+      $_SESSION['type'] = 'success';
     }
   }
 }

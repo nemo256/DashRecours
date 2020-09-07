@@ -189,6 +189,14 @@ class visitor extends database
     }
   }
 
+  public function getId()
+  {
+    $query = 'select * from users';
+    $statement = $this->connect()->prepare($query);
+    $statement->execute([]);
+    return count($statement->fetchALL()) + 3;
+  }
+
   // Hash password //
   private function hashPwd()
   {
@@ -207,7 +215,7 @@ class visitor extends database
     ]);
 
     // Redirecting with success message! //
-    if (!isset($info['location']))
+    if (!isset($this->info['location']))
       redirect (
         $GLOBALS['MSG']['RS'], 
         'success', 

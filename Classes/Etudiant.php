@@ -118,14 +118,16 @@ class etudiant extends user
       $this->info['photo']
     ]);
 
-    if (!isset($info['idadm']))
+    if (!isset($this->info['idadm']))
       $_SESSION['TU'] = $this->info['type'];
 
     $_SESSION['message'] = "Registered successfully!";
     $_SESSION['type'] = "success";
 
-    if (!isset($info['idadm']))
+    if (!isset($this->info['idadm']))
       header('Location: ../index.php?register=success');
+    else
+      header('Location: ../profile.php?register=success');
   }
 
   // Updating student infos! //
