@@ -1,3 +1,17 @@
+<?php
+require_once ('.workingDir.info.php');
+basename(dirname(__FILE__)) != $projectDir ?
+  $level = 2 :
+  $level = 1;
+require_once (dirname(__FILE__, $level) . '/Include/main.php');
+if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
+  redirect (
+    $GLOBALS['MSG']['AD'], 
+    'danger', 
+    $GLOBALS['LOC']['P'], 
+    '?accessDenied'
+  );
+?>
 
 <script>
   $(document).ready(function(){
@@ -105,7 +119,6 @@
 
           <p>Vous pouvez cliquer sur ajouter un utilisateur pour ajouter un nouveau utilisateur.</p>
         </div>
-
 <?php else: ?>
   <table id="dataTable" class="table table-sm table-striped table-bordered projects">
       <thead>
@@ -129,11 +142,11 @@ elseif ($user['type'] == 'Enseignant')
 if (isset($userInfo))
   $userInfo = $userInfo->getInfo();
 ?>
-            <td><?=$userInfo['matricule']?></td>
-            <td><?=$userInfo['nom']?></td>
-            <td><?=$userInfo['prenom']?></td>
-            <td><?=$userInfo['email']?></td>
-            <td><?=$user['type']?></td>
+            <td class="text-center"><?=$userInfo['matricule']?></td>
+            <td class="text-center"><?=$userInfo['nom']?></td>
+            <td class="text-center"><?=$userInfo['prenom']?></td>
+            <td class="text-center"><?=$userInfo['email']?></td>
+            <td class="text-center"><?=$user['type']?></td>
             <td class="project-actions text-center">
               <a class="btn btn-primary btn-sm" href="./profile.php?view=<?=$userInfo['id']?>">
                 <i class="fas fa-folder"></i>

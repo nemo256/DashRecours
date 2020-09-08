@@ -1,3 +1,18 @@
+<?php
+require_once ('.workingDir.info.php');
+basename(dirname(__FILE__)) != $projectDir ?
+  $level = 2 :
+  $level = 1;
+require_once (dirname(__FILE__, $level) . '/Include/main.php');
+if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
+  redirect (
+    $GLOBALS['MSG']['AD'], 
+    'danger', 
+    $GLOBALS['LOC']['P'], 
+    '?accessDenied'
+  );
+?>
+
       <!-- Profile Infos-->
       <div class="card card-primary card-outline">
         <div class="card-body box-profile">

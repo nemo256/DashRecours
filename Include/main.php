@@ -247,5 +247,4 @@ function redirect ($message, $type, $location, $urlAppend)
 }
 
 
-
 ?>

@@ -20,8 +20,13 @@ else
 
   if ($thisFileName == 'registerFULL.php' && isset($_SESSION['TU']))
   {
-      header('Location: ./index.php');
-      exit();
+    header ('Location: ./index.php');
+    exit;
+  }
+  if ($thisFileName == 'trafic.php' && $_SESSION['TU'] != 'Administrateur')
+  {
+    header ('Location: ./index.php');
+    exit;
   }
 
   // For generating Profile pic //
@@ -33,6 +38,7 @@ else
   else if ($thisFileName == 'charts.php') { $pageName = 'Charts'; $titleName = $pageName; }
   else if ($thisFileName == 'contact.php') { $pageName = 'Contact'; $titleName = $pageName; }
   else if ($thisFileName == 'registerFULL.php') { $pageName = 'Registration'; $titleName = $pageName; }
+  else if ($thisFileName == 'trafic.php') { $pageName = 'Traffic'; $titleName = $pageName; }
 
   if ($thisFileName == 'dashboard.php' || $thisFileName == 'charts.php')
   {
@@ -103,10 +109,23 @@ else
   if (empty($info['photo']) || $info['photo'] == '<null>') $photo = './Icons/account2.png';
   else $photo = './Pics/' . $info['photo'];
 
+  if ($thisFileName == 'trafic.php')
+  {
+    require_once (dirname(__FILE__, $level) . '/Classes/Etudiant.php');
+    require_once (dirname(__FILE__, $level) . '/Classes/Enseignant.php');
+    require_once (dirname(__FILE__, $level) . '/Classes/Recours.php');
+
+    $recours = new recours(-1);
+    $recours = $recours->getAllRecours();
+
+    foreach ($recours as $key => $REC)
+      if ($REC['module'] != 'dummyModule')
+        $recs[$key] = $REC;
+  }
 }
 
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -351,6 +370,16 @@ else
             </a>
           </li>
 <?php endif; ?>
+<?php if (isset($_SESSION['TU']) && $_SESSION['TU'] == 'Administrateur'): ?>
+          <li class="nav-item">
+            <a href="./trafic.php" class="nav-link <?php if ($thisFileName == 'trafic.php') echo 'active'; ?>">
+              <i class="nav-icon fas fa-traffic-light"></i>
+              <p>
+                Trafic
+              </p>
+            </a>
+          </li>
+<?php endif; ?>
           <li class="nav-item">
             <a href="./Include/logout.inc.php" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
@@ -368,7 +397,7 @@ else
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-<?php if ($thisFileName != 'registerFULL.php' && $thisFileName != 'profile.php'): ?>
+<?php if ($thisFileName != 'registerFULL.php' && $thisFileName != 'profile.php' && $thisFileName != 'trafic.php'): ?>
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">

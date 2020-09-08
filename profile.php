@@ -277,7 +277,6 @@ else if ($_SESSION['TU'] == 'Administrateur')
 }
 
 
-
 ?>
 
 <!-- Main content -->
