@@ -120,9 +120,9 @@ $(function () {
     datasets: [
       {
         label               : 'Recours Validé',
-        backgroundColor     : 'rgba(10,241,88,0.9)',
-        borderColor         : 'rgba(10,241,88,0.9)',
-        pointRadius          : false,
+        backgroundColor     : 'rgb(139, 195, 74)',
+        borderColor         : 'rgb(76, 175, 80)',
+        pointRadius         : false,
         pointColor          : '#FF0000',
         pointStrokeColor    : 'rgba(255,0,0,1)',
         pointHighlightFill  : '#fff',
@@ -141,8 +141,8 @@ $(function () {
       },
       {
         label               : 'Recours Refusé',
-        backgroundColor     : 'rgba(210, 14, 59, 1)',
-        borderColor         : 'rgba(210, 14, 59, 1)',
+        backgroundColor     : 'rgb(255, 87, 34)',
+        borderColor         : 'rgb(244, 67, 54)',
         pointRadius         : false,
         pointColor          : 'rgba(210, 214, 222, 1)',
         pointStrokeColor    : '#c1c7d1',
@@ -162,8 +162,8 @@ $(function () {
       },
       {
         label               : 'Recours Non Traité',
-        backgroundColor     : 'rgba(210, 140, 00, 1)',
-        borderColor         : 'rgba(210, 140, 00, 1)',
+        backgroundColor     : 'rgb(255, 193, 7)',
+        borderColor         : 'rgb(255, 152, 0)',
         pointRadius         : false,
         pointColor          : 'rgba(210, 214, 222, 1)',
         pointStrokeColor    : '#c1c7d1',
@@ -238,7 +238,7 @@ $(function () {
     datasets: [
       {
         data: [<?=$nbrRecoursValide?>,<?=$nbrRecoursRefuse?>,<?=$nbrRecours?>],
-        backgroundColor : ['#33FF33', '#EF1443', '#E7A400'],
+        backgroundColor : ['rgb(139, 195, 74)', 'rgb(255, 87, 34)', 'rgb(255, 193, 7)'],
       }
     ]
   }
