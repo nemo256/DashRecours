@@ -22,6 +22,7 @@ class recours extends database
 
       $this->checkEmptyFields();
       $this->checkEmailENS();
+      $this->checkDescription();
       $this->checkIfEnsExists();
 
       if (isset($info['id']))
@@ -57,6 +58,18 @@ class recours extends database
         'danger', 
         $GLOBALS['LOC']['P'], 
         '?mod='.$this->info['module'].'&descc='.$this->info['desc']
+      );
+  }
+
+  // Checking for valid description (Prevent any input)! //
+  private function checkDescription()
+  {
+    if (checkAlphaNum($this->info['desc']))
+      redirect (
+        $GLOBALS['MSG']['IDD'],
+        'warning', 
+        $GLOBALS['LOC']['P'], 
+        '?mailens='.$this->info['emailens'].'&mod='.$this->info['module'].'&descc='.$this->info['desc']
       );
   }
   
