@@ -149,7 +149,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                     <i class="ion ion-stats-bars mr-1"></i>
-                    Statut des recours mensuel
+                    Statut Des Recours
                 </h3>
 
                 <div class="card-tools">
@@ -229,49 +229,35 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
             <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Visiteurs Enligne</h3>
-                  <a href="javascript:void(0);">View Report</a>
+              <div class="card-header">
+                <h3 class="card-title">
+                    <i class="ion ion-stats-bars mr-1"></i>
+                    Status Des Utilisateurs
+                </h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
                 </div>
               </div>
+              <!-- /.card-header -->
               <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                  <span class="text-bold text-lg"><?=$nbrVisiteur?></span>
-                    <span>Visiteurs au fil du temps</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 12.5%
-                    </span>
-                    <span class="text-muted">Depuis la semaine derni&egrave;re</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> Cette semaine
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> La semaine derni&egrave;re
-                  </span>
+                <div class="chart">
+                  <!-- Rec Chart Canvas -->
+                  <canvas id="radarChart" height="200"></canvas>
                 </div>
               </div>
+              <!-- /.card-footer -->
             </div>
             <!-- /.card -->
 
           </section>
           <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
           <section class="col-lg-5 connectedSortable">
     
             <!-- Calendar -->
@@ -335,9 +321,9 @@ $(function () {
     datasets: [
       {
         label               : 'Recours Totale',
-        backgroundColor     : 'rgb(33, 150, 243)',
+        backgroundColor     : 'rgb(100, 181, 246)',
         borderColor         : 'rgb(63, 81, 181)',
-        pointRadius         : false,
+        pointRadius         : true,
         pointColor          : '#FF0000',
         pointStrokeColor    : 'rgba(255,0,0,1)',
         pointHighlightFill  : '#fff',
@@ -386,7 +372,53 @@ $(function () {
   })
 })
 </script>
+<script>
+$(function () {
+  'use strict'
 
+  var radarChartCanvas = $('#radarChart').get(0).getContext('2d')
+
+  var radarChartData = {
+    labels   : ["𝗘𝗻𝘀𝗲𝗶𝗴𝗻𝗮𝗻𝘁𝘀","𝗘𝘁𝘂𝗱𝗶𝗮𝗻𝘁𝘀","𝗔𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗲𝘂𝗿𝘀","𝗩𝗶𝘀𝗶𝘁𝗲𝘂𝗿𝘀"],
+    datasets : [
+      {
+        label               : 'Users',
+        data : [
+          <?=$nbrEnseignant?>,
+          <?=$nbrEtudiant?>,
+          <?=$nbrAdministrateur?>,
+          <?=$nbrVisiteur?>
+        ]
+      },
+    ]
+  }
+
+  var radarChartOptions = {
+    maintainAspectRatio: true,
+    responsive: true,
+    legend: false,
+    tooltips: true,
+    elements: {
+      line: {
+        backgroundColor: 'rgb(225, 190, 231)',
+        borderColor: 'rgb(171, 71, 188)'
+      },
+      point: {
+        backgroundColor: 'rgb(171, 71, 188)',
+        hoverBackgroundColor: 'rgb(186, 104, 200)',
+        radius: 5,
+        hoverRadius: 10,
+      }
+    }
+  }
+
+  var radarChart = new Chart(radarChartCanvas, {
+    type: 'radar',
+    data: radarChartData,
+    options: radarChartOptions
+  })
+})
+</script>
 <?php
     require_once ('./Pages/footer.php');
 ?>

@@ -46,7 +46,6 @@
 <script src="./Plugins/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo -->
 <script src="./Plugins/js/dashboard.js"></script>
-<script src="./Plugins/js/dashboard3.js"></script>
 <!-- bs-custom-file-input -->
 <script src="./Plugins/js/bs-custom-file-input.min.js"></script>
 <!-- JS and Jquery for Photo previewing and generating charts -->
