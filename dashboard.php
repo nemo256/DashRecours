@@ -168,7 +168,6 @@
                     <p class="text-center">
                       <strong>Recours: 1 Sep, 2019 - 30 Mai, 2020</strong>
                     </p>
-
                     <div class="chart">
                       <!-- Rec Chart Canvas -->
                       <canvas id="recChart" height="180"></canvas>
