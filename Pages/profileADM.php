@@ -1,4 +1,5 @@
 <?php
+
 require_once ('.workingDir.info.php');
 basename(dirname(__FILE__)) != $projectDir ?
   $level = 2 :
@@ -11,6 +12,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
     $GLOBALS['LOC']['P'], 
     '?accessDenied'
   );
+
 ?>
 
 <script>
