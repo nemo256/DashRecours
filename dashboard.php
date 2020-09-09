@@ -34,7 +34,9 @@
               <div class="icon">
                 <i class="ion ion-ios-people"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -48,7 +50,9 @@
               <div class="icon">
                 <i class="ion ion-android-contact"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -62,7 +66,9 @@
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -76,7 +82,9 @@
               <div class="icon">
                 <i class="ion ion-ios-body"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -94,7 +102,9 @@
               <div class="icon">
                 <i class="ion ion-person"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -108,7 +118,9 @@
               <div class="icon">
                 <i class="ion ion-document-text"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -122,7 +134,9 @@
               <div class="icon">
                 <i class="ion ion-checkmark-circled"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
@@ -136,7 +150,9 @@
               <div class="icon">
                 <i class="ion ion-close-circled"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php if ($_SESSION['TU'] == 'Administrateur'): ?>
+              <a href="./trafic.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+<?php endif; ?>
             </div>
           </div>
           <!-- ./col -->
