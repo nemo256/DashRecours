@@ -381,23 +381,24 @@ $(function () {
   var radarChartData = {
     labels   : ["𝗘𝗻𝘀𝗲𝗶𝗴𝗻𝗮𝗻𝘁𝘀","𝗘𝘁𝘂𝗱𝗶𝗮𝗻𝘁𝘀","𝗔𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗲𝘂𝗿𝘀","𝗩𝗶𝘀𝗶𝘁𝗲𝘂𝗿𝘀"],
     datasets : [
-      {
-        label               : 'Users',
-        data : [
+      { 
+        label: "Users",
+        fill : 'origin',
+        data : 
+        [
           <?=$nbrEnseignant?>,
           <?=$nbrEtudiant?>,
           <?=$nbrAdministrateur?>,
           <?=$nbrVisiteur?>
-        ]
+        ] 
       },
     ]
   }
 
   var radarChartOptions = {
-    maintainAspectRatio: true,
     responsive: true,
     legend: false,
-    tooltips: true,
+    spanGaps: true,
     elements: {
       line: {
         backgroundColor: 'rgb(225, 190, 231)',
@@ -408,6 +409,12 @@ $(function () {
         hoverBackgroundColor: 'rgb(186, 104, 200)',
         radius: 5,
         hoverRadius: 10,
+      },
+    },
+    scale: {
+      ticks: {
+          beginAtZero: true,
+          stepSize: 4
       }
     }
   }

@@ -1,4 +1,3 @@
-7,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
 8,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
 9,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
 10,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
@@ -10,10 +9,3 @@
 16,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
 17,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
 18,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-19,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-20,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-21,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-22,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-23,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-24,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
-25,dummyTeacher,7310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,DEP,MCB,dummyPic.png
