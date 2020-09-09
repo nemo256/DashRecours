@@ -110,6 +110,7 @@ $(function () {
     "responsive": true
   });
 
+
   // AREA CHART
 
   // Get context with jQuery using jQuery's .get() method.
@@ -227,7 +228,6 @@ $(function () {
   })
 
   // DONUT CHART
-  // Get context with jQuery - using jQuery's .get() method.
   var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
   var donutData        = {
     labels: [
@@ -254,7 +254,6 @@ $(function () {
   })
 
   // PIE CHART 
-  // Get context with jQuery - using jQuery's .get() method.
   var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
   var pieData        = donutData;
   var pieOptions     = {

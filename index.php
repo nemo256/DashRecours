@@ -82,6 +82,20 @@ endif;
       </div>
       <!-- /.col-lg-9 -->
 <?php endif; ?>
+<?php if ($_SESSION['TU'] == "Administrateur"): ?>
+      <div class="col-lg-6">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h5 class="m-0">Flux de Trafic</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Voir les informations détaillées sur recours!</p>
+            <a href="./trafic.php" class="btn btn-primary">Trafic</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-lg-9 -->
+<?php endif; ?>
     </div>
     <!-- /.row -->
   </div><!-- /.container-fluid -->
