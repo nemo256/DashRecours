@@ -28,6 +28,7 @@ abstract class user extends database
       $this->checkName('P');
       $this->checkFname('P');
       $this->checkEmail('P');
+      $this->checkSex('P');
       $this->checkTel('P');
     }
     else
@@ -36,6 +37,7 @@ abstract class user extends database
       $this->checkName();
       $this->checkFname();
       $this->checkEmail();
+      $this->checkSex();
       $this->checkTel();
     }
   }
@@ -106,6 +108,18 @@ abstract class user extends database
         'danger', 
         $GLOBALS['LOC'][$loc], 
         '?nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&sex='.$this->info['sexe'].'&add='.$this->info['adresse'].'&tel='.$this->info['tel']
+      );
+  }
+
+  // checking if the sex is valid //
+  protected function checkSex($loc = 'RF')
+  {
+    if ($this->info['sexe'] != 'Male' && $this->info['sexe'] != 'Female' && $this->info['sexe'] != 'Autre')
+      redirect (
+        $GLOBALS['MSG']['IS'], 
+        'danger', 
+        $GLOBALS['LOC'][$loc], 
+        '&nom='.$this->info['nom'].'&prenom='.$this->info['prenom'].'&ddn='.$this->info['ddn'].'&add='.$this->info['adresse']
       );
   }
 

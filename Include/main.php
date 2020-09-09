@@ -41,6 +41,7 @@ $MSG = array
   'ID'   => '<b>Invalid Deplome!</b>',
   'IPO'  => '<b>Invalid Poste!</b>',
   'IPN'  => '<b>Invalid Phone Number!</b>',
+  'IS'   => '<b>Invalid Sex!</b>',
   'IR'   => '<b>Invalid Recours!</b>',
   'IDD'  => '<b>Invalid Description (No special characters)!</b>',
   'CT'   => '<b>Please choose the type of user!</b>',
