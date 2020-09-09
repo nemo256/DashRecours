@@ -166,7 +166,7 @@
                 <div class="row">
                   <div class="col-md-8">
                     <p class="text-center">
-                      <strong>Recours: 1 Jan, 2019 - 30 Jul, 2020</strong>
+                      <strong>Recours: 1 Sep, 2019 - 30 Mai, 2020</strong>
                     </p>
 
                     <div class="chart">
