@@ -270,12 +270,10 @@
             </div>
             <!-- /.card -->
 
-
           </section>
           <!-- /.Left col -->
           <!-- right col (We are only adding the ID to make the widgets sortable)-->
           <section class="col-lg-5 connectedSortable">
-
     
             <!-- Calendar -->
             <div class="card bg-gradient-success">
@@ -327,43 +325,67 @@
     <!-- /.content -->
 
 <script>
-var ctx = document.getElementById('recChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+$(function () {
+  'use strict'
+
+  // AREA CHART (Recours Totale)
+  var recChartCanvas = $('#recChart').get(0).getContext('2d')
+
+  var recChartData = {
+    labels  : ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Fév', 'Mar', 'Avr', 'Mai'],
+    datasets: [
+      {
+        label               : 'Recours Totale',
+        backgroundColor     : 'rgb(33, 150, 243)',
+        borderColor         : 'rgb(63, 81, 181)',
+        pointRadius         : false,
+        pointColor          : '#FF0000',
+        pointStrokeColor    : 'rgba(255,0,0,1)',
+        pointHighlightFill  : '#fff',
+        pointHighlightStroke: 'rgba(60,141,188,1)',
+        data                : [
+          <?=$recoursTotale['September']?>,
+          <?=$recoursTotale['October']?>,
+          <?=$recoursTotale['November']?>,
+          <?=$recoursTotale['December']?>,
+          <?=$recoursTotale['January']?>,
+          <?=$recoursTotale['February']?>,
+          <?=$recoursTotale['March']?>,
+          <?=$recoursTotale['April']?>,
+          <?=$recoursTotale['May']?>
+        ]
+      },
+    ]
+  }
+
+  var recChartOptions = {
+    maintainAspectRatio: false,
+    responsive: true,
+    legend: {
+      display: false
     },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
         }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        }
+      }]
     }
-});
+  }
+
+  // This will get the first returned node in the jQuery collection.
+  // eslint-disable-next-line no-unused-vars
+  var recChart = new Chart(recChartCanvas, {
+    type: 'line',
+    data: recChartData,
+    options: recChartOptions
+  })
+})
 </script>
 
 <?php
