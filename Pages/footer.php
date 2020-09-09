@@ -44,8 +44,6 @@
 <script src="./Plugins/js/responsive.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
 <script src="./Plugins/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo -->
-<script src="./Plugins/js/dashboard.js"></script>
 <!-- bs-custom-file-input -->
 <script src="./Plugins/js/bs-custom-file-input.min.js"></script>
 <!-- JS and Jquery for Photo previewing and generating charts -->

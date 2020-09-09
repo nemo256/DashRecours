@@ -313,6 +313,12 @@
 $(function () {
   'use strict'
 
+  // The Calendar
+  $('#calendar').datetimepicker({
+    format: 'L',
+    inline: true
+  })
+
   // AREA CHART (Recours Totale)
   var recChartCanvas = $('#recChart').get(0).getContext('2d')
 
@@ -323,11 +329,6 @@ $(function () {
         label               : 'Recours Totale',
         backgroundColor     : 'rgb(100, 181, 246)',
         borderColor         : 'rgb(63, 81, 181)',
-        pointRadius         : true,
-        pointColor          : '#FF0000',
-        pointStrokeColor    : 'rgba(255,0,0,1)',
-        pointHighlightFill  : '#fff',
-        pointHighlightStroke: 'rgba(60,141,188,1)',
         data                : [
           <?=$recoursTotale['September']?>,
           <?=$recoursTotale['October']?>,
@@ -349,6 +350,13 @@ $(function () {
     legend: {
       display: false
     },
+    elements: {
+      point: {
+        hoverBackgroundColor: 'rgb(63, 81, 181)',
+        radius: 5,
+        hoverRadius: 10,
+      },
+    },
     scales: {
       xAxes: [{
         gridLines: {
@@ -363,8 +371,6 @@ $(function () {
     }
   }
 
-  // This will get the first returned node in the jQuery collection.
-  // eslint-disable-next-line no-unused-vars
   var recChart = new Chart(recChartCanvas, {
     type: 'line',
     data: recChartData,
