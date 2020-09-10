@@ -15,7 +15,7 @@ if (isset($_POST['submit']))
 
   $vis = new visitor($info);
 
-  $vis->insert();
+  //$vis->insert();
 }
 
 else

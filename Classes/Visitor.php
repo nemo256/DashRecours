@@ -179,7 +179,7 @@ class visitor extends database
         );
 
       // Email Taken //
-      if ($this->info['Email'] == $user['email'])
+      elseif ($this->info['email'] == $user['email'])
         redirect (
           $GLOBALS['MSG']['ET'], 
           'danger', 

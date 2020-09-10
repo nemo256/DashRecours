@@ -15,15 +15,19 @@ Dashboard recours is a website that can manage recours concerning IT department 
 > `PHP` version 5 is required
 1. Run this to clone this repo and make `./script` command executable:
 ```bash
-$ sudo git clone https://github.com/nemo256/DashRecours /var/www/html/project_dir  # for linux users
-$ cd /var/www/html/project_dir  # this working directory
-$ sudo chmod +x script.sh
+$ git clone https://github.com/nemo256/DashRecours
+$ cd DashRecours
+$ chmod +x script.sh
 ```
 2. This will generate the database with its tables and populate them (run as `sudo` for superuser privileges):
 ```bash
 $ ./script.sh -u [MYSQL-username] -p [MYSQL-password] -d [DB-NAME]
 ```
-3. For more informations run:
+3. Launch a local server on PORT 3000: 
+```bash
+$ php -S localhost:3000
+```
+4. For more informations run:
 ```bash
 $ ./script.sh -h
 ```
@@ -37,15 +41,15 @@ $ sudo ./script.sh -d [DB-NAME]
 
 ## Usage
 
-1. `Student` can add, update, remove a recourse.
-2. `Teacher` can validate, refuse a recourse,
-3. `Administrator` can manage `Students` and `Teachers`.
+1. A `Student` can add, update, remove a recourse.
+2. A `Teacher` can validate, refuse a recourse,
+3. An `Administrator` can manage `Students` and `Teachers`.
 
 ## Issues you might run into
 
-For linux users that may have to change ownership of this project for files and images to be copied correctly!
+For linux users that may have to change ownership of this project for files and images to be uploaded correctly!
 ```bash
-$ sudo chown -R www-data:www-data /var/www/html/project_dir
+$ sudo chown -R www-data:www-data [PATH-TO-DIR]/DashRecours
 ```
 
 Please make sure you have mysql running on your computer before running (./script.sh):

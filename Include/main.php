@@ -25,7 +25,7 @@ $MSG = array
   // Error Messages //
   'AD'   => '<b>Access Denied!</b>',
   'EF'   => '<b>Empty Fields!</b> please fill out all inputs.',
-  'AT'   => '<b>Username is already taken!</b>',
+  'UT'   => '<b>Username is already taken!</b>',
   'ET'   => '<b>Email is already taken!</b>',
   'WP'   => '<b>Wrong Password!</b>',
   'UENR' => '<b>Username / Email not registered!</b>',
