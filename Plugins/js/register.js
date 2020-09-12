@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
   else if (username.value.length < 4)
     printError(e, username, errorUsername, 'Username is too short')
   else if (username.value.length > 14)
-    printError(e, usernam, errorUsername, 'Username is too long')
+    printError(e, username, errorUsername, 'Username is too long')
   else
     printSuccess(e, username, errorUsername)
 
