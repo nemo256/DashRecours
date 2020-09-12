@@ -25,7 +25,7 @@ $ ./script.sh -u [MYSQL-username] -p [MYSQL-password] -d [DB-NAME]
 ```
 3. Launch a local server on PORT 3000: 
 ```bash
-$ php -S localhost:3000
+$ sudo php -S localhost:3000
 ```
 4. For more informations run:
 ```bash
