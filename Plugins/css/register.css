@@ -31,6 +31,9 @@ body {
   border-size: 19px;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
+.form-control input{
+  border: 2px solid #f0f0f0 !important;
+}
 .form button{
   background-color: #0026a9;
   margin-top: 6px;
