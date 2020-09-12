@@ -36,7 +36,7 @@ create table `ET` (
   `ddn` text not null,
   `sexe` enum('Male', 'Female', 'Autre') not null,
   `adresse` text not null,
-  `tel` bigint not null,
+  `tel` tinytext not null,
   `speciality` enum('L1-MI', 'L2-INFO', 'L3-ISIL', 'L3-SI', 'M1-ILTI', 'M1-SIR', 'M1-TI', 'M2-ILTI', 'M2-SIR', 'M2-TI') not null,
   `groupe` smallint not null,
   `photo` text
@@ -57,7 +57,7 @@ create table `ENS` (
   `ddn` text not null,
   `sexe` enum('Male', 'Female', 'Autre') not null,
   `adresse` text not null,
-  `tel` bigint not null,
+  `tel` tinytext not null,
   `deplome` text not null,
   `grade` enum('MAA', 'MAB', 'MCA', 'MCB', 'PROF') not null,
   `photo` text
@@ -78,7 +78,7 @@ create table `ADM` (
   `ddn` text not null,
   `sexe` enum('Male', 'Female', 'Autre') not null,
   `adresse` text not null,
-  `tel` bigint not null,
+  `tel` tinytext not null,
   `poste` text not null,
   `photo` text
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
