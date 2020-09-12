@@ -203,6 +203,7 @@ if (isset($userInfo))
             <strong><i class="fas fa-poll-h mr-2"></i>Prenom</strong>
             <p class="text-muted mt-1"><?=$viewUser['prenom']?></p>
           </div>
+<?php if (empty($viewUser['photo']) || $viewUser['photo'] == '<null>') $viewUser['photo'] = 'account2.png'; ?>
           <div class="col-sm-6 text-center">
             <img class="profile-user-img img-fluid img-circle"
             style="width: 160px; height: 150px"
