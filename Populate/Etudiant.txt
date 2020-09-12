@@ -1,3 +1,4 @@
+18,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
 19,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
 20,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
 21,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
@@ -10,4 +11,3 @@
 28,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
 29,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
 30,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
-31,dummyStudent,1717310XXX,dummyName,dummyFname,dummy@mail.com,00-00-0000,Autre,Boumerdes,777777777,L1-MI,0,dummyPic.png
