@@ -19,11 +19,11 @@ $ git clone https://github.com/nemo256/DashRecours
 $ cd DashRecours
 $ chmod +x script.sh
 ```
-2. This will generate the database with its tables and populate them (run as `sudo` for superuser privileges):
+2. This will generate the database with its tables and populate them:
 ```bash
 $ ./script.sh -u [MYSQL-username] -p [MYSQL-password] -d [DB-NAME]
 ```
-3. Launch a local server on PORT 3000: 
+3. Launch a local server on PORT 3000 (run as `sudo` for superuser privileges):
 ```bash
 $ sudo php -S localhost:3000
 ```
