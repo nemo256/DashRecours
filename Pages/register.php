@@ -99,5 +99,6 @@ session_start();
 <!-- /.register-box -->
 
 <script src="../Plugins/js/register.js"></script>
+
 </body>
 </html>
