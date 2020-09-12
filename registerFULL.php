@@ -32,17 +32,19 @@ endif;
       <h3 class="card-title"><b>Registration Form</b></h3>
     </div>
     <div class="card-body">
-      <form action="./Include/registerFULL.inc.php" method="post" enctype="multipart/form-data">
+      <form id="form" action="./Include/registerFULL.inc.php" method="post" enctype="multipart/form-data">
 
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
               <label>Nom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="nom" class="form-control" placeholder="Entrez votre nom" value="<?=$_GET['nom']?>">
+              <input type="text" name="nom" id="nom" class="form-control" placeholder="Entrez votre nom" value="<?=$_GET['nom']?>">
+              <div id="errorNom" class="text-red text-sm ml-1" style="margin-bottom: -10px"></div>
             </div>
             <div class="form-group">
               <label>Prénom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="prenom" class="form-control" placeholder="Entrez votre prénom" value="<?=$_GET['prenom']?>">
+              <input type="text" name="prenom" id="prenom" class="form-control" placeholder="Entrez votre prénom" value="<?=$_GET['prenom']?>">
+              <div id="errorPrenom" class="text-red text-sm ml-1" style="margin-bottom: -10px"></div>
             </div>
           </div>
           <div class="col-sm-6 text-center">
@@ -50,7 +52,7 @@ endif;
             <!-- Photo -->
             <input type="file" name="file" class="file" style="visibility: hidden; position: absolute;">
             <input type="text" class="form-control" disabled placeholder="Upload File" id="file" style="visibility: hidden; position: absolute;">
-            <button type="button" class="browse btn btn-lg mt-3">
+            <button type="button" class="browse btn btn-lg">
             <img class="profile-user-img img-fluid img-circle"
             style="width: 160px; height: 150px"
             src="./Icons/account2.png"
@@ -68,19 +70,21 @@ endif;
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
-            <input type="email" name="email" class="form-control" placeholder="JonDoe@mail.com" value="<?=$_SESSION['email']?>">
+            <input type="email" name="email" id="email" class="form-control" placeholder="JonDoe@mail.com" value="<?=$_SESSION['email']?>">
           </div>
         </div>
+        <div id="errorEmail" class="text-red text-sm ml-1" style="margin-top: -10px"></div>
 
-        <div class="form-group">
+        <div class="form-group mt-2">
           <label>Date de naissance<span class="text-red ml-1">*</span></label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
             </div>
-            <input type="date" name="ddn" class="form-control" placeholder="02/01/2000" value="<?=$_GET['ddn']?>">
+            <input type="date" name="ddn" id="ddn" class="form-control" placeholder="02/01/2000" value="<?=$_GET['ddn']?>">
           </div>
         </div>
+        <div id="errorDdn" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
 <?php if (isset($_GET['sex'])) $sex = $_GET['sex']; ?>
         <label>Sexe<span class="text-red ml-1">*</span></label>
@@ -104,6 +108,7 @@ endif;
             </label>
           </div>
         </div>
+        <div id="errorSex" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
         <div class="form-group">
           <label>Adresse<span class="text-red ml-1">*</span></label>
@@ -111,9 +116,10 @@ endif;
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-map-marker"></i></span>
             </div>
-            <input type="text" name="add" class="form-control" placeholder="Frantz Fanon / Boumerdes / 35000" value="<?=$_GET['add']?>">
+            <input type="text" name="add" id="add" class="form-control" placeholder="Frantz Fanon / Boumerdes / 35000" value="<?=$_GET['add']?>">
           </div>
         </div>
+        <div id="errorAdd" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
         <div class="form-group">
           <label>Numéro de téléphone<span class="text-red ml-1">*</span></label>
@@ -121,9 +127,10 @@ endif;
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-phone"></i></span>
             </div>
-            <input type="text" name="tel" class="form-control" placeholder="07 70 70 70 11" value="<?=$_GET['tel']?>">
+            <input type="text" name="tel" id="tel" class="form-control" placeholder="07 70 70 70 11" value="<?=$_GET['tel']?>">
           </div>
         </div>
+        <div id="errorTel" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
         <div class="form-group">
           <label>Type Utilisateur<span class="text-red ml-1">*</span></label>
@@ -134,12 +141,14 @@ endif;
             <option value="Administrateur">Administrateur</option>
           </select>
         </div>
+        <div id="errorTU" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
 <!-- this is extended through AJAX on the script in header file! -->
+<!-- Please see the header file -->
         <div id="myOptions"> 
         </div>
 
-        <button type="submit" name="submit" class="btn btn-warning mt-3" style="width: 27%">Submit</button>
+        <button type="submit" name="submit" class="btn btn-warning mt-3" style="width: 30%">Submit</button>
 
       </form>
     </div>
@@ -150,6 +159,8 @@ endif;
   </div><!-- /.container-fluid -->
 </section>
 <!-- /.content -->
+
+<script src="./Plugins/js/registerFULL.js"></script>
 
 <?php
     require './Pages/footer.php';
