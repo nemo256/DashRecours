@@ -18,7 +18,7 @@ function printError(e, element, error, errorMessage) {
   element.className += ' is-invalid'
 }
 
-function printSuccess(e, element, error) {
+function printSuccess(element, error) {
   error.innerText = ''
   element.className = 'form-control is-valid'
 }
@@ -37,14 +37,14 @@ form.addEventListener('submit', (e) => {
   else if (username.value.length > 14)
     printError(e, username, errorUsername, 'Username is too long')
   else
-    printSuccess(e, username, errorUsername)
+    printSuccess(username, errorUsername)
 
   if (email.value === '' || email.value == null)
     printError(e, email, errorEmail, 'Email is required')
   else if (!isEmail(email.value))
     printError(e, email, errorEmail, 'Invalid email')
   else
-    printSuccess(e, email, errorEmail)
+    printSuccess(email, errorEmail)
 
   if (pwd.value === '' || pwd.value == null)
     printError(e, pwd, errorPwd, 'Password is required')
@@ -53,14 +53,14 @@ form.addEventListener('submit', (e) => {
   else if (pwd.value.length > 16)
     printError(e, pwd, errorPwd, 'Password is too long')
   else
-    printSuccess(e, pwd, errorPwd)
+    printSuccess(pwd, errorPwd)
 
   if (pwd2.value === '' || pwd2.value == null)
     printError(e, pwd2, errorPwd2, 'Password confirm is required')
   else if (pwd2.value !== pwd.value)
     printError(e, pwd2, errorPwd2, 'Passwords do not match')
   else
-    printSuccess(e, pwd2, errorPwd2)
+    printSuccess(pwd2, errorPwd2)
 
 })
 
