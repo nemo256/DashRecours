@@ -258,23 +258,25 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
       <!-- AR -->
       <div class="tab-pane" id="AR">
 
-      <form action="./Include/profileET.inc.php" method="post" enctype="multipart/form-data">
+      <form id="formET" action="./Include/profileET.inc.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
         <i class="fas fa-book mr-1"></i>
           <label>Module<span class="text-red ml-1">*</span></label>
-          <input type="text" name="module" class="form-control" placeholder="Nom du module" value="<?=$_GET['mod']?>">
+          <input type="text" name="module" id="module" class="form-control" placeholder="Nom du module" value="<?=$_GET['mod']?>">
         </div>
+        <div id="errorModule" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-file mr-1"></i>
               <label>Type<span class="text-red ml-1">*</span></label>
-                <select name="typeE" class="form-control select2" style="width: 100%;">
-                <option>Examin</option>
-                <option>Test</option>
+                <select name="typeE" id="typeE" class="form-control select2" style="width: 100%;">
+                <option value="Examin">Examin</option>
+                <option value="Test">Test</option>
                 </select>
             </div>
+          <div id="errorTypeE" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
@@ -291,14 +293,16 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
         <div class="form-group">
         <i class="fas fa-id-badge mr-1"></i>
           <label>Enseignant<span class="text-red ml-1">*</span></label>
-          <input type="text" name="emailens" class="form-control" placeholder="Email" value="<?=$_GET['mailens']?>">
+          <input type="text" name="emailens" id="emailens" class="form-control" placeholder="Email" value="<?=$_GET['mailens']?>">
         </div>
+        <div id="errorEmailens" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
         <div class="form-group">
         <i class="fas fa-align-left mr-1"></i>
           <label>Description</label>
-          <textarea name="desc" class="form-control" rows="3" placeholder="Enter ..."><?=$_GET['descc']?></textarea>
+          <textarea name="desc" id="desc" class="form-control" rows="3" placeholder="Enter ..."><?=$_GET['descc']?></textarea>
         </div>
+        <div id="errorDesc" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
         <button name="submitET" class="btn btn-primary" style="width: 25%">
             Submit
@@ -312,23 +316,25 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
 <?php if (isset($_GET['update'])): ?>
       <div class="tab-pane active" id="MR">
 
-        <form action="./Include/profileET.inc.php?update=<?=$idrec?>" method="post" enctype="multipart/form-data">
+        <form id="formET2" action="./Include/profileET.inc.php?update=<?=$idrec?>" method="post" enctype="multipart/form-data">
           <div class="form-group">
           <i class="fas fa-book mr-1"></i>
             <label>Module<span class="text-red ml-1">*</span></label>
-            <input type="text" name="module" class="form-control" placeholder="Nom du module" value="<?=$module?>">
+            <input type="text" name="module" id="module2" class="form-control" placeholder="Nom du module" value="<?=$module?>">
           </div>
+          <div id="errorModule2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <i class="fas fa-file mr-1"></i>
                 <label>Type<span class="text-red ml-1">*</span></label>
-                  <select name="typeE" class="form-control select2" style="width: 100%;">
+                  <select name="typeE" id="typeE2" class="form-control select2" style="width: 100%;">
                   <option <?php if (!strcmp($typeE, 'Examin')) echo 'selected'; ?>>Examin</option>
                   <option <?php if (!strcmp($typeE, 'Test')) echo 'selected'; ?>>Test</option>
                   </select>
               </div>
+            <div id="errorTypeE2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
@@ -345,14 +351,16 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
           <div class="form-group">
           <i class="fas fa-id-badge mr-1"></i>
             <label>Enseignant<span class="text-red ml-1">*</span></label>
-            <input type="text" name="emailens" class="form-control" placeholder="Email" value="<?=$emailens?>">
+            <input type="text" name="emailens" id="emailens2" class="form-control" placeholder="Email" value="<?=$emailens?>">
           </div>
+          <div id="errorEmailens2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
           <div class="form-group">
           <i class="fas fa-align-left mr-1"></i>
             <label>Description</label>
-            <textarea name="desc" class="form-control" rows="3" placeholder="Enter ..."><?=$desc?></textarea>
+            <textarea name="desc" id="desc2" class="form-control" rows="3" placeholder="Enter ..."><?=$desc?></textarea>
           </div>
+          <div id="errorDesc2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
           <button name="submitET" class="btn btn-info" style="width: 25%">
               Update 
@@ -370,6 +378,8 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   <!-- /.card-body -->
 </div>
 <!-- /.card -->
+
+<script src="./Plugins/js/profileET.js"></script>
 
 <script>
 $(function () {
