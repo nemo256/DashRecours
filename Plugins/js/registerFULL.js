@@ -108,11 +108,20 @@ form.addEventListener('submit', (e) => {
   {
     // Not working because of ajax (ISSUE) X
     if (TU.options[TU.selectedIndex].value == 'Etudiant')
-    {}
+    { 
+      errorTU.innerText = '' 
+      TU.className = 'form-control'
+    }
     else if (TU.options[TU.selectedIndex].value == 'Enseignant')
-    {}
+    { 
+      errorTU.innerText = '' 
+      TU.className = 'form-control'
+    }
     else if (TU.options[TU.selectedIndex].value == 'Administrateur')
-    {}
+    { 
+      errorTU.innerText = '' 
+      TU.className = 'form-control'
+    }
     else
       printError(e, TU, errorTU, 'Invalid user type!')
   }
