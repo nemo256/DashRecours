@@ -182,7 +182,9 @@ formM.addEventListener('submit', (e) => {
   else
     errorSexM.innerText = ''
 
-  if (pwdM.value != '')
+  if (pwdM.value == '' && pwd2M != '')
+    printError(e, pwdM, errorPwdM, 'Password is required')
+  else if (pwdM.value != '')
   {
     if (pwdM.value.length < 5)
       printError(e, pwdM, errorPwdM, 'Password is too short')
