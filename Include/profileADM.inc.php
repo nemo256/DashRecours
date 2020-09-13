@@ -45,7 +45,7 @@ if (isset($_POST['submit']))
 
   // Getting id to be inserted on!
   if (!isset($_GET['update']))
-    $userInfo['id'] = $userInfo['id'] = $vis->getId();
+    $userInfo['id'] = $vis->getId();
 
   if ($userInfo['type'] == "Etudiant")
   {

@@ -194,7 +194,7 @@ class visitor extends database
     $query = 'select * from users';
     $statement = $this->connect()->prepare($query);
     $statement->execute([]);
-    return count($statement->fetchALL()) + 3;
+    return count($statement->fetchALL()) + 1;
   }
 
   // Hash password //
