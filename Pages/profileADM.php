@@ -288,19 +288,21 @@ if (isset($userInfo))
 
     <!-- AU -->
     <div class="tab-pane" id="AU">
-      <form action="./Include/profileADM.inc.php" method="post" enctype="multipart/form-data">
+      <form id="formADM" action="./Include/profileADM.inc.php" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-poll-h mr-2"></i>
               <label>Nom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="nom" class="form-control" placeholder="Nom" value="<?=$_GET['nom']?>">
+              <input type="text" name="nom" id="nom" class="form-control" placeholder="Nom" value="<?=$_GET['nom']?>">
             </div>
+            <div id="errorNom" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
             <div class="form-group">
               <i class="fas fa-poll-h mr-2"></i>
               <label>Prenom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="prenom" class="form-control" placeholder="Prenom" value="<?=$_GET['prenom']?>">
+              <input type="text" name="prenom" id="prenom" class="form-control" placeholder="Prenom" value="<?=$_GET['prenom']?>">
             </div>
+            <div id="errorPrenom" class="text-red text-sm ml-1 mb-3" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6 text-center">
             <!-- Photo -->
@@ -321,8 +323,9 @@ if (isset($userInfo))
             <div class="form-group">
               <i class="fas fa-id-card mr-2"></i>
               <label>Matricule<span class="text-red ml-1">*</span></label>
-              <input type="text" name="matricule" class="form-control" placeholder="Matricule" value="<?=$_GET['matricule']?>">
+              <input type="text" name="matricule" id="matricule" class="form-control" placeholder="Matricule" value="<?=$_GET['matricule']?>">
             </div>
+            <div id="errorMatricule" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
           </div>
@@ -338,6 +341,7 @@ if (isset($userInfo))
             <option value="Enseignant">Enseignant</option>
           </select>
         </div>
+        <div id="errorTU" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
         </div>
         <div class="col-sm-6">
 <?php if (isset($_GET['sex'])) $sex = $_GET['sex']; ?>
@@ -362,6 +366,7 @@ if (isset($userInfo))
               </label>
             </div>
           </div>
+        <div id="errorSex" class="text-red text-sm mb-2" style="margin-top: -12px; margin-left: 20px"></div>
         </div>
       </div>
 
@@ -373,14 +378,16 @@ if (isset($userInfo))
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-key mr-2"></i><label>Password<span class="text-red ml-1">*</span></label>
-              <input type="password" name="pwd" class="form-control" placeholder="Entrez un mot de passe" value="">
+              <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Entrez un mot de passe" value="">
             </div>
+          <div id="errorPwd" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-key mr-2"></i><label>Confirm Password<span class="text-red ml-1">*</span></label>
-              <input type="password" name="pwd2" class="form-control" placeholder="Confirmer votre mot de passe" value="">
+              <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Confirmer votre mot de passe" value="">
             </div>
+          <div id="errorPwd2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
         </div>
 
@@ -412,6 +419,7 @@ if (isset($userInfo))
             <!-- Photo -->
             <input id="fileInput2" type="file" name="file" class="file2" style="visibility: hidden; position: absolute;">
             <button type="button" class="browse2 btn btn-lg mt-1">
+<?php if (empty($viewUser['photo']) || $viewUser['photo'] == '<null>') $viewUser['photo'] = 'account2.png'; ?>
             <img class="profile-user-img img-fluid img-circle"
             style="width: 160px; height: 150px"
             src="./Pics/<?=$viewUser['photo']?>"
@@ -554,6 +562,8 @@ if (isset($userInfo))
   <!-- /.card-body -->
 </div>
 <!-- /.card -->
+
+<script src="./Plugins/js/profileADM.js"></script>
 
 <script>
 
