@@ -8,7 +8,16 @@ const pwd = document.getElementById('pwd')
 const pwd2 = document.getElementById('pwd2')
 const form = document.getElementById('formADM')
 
-// Errors: 
+// Updating a user!
+const nomM = document.getElementById('nomM')
+const prenomM = document.getElementById('prenomM')
+const matriculeM = document.getElementById('matriculeM')
+const TUM = document.getElementById('select2')
+const pwdM = document.getElementById('pwdM')
+const pwd2M = document.getElementById('pwd2M')
+const formM = document.getElementById('formADMM')
+
+// Errors:
 const errorNom = document.getElementById('errorNom')
 const errorPrenom = document.getElementById('errorPrenom')
 const errorMatricule = document.getElementById('errorMatricule')
@@ -16,6 +25,15 @@ const errorTU = document.getElementById('errorTU')
 const errorSex = document.getElementById('errorSex')
 const errorPwd = document.getElementById('errorPwd')
 const errorPwd2 = document.getElementById('errorPwd2')
+
+// Updating a user!
+const errorNomM = document.getElementById('errorNomM')
+const errorPrenomM = document.getElementById('errorPrenomM')
+const errorMatriculeM = document.getElementById('errorMatriculeM')
+const errorTUM = document.getElementById('errorTUM')
+const errorSexM = document.getElementById('errorSexM')
+const errorPwdM = document.getElementById('errorPwdM')
+const errorPwd2M = document.getElementById('errorPwd2M')
 
 function printError(e, element, error, errorMessage) {
   e.preventDefault()
@@ -28,6 +46,7 @@ function printSuccess(element, error) {
   element.className = 'form-control is-valid'
 }
 
+// Add a user: 
 form.addEventListener('submit', (e) => {
 
   // Checking every field here!
@@ -63,7 +82,7 @@ form.addEventListener('submit', (e) => {
   else
   {
     // Not working because of ajax (ISSUE) X
-    if (TU.options[TU.selectedIndex].value == 'Etudiant' || TU.options[TU.selectedIndex].value == 'Enseignant' || TU.options[TU.selectedIndex].value == 'Administrateur')
+    if (TU.options[TU.selectedIndex].value == 'Etudiant' || TU.options[TU.selectedIndex].value == 'Enseignant')
       printSuccess(TU, errorTU)
     else
       printError(e, TU, errorTU, 'Invalid user type!')
@@ -101,5 +120,86 @@ form.addEventListener('submit', (e) => {
     printError(e, pwd2, errorPwd2, 'Passwords do not match')
   else
     printSuccess(pwd2, errorPwd2)
+
+})
+
+// Update a user: 
+formM.addEventListener('submit', (e) => {
+
+  // Checking every field here!
+  if (nomM.value === '' || nomM.value == null)
+    printError(e, nomM, errorNomM, 'Nom is required')
+  else if (nomM.value.length < 4)
+    printError(e, nomM, errorNomM, 'Nom is too short')
+  else if (nomM.value.length > 14)
+    printError(e, nomM, errorNomM, 'Nom is too long')
+  else
+    printSuccess(nomM, errorNomM)
+
+  if (prenomM.value === '' || prenomM.value == null)
+    printError(e, prenomM, errorPrenomM, 'Prenom is required')
+  else if (prenomM.value.length < 4)
+    printError(e, prenomM, errorPrenomM, 'Prenom is too short')
+  else if (prenomM.value.length > 14)
+    printError(e, prenomM, errorPrenomM, 'Prenom is too long')
+  else
+    printSuccess(prenomM, errorPrenomM)
+
+  if (matriculeM.value === '' || matriculeM.value == null)
+    printError(e, matriculeM, errorMatriculeM, 'Matricule is required')
+  else if (matriculeM.value.length < 4)
+    printError(e, matriculeM, errorMatriculeM, 'Matricule is too short')
+  else if (matriculeM.value.length > 14)
+    printError(e, matriculeM, errorMatriculeM, 'Matricule is too long')
+  else
+    printSuccess(matriculeM, errorMatriculeM)
+
+  if (TUM.options[TUM.selectedIndex].value == '')
+    printError(e, TUM, errorTUM, 'Please select the type of user')
+  else
+  {
+    // Not working because of ajax (ISSUE) X
+    if (TUM.options[TUM.selectedIndex].value == 'Etudiant' || TUM.options[TUM.selectedIndex].value == 'Enseignant')
+      printSuccess(TUM, errorTUM)
+    else
+      printError(e, TUM, errorTUM, 'Invalid user type!')
+  }
+
+  if (document.getElementById('radio1').checked)
+    sexM = 'Male'
+  else if (document.getElementById('radio2').checked)
+    sexM = 'Female'
+  else if (document.getElementById('radio3').checked)
+    sexM = 'Autre'
+  else
+    sexM = null
+
+  if (sexM == null)
+  {
+    e.preventDefault()
+    errorSexM.innerText = 'Sex is required'
+  }
+  else
+    errorSexM.innerText = ''
+
+  if (pwdM.value != '')
+  {
+    if (pwdM.value.length < 5)
+      printError(e, pwdM, errorPwdM, 'Password is too short')
+    else if (pwdM.value.length > 16)
+      printError(e, pwdM, errorPwdM, 'Password is too long')
+    else if (pwd2M.value === '' || pwd2M == null)
+      printError(e, pwd2M, errorPwd2M, 'Password confirm is required')
+    else if (pwdM.value != pwd2M.value)
+    {
+      printSuccess(pwdM, errorPwdM)
+      printError(e, pwd2M, errorPwd2M, 'Passwords do not match')
+    }
+    else
+    {
+      printSuccess(pwdM, errorPwdM)
+      printSuccess(pwd2M, errorPwd2M)
+    }
+  }
 
 })

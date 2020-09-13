@@ -401,19 +401,21 @@ if (isset($userInfo))
     <!-- MU -->
 <?php if (isset($_GET['update'])): ?>
       <div class="tab-pane active" id="MU">
-      <form action="./Include/profileADM.inc.php?update=<?=$_GET['update']?>" method="post" enctype="multipart/form-data">
+      <form id="formADMM" action="./Include/profileADM.inc.php?update=<?=$_GET['update']?>" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-poll-h mr-2"></i>
               <label>Nom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="nom" class="form-control" placeholder="Nom" value="<?=$viewUser['nom']?>">
+              <input type="text" name="nom" id="nomM"class="form-control" placeholder="Nom" value="<?=$viewUser['nom']?>">
             </div>
+            <div id="errorNomM" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
             <div class="form-group">
               <i class="fas fa-poll-h mr-2"></i>
               <label>Prenom<span class="text-red ml-1">*</span></label>
-              <input type="text" name="prenom" class="form-control" placeholder="Prenom" value="<?=$viewUser['prenom']?>">
+              <input type="text" name="prenom" id="prenomM" class="form-control" placeholder="Prenom" value="<?=$viewUser['prenom']?>">
             </div>
+            <div id="errorPrenomM" class="text-red text-sm ml-1 mb-3" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6 text-center">
             <!-- Photo -->
@@ -436,20 +438,22 @@ if (isset($userInfo))
             <div class="form-group">
               <i class="fas fa-id-card mr-2"></i>
               <label>Matricule<span class="text-red ml-1">*</span></label>
-              <input type="text" name="matricule" class="form-control" placeholder="Matricule" value="<?=$viewUser['matricule']?>">
+              <input type="text" name="matricule" id="matriculeM" class="form-control" placeholder="Matricule" value="<?=$viewUser['matricule']?>">
             </div>
+            <div id="errorMatriculeM" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
         </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
             <i class="fas fa-user mr-2"></i><label>Type Utilisateur<span class="text-red ml-1">*</span></label>
-            <select id="select1" class="form-control select2bs4 " disabled>
+            <select id="select2" class="form-control select2bs4 " disabled>
               <option value="Etudiant" <?php if ($type == 'Etudiant') echo 'selected'; ?>>Etudiant</option>
               <option value="Enseignant" <?php if ($type == 'Enseignant') echo 'selected'; ?>>Enseignant</option>
             </select>
             <input type="hidden" name="TU" value="<?=$type?>">
           </div>
+        <div id="errorTUM" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
         </div>
         <div class="col-sm-6">
           <i class="fas fa-venus-mars mr-1"></i>
@@ -476,6 +480,7 @@ if (isset($userInfo))
               </label>
             </div>
           </div>
+        <div id="errorSexM" class="text-red text-sm mb-2" style="margin-top: -12px; margin-left: 20px"></div>
         </div>
       </div>
 
@@ -536,14 +541,16 @@ if (isset($userInfo))
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-key mr-2"></i><label>Password<span class="text-red ml-1">*</span></label>
-              <input type="password" name="pwd" class="form-control" placeholder="Entrez un mot de passe" value="">
+              <input type="password" name="pwd" id="pwdM" class="form-control" placeholder="Entrez un mot de passe" value="">
             </div>
+          <div id="errorPwdM" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-key mr-2"></i><label>Confirm Password<span class="text-red ml-1">*</span></label>
-              <input type="password" name="pwd2" class="form-control" placeholder="Confirmer votre mot de passe" value="">
+              <input type="password" name="pwd2" id="pwd2M" class="form-control" placeholder="Confirmer votre mot de passe" value="">
             </div>
+          <div id="errorPwd2M" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
         </div>
 
