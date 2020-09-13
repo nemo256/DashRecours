@@ -318,7 +318,7 @@ if (isset($userInfo))
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-top: -10px">
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-id-card mr-2"></i>
