@@ -182,7 +182,7 @@ formM.addEventListener('submit', (e) => {
   else
     errorSexM.innerText = ''
 
-  if (pwdM.value == '' && pwd2M != '')
+  if (pwdM.value == '' && pwd2M.value != '')
     printError(e, pwdM, errorPwdM, 'Password is required')
   else if (pwdM.value != '')
   {
