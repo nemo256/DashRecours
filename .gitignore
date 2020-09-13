@@ -1,2 +1,7 @@
 .*.sw*
 .env.info.php
+./Pics/*.jpg
+./Pics/*.jpeg
+./Pics/*.png
+./Pics/*.ico
+./Pics/*.svg
