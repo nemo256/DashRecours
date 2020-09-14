@@ -1,8 +1,6 @@
 <?php
-
 $thisFileName = basename(__FILE__);
 require_once (dirname(__FILE__) . '/Pages/header.php');
-
 ?>
 
 <!-- Main content -->
