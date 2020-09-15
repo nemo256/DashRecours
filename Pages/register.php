@@ -9,7 +9,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register a new account</title>
+    <title>Créer un nouveau compte</title>
     <link rel="icon" href="../Icons/Cap.png">
 
     <!-- Font Awesome -->
@@ -41,11 +41,11 @@ session_start();
 
   <div class="card" style="max-width: 380px">
     <div class="card-body register-card-body" style="max-width: 370px; border-radius: 15px">
-      <p class="login-box-msg text-lg">Register a new account</p>
+      <p class="login-box-msg text-lg">Créer un nouveau compte</p>
 
       <form id="form" class="form" action="../Include/register.inc.php" method="post">
         <div class="input-group mb-3">
-        <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="<?=$_GET['user']?>">
+        <input type="text" name="username" id="username" class="form-control" placeholder="Nom d'utilisateur" value="<?=$_GET['user']?>">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -63,7 +63,7 @@ session_start();
         </div>
         <div id="errorEmail" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
         <div class="input-group mb-3">
-          <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Password">
+          <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Mot de passe">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -72,7 +72,7 @@ session_start();
         </div>
         <div id="errorPwd" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
         <div class="input-group mb-3">
-          <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Retype password">
+          <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Retaper le mot de passe">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -82,12 +82,12 @@ session_start();
         <div id="errorPwd2" class="text-red text-sm ml-1 mb-4" style="margin-top: -12px"></div>
         <div class="row">
           <div class="col-5">
-            <a href="login.php" class="text-center mb-2">I already have an account</a>
+            <a href="login.php" class="text-center mb-2">J'ai déjà un compte</a>
           </div>
           <div class="col-2 sep">Or</div>
           <!-- /.col -->
           <div class="col-5">
-            <button type="submit" name="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" name="submit" class="btn btn-primary btn-block">S'inscrire</button>
           </div>
           <!-- /.col -->
         </div>

@@ -55,11 +55,11 @@ endif;
 
   <img class="mb-3" src="../Icons/TCap.png" alt="" width="110" height="100">
   <h1 class="h3 mb-4"><b>Dashboard</b> Recours</h1>
-  <input type="text" name="username" class="form-control" placeholder="Username / Email" value="<?=$_GET['user']?>">
-  <input type="password" name="pwd" class="form-control" placeholder="Password">
-  <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Log In</button>
+  <input type="text" name="username" class="form-control" placeholder="Nom d'utilisateur / Email" value="<?=$_GET['user']?>">
+  <input type="password" name="pwd" class="form-control" placeholder="Mot de passe">
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Connexion</button>
   <p class="mb-2" style="margin-top: 12px;">
-    <a href="register.php" class="text-center">Register a new account</a>
+    <a href="register.php" class="text-center">Créer un compte</a>
 
 <footer class="fixed-bottom">
     <p class="text-muted">&copy; 2019-2020</p>

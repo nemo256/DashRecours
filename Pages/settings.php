@@ -80,13 +80,13 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
-          <label>New Password</label>
+          <label>Nouveau Mot de passe</label>
           <input type="password" name="pwd" class="form-control" placeholder="Entrez un nouveau mot de passe" value="">
         </div>
       </div>
       <div class="col-sm-6">
         <div class="form-group">
-          <label>Confirm Password</label>
+          <label>Confirmer Mot de passe</label>
           <input type="password" name="pwd2" class="form-control" placeholder="Confirmer votre mot de passe" value="">
         </div>
       </div>

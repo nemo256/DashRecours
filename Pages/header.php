@@ -32,11 +32,11 @@ else
   // For generating Profile pic //
   $id = $_SESSION['id'];
 
-  if ($thisFileName == 'index.php') { $pageName = 'Home'; $titleName = 'Dashboard Recours'; }
+  if ($thisFileName == 'index.php') { $pageName = 'Accueil'; $titleName = 'Dashboard Recours'; }
   else if ($thisFileName == 'profile.php') { $pageName = 'My Profile'; $titleName = $pageName; }
   else if ($thisFileName == 'dashboard.php') { $pageName = 'Dashboard'; $titleName = $pageName; }
-  else if ($thisFileName == 'charts.php') { $pageName = 'Charts'; $titleName = $pageName; }
-  else if ($thisFileName == 'contact.php') { $pageName = 'Contact'; $titleName = $pageName; }
+  else if ($thisFileName == 'charts.php') { $pageName = 'Graphiques'; $titleName = $pageName; }
+  else if ($thisFileName == 'contact.php') { $pageName = 'Contactez-nous'; $titleName = $pageName; }
   else if ($thisFileName == 'registerFULL.php') { $pageName = 'Registration'; $titleName = $pageName; }
   else if ($thisFileName == 'trafic.php') { $pageName = 'Traffic'; $titleName = $pageName; }
 
@@ -289,7 +289,7 @@ else
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Home</a>
+        <a href="index.php" class="nav-link">Accueil</a>
       </li>
     </ul>
 
@@ -306,7 +306,7 @@ else
     </form>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="./contact.php" class="nav-link">Contact</a>
+        <a href="./contact.php" class="nav-link">Contactez-nous</a>
       </li>
     </ul>
   </nav>
@@ -356,7 +356,7 @@ else
           <a href="./charts.php" class="nav-link <?php if ($thisFileName == 'charts.php') echo 'active'; ?>">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Graphiques 
               </p>
             </a>
           </li>
@@ -365,7 +365,7 @@ else
             <a href="./registerFULL.php" class="nav-link">
               <i class="nav-icon fas fa-address-card"></i>
               <p>
-                Continue Registration 
+                Continuer l'inscription
               </p>
             </a>
           </li>
@@ -384,7 +384,7 @@ else
             <a href="./Include/logout.inc.php" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>
-                Log Out 
+                Déconnecter 
               </p>
             </a>
           </li>
@@ -407,7 +407,7 @@ else
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="./index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="./index.php">Accueil</a></li>
             <li class="breadcrumb-item active"><?php if ($thisFileName == 'index.php') echo ''; else echo $pageName; ?></li>
             </ol>
           </div><!-- /.col -->

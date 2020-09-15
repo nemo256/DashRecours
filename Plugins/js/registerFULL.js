@@ -38,32 +38,32 @@ form.addEventListener('submit', (e) => {
 
   // Checking every field here!
   if (nom.value === '' || nom.value == null)
-    printError(e, nom, errorNom, 'Nom is required')
+    printError(e, nom, errorNom, 'Nom est nécessaire')
   else if (nom.value.length < 4)
-    printError(e, nom, errorNom, 'Nom is too short')
+    printError(e, nom, errorNom, 'Nom est trop court')
   else if (nom.value.length > 14)
-    printError(e, nom, errorNom, 'Nom is too long')
+    printError(e, nom, errorNom, 'Nom est trop long')
   else
     printSuccess(nom, errorNom)
 
   if (prenom.value === '' || prenom.value == null)
-    printError(e, prenom, errorPrenom, 'Prenom is required')
+    printError(e, prenom, errorPrenom, 'Prenom est nécessaire')
   else if (prenom.value.length < 4)
-    printError(e, prenom, errorPrenom, 'Prenom is too short')
+    printError(e, prenom, errorPrenom, 'Prenom est trop court')
   else if (prenom.value.length > 14)
-    printError(e, prenom, errorPrenom, 'Prenom is too long')
+    printError(e, prenom, errorPrenom, 'Prenom est trop long')
   else
     printSuccess(prenom, errorPrenom)
 
   if (email.value === '' || email.value == null)
-    printError(e, email, errorEmail, 'Email is required')
+    printError(e, email, errorEmail, 'Email est nécessaire')
   else if (!isEmail(email.value))
-    printError(e, email, errorEmail, 'Invalid email')
+    printError(e, email, errorEmail, 'Email invalide')
   else
     printSuccess(email, errorEmail)
 
   if (ddn.value === '' || ddn.value == null)
-    printError(e, ddn, errorDdn, 'Date de naissance is required')
+    printError(e, ddn, errorDdn, 'Date de naissance est nécessaire')
   else
     printSuccess(ddn, errorDdn)
 
@@ -79,38 +79,38 @@ form.addEventListener('submit', (e) => {
   if (sex == null)
   {
     e.preventDefault()
-    errorSex.innerText = 'Sex is required'
+    errorSex.innerText = 'Sexe est nécessaire'
   }
   else
     errorSex.innerText = ''
 
   if (add.value === '' || add.value == null)
-    printError(e, add, errorAdd, 'Adresse is required')
+    printError(e, add, errorAdd, 'Adresse est nécessaire')
   else if (add.value.length < 4)
-    printError(e, add, errorAdd, 'Adresse is too short')
-  else if (add.value.length > 128)
-    printError(e, add, errorAdd, 'Adresse is too long')
+    printError(e, add, errorAdd, 'Adresse est trop court')
+  else if (add.value.length > 64)
+    printError(e, add, errorAdd, 'Adresse est trop long')
   else
     printSuccess(add, errorAdd)
 
   if (tel.value === '' || tel.value == null)
-    printError(e, tel, errorTel, 'Numero de telephone is required')
+    printError(e, tel, errorTel, 'Numero de telephone est nécessaire')
   else if (tel.value.length < 10)
-    printError(e, tel, errorTel, 'Numero de telephone is too short')
+    printError(e, tel, errorTel, 'Numero de telephone est trop court')
   else if (tel.value.length > 10)
-    printError(e, tel, errorTel, 'Numero de telephone is too long')
+    printError(e, tel, errorTel, 'Numero de telephone est trop long')
   else
     printSuccess(tel, errorTel)
 
   if (TU.options[TU.selectedIndex].value == '')
-    printError(e, TU, errorTU, 'Please select the type of user')
+    printError(e, TU, errorTU, "Veuillez sélectionner le type d'utilisateur")
   else
   {
     // Not working because of ajax (ISSUE) X
     if (TU.options[TU.selectedIndex].value == 'Etudiant' || TU.options[TU.selectedIndex].value == 'Enseignant' || TU.options[TU.selectedIndex].value == 'Administrateur')
       printSuccess(TU, errorTU)
     else
-      printError(e, TU, errorTU, 'Invalid user type!')
+      printError(e, TU, errorTU, "Type d'utilisateur non valide!")
   }
 
 })

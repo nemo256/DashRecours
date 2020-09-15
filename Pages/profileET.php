@@ -304,8 +304,8 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
         </div>
         <div id="errorDesc" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
-        <button name="submitET" class="btn btn-primary" style="width: 25%">
-            Submit
+        <button name="submitET" class="btn btn-primary mt-2" style="width: 25%">
+            Soumettre 
         </button>
       </form>
 
@@ -362,8 +362,8 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
           </div>
           <div id="errorDesc2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
-          <button name="submitET" class="btn btn-info" style="width: 25%">
-              Update 
+          <button name="submitET" class="btn btn-info mt-2" style="width: 25%">
+              Modifier
           </button>
         </form>
 

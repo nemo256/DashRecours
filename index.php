@@ -49,7 +49,7 @@ endif;
           </div>
           <div class="card-body">
             <p class="card-text">Consultez les statistiques concernant les recours passés soumis / acceptés et refusés.</p>
-            <a href="./charts.php" class="btn btn-primary">Charts</a>
+            <a href="./charts.php" class="btn btn-primary">Graphiques</a>
           </div>
         </div>
       </div>

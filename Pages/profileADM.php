@@ -382,14 +382,14 @@ if (isset($userInfo))
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <i class="fas fa-key mr-2"></i><label>Password<span class="text-red ml-1">*</span></label>
+              <i class="fas fa-key mr-2"></i><label>Mot de passe<span class="text-red ml-1">*</span></label>
               <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Entrez un mot de passe" value="">
             </div>
           <div id="errorPwd" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <i class="fas fa-key mr-2"></i><label>Confirm Password<span class="text-red ml-1">*</span></label>
+              <i class="fas fa-key mr-2"></i><label>Confirmer Mot de passe<span class="text-red ml-1">*</span></label>
               <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Confirmer votre mot de passe" value="">
             </div>
           <div id="errorPwd2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
@@ -545,14 +545,14 @@ if (isset($userInfo))
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <i class="fas fa-key mr-2"></i><label>Password<span class="text-red ml-1">*</span></label>
+              <i class="fas fa-key mr-2"></i><label>Mot de passe<span class="text-red ml-1">*</span></label>
               <input type="password" name="pwd" id="pwdM" class="form-control" placeholder="Entrez un mot de passe" value="">
             </div>
           <div id="errorPwdM" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <i class="fas fa-key mr-2"></i><label>Confirm Password<span class="text-red ml-1">*</span></label>
+              <i class="fas fa-key mr-2"></i><label>Confirmer Mot de passe<span class="text-red ml-1">*</span></label>
               <input type="password" name="pwd2" id="pwd2M" class="form-control" placeholder="Confirmer votre mot de passe" value="">
             </div>
           <div id="errorPwd2M" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>

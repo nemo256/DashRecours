@@ -44,27 +44,27 @@ form.addEventListener('submit', (e) => {
 
   // Checking every field here!
   if (module.value === '' || module.value == null)
-    printError(e, module, errorModule, 'Module is required')
+    printError(e, module, errorModule, 'Module est nécessaire')
   else if (module.value.length < 2)
-    printError(e, module, errorModule, 'Module is too short')
+    printError(e, module, errorModule, 'Module est trop court')
   else if (module.value.length > 15)
-    printError(e, module, errorModule, 'Module is too long')
+    printError(e, module, errorModule, 'Module est trop long')
   else
     printSuccess(module, errorModule)
 
   if (typeE.value === '' || typeE.value == null)
-    printError(e, typeE, errorTypeE, 'Type is required')
+    printError(e, typeE, errorTypeE, 'Type est nécessaire')
   else if (typeE.value == 'Examin')
     printSuccess(typeE, errorTypeE)
   else if (typeE.value == 'Test')
     printSuccess(typeE, errorTypeE)
   else
-    printError(e, typeE, errorTypeE, 'Invalid type')
+    printError(e, typeE, errorTypeE, 'Type invalide')
 
   if (emailens.value === '' || emailens.value == null)
-    printError(e, emailens, errorEmailens, 'Email (Enseignant) is required')
+    printError(e, emailens, errorEmailens, 'Email (Enseignant) est nécessaire')
   else if (!isEmail(emailens.value))
-    printError(e, emailens, errorEmailens, 'Invalid email')
+    printError(e, emailens, errorEmailens, 'Email invalide')
   else
     printSuccess(emailens, errorEmailens)
 
@@ -75,27 +75,27 @@ form2.addEventListener('submit', (e) => {
 
   // Checking every field here!
   if (module2.value === '' || module2.value == null)
-    printError(e, module2, errorModule2, 'Module is required')
+    printError(e, module2, errorModule2, 'Module est nécessaire')
   else if (module2.value.length < 2)
-    printError(e, module2, errorModule2, 'Module is too short')
+    printError(e, module2, errorModule2, 'Module est trop court')
   else if (module2.value.length > 15)
-    printError(e, module2, errorModule2, 'Module is too long')
+    printError(e, module2, errorModule2, 'Module est trop long')
   else
     printSuccess(module2, errorModule2)
 
   if (typeE2.value === '' || typeE2.value == null)
-    printError(e, typeE2, errorTypeE2, 'Type is required')
+    printError(e, typeE2, errorTypeE2, 'Type est nécessaire')
   else if (typeE2.value == 'Examin')
     printSuccess(typeE2, errorTypeE2)
   else if (typeE2.value == 'Test')
     printSuccess(typeE2, errorTypeE2)
   else
-    printError(e, typeE2, errorTypeE2, 'Invalid type')
+    printError(e, typeE2, errorTypeE2, 'Type invalide')
 
   if (emailens2.value === '' || emailens2.value == null)
-    printError(e, emailens2, errorEmailens2, 'Email (Enseignant) is required')
+    printError(e, emailens2, errorEmailens2, 'Email (Enseignant) est nécessaire')
   else if (!isEmail(emailens2.value))
-    printError(e, emailens2, errorEmailens2, 'Invalid email')
+    printError(e, emailens2, errorEmailens2, 'Email invalide')
   else
     printSuccess(emailens2, errorEmailens2)
 

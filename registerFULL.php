@@ -29,7 +29,7 @@ endif;
 
   <div class="card card-warning">
     <div class="card-header">
-      <h3 class="card-title"><b>Registration Form</b></h3>
+      <h3 class="card-title"><b>Formulaire d'inscription</b></h3>
     </div>
     <div class="card-body">
       <form id="form" action="./Include/registerFULL.inc.php" method="post" enctype="multipart/form-data">
@@ -148,7 +148,7 @@ endif;
         <div id="myOptions"> 
         </div>
 
-        <button type="submit" name="submit" class="btn btn-warning mt-3" style="width: 30%">Submit</button>
+        <button type="submit" name="submit" class="btn btn-warning mt-3" style="width: 30%">Soumettre</button>
 
       </form>
     </div>

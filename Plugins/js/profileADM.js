@@ -51,41 +51,41 @@ form.addEventListener('submit', (e) => {
 
   // Checking every field here!
   if (nom.value === '' || nom.value == null)
-    printError(e, nom, errorNom, 'Nom is required')
+    printError(e, nom, errorNom, 'Nom est nécessaire')
   else if (nom.value.length < 4)
-    printError(e, nom, errorNom, 'Nom is too short')
+    printError(e, nom, errorNom, 'Nom est trop court')
   else if (nom.value.length > 14)
-    printError(e, nom, errorNom, 'Nom is too long')
+    printError(e, nom, errorNom, 'Nom est trop long')
   else
     printSuccess(nom, errorNom)
 
   if (prenom.value === '' || prenom.value == null)
-    printError(e, prenom, errorPrenom, 'Prenom is required')
+    printError(e, prenom, errorPrenom, 'Prenom est nécessaire')
   else if (prenom.value.length < 4)
-    printError(e, prenom, errorPrenom, 'Prenom is too short')
+    printError(e, prenom, errorPrenom, 'Prenom est trop court')
   else if (prenom.value.length > 14)
-    printError(e, prenom, errorPrenom, 'Prenom is too long')
+    printError(e, prenom, errorPrenom, 'Prenom est trop long')
   else
     printSuccess(prenom, errorPrenom)
 
   if (matricule.value === '' || matricule.value == null)
-    printError(e, matricule, errorMatricule, 'Matricule is required')
+    printError(e, matricule, errorMatricule, 'Matricule est nécessaire')
   else if (matricule.value.length < 4)
-    printError(e, matricule, errorMatricule, 'Matricule is too short')
+    printError(e, matricule, errorMatricule, 'Matricule est trop court')
   else if (matricule.value.length > 14)
-    printError(e, matricule, errorMatricule, 'Matricule is too long')
+    printError(e, matricule, errorMatricule, 'Matricule est trop long')
   else
     printSuccess(matricule, errorMatricule)
 
   if (TU.options[TU.selectedIndex].value == '')
-    printError(e, TU, errorTU, 'Please select the type of user')
+    printError(e, TU, errorTU, "Veuillez sélectionner le type d'utilisateur")
   else
   {
     // Not working because of ajax (ISSUE) X
     if (TU.options[TU.selectedIndex].value == 'Etudiant' || TU.options[TU.selectedIndex].value == 'Enseignant')
       printSuccess(TU, errorTU)
     else
-      printError(e, TU, errorTU, 'Invalid user type!')
+      printError(e, TU, errorTU, "Type d'utilisateur non valide!")
   }
 
   if (document.getElementById('radioPrimary1').checked)
@@ -100,24 +100,24 @@ form.addEventListener('submit', (e) => {
   if (sex == null)
   {
     e.preventDefault()
-    errorSex.innerText = 'Sex is required'
+    errorSex.innerText = 'Sexe est nécessaire'
   }
   else
     errorSex.innerText = ''
 
   if (pwd.value === '' || pwd.value == null)
-    printError(e, pwd, errorPwd, 'Password is required')
+    printError(e, pwd, errorPwd, 'Mot de passe est nécessaire')
   else if (pwd.value.length < 5)
-    printError(e, pwd, errorPwd, 'Password is too short')
+    printError(e, pwd, errorPwd, 'Mot de passe est trop court')
   else if (pwd.value.length > 16)
-    printError(e, pwd, errorPwd, 'Password is too long')
+    printError(e, pwd, errorPwd, 'Mot de passe est trop long')
   else
     printSuccess(pwd, errorPwd)
 
   if (pwd2.value === '' || pwd2.value == null)
-    printError(e, pwd2, errorPwd2, 'Password confirm is required')
+    printError(e, pwd2, errorPwd2, 'Mot de passe est nécessaire')
   else if (pwd2.value !== pwd.value)
-    printError(e, pwd2, errorPwd2, 'Passwords do not match')
+    printError(e, pwd2, errorPwd2, 'Mots de passe ne correspondent pas')
   else
     printSuccess(pwd2, errorPwd2)
 
@@ -128,41 +128,41 @@ formM.addEventListener('submit', (e) => {
 
   // Checking every field here!
   if (nomM.value === '' || nomM.value == null)
-    printError(e, nomM, errorNomM, 'Nom is required')
+    printError(e, nomM, errorNomM, 'Nom est nécessaire')
   else if (nomM.value.length < 4)
-    printError(e, nomM, errorNomM, 'Nom is too short')
+    printError(e, nomM, errorNomM, 'Nom est trop court')
   else if (nomM.value.length > 14)
-    printError(e, nomM, errorNomM, 'Nom is too long')
+    printError(e, nomM, errorNomM, 'Nom est trop long')
   else
     printSuccess(nomM, errorNomM)
 
   if (prenomM.value === '' || prenomM.value == null)
-    printError(e, prenomM, errorPrenomM, 'Prenom is required')
+    printError(e, prenomM, errorPrenomM, 'Prenom est nécessaire')
   else if (prenomM.value.length < 4)
-    printError(e, prenomM, errorPrenomM, 'Prenom is too short')
+    printError(e, prenomM, errorPrenomM, 'Prenom est trop court')
   else if (prenomM.value.length > 14)
-    printError(e, prenomM, errorPrenomM, 'Prenom is too long')
+    printError(e, prenomM, errorPrenomM, 'Prenom est trop long')
   else
     printSuccess(prenomM, errorPrenomM)
 
   if (matriculeM.value === '' || matriculeM.value == null)
-    printError(e, matriculeM, errorMatriculeM, 'Matricule is required')
+    printError(e, matriculeM, errorMatriculeM, 'Matricule est nécessaire')
   else if (matriculeM.value.length < 4)
-    printError(e, matriculeM, errorMatriculeM, 'Matricule is too short')
+    printError(e, matriculeM, errorMatriculeM, 'Matricule est trop court')
   else if (matriculeM.value.length > 14)
-    printError(e, matriculeM, errorMatriculeM, 'Matricule is too long')
+    printError(e, matriculeM, errorMatriculeM, 'Matricule est trop long')
   else
     printSuccess(matriculeM, errorMatriculeM)
 
   if (TUM.options[TUM.selectedIndex].value == '')
-    printError(e, TUM, errorTUM, 'Please select the type of user')
+    printError(e, TUM, errorTUM, "Veuillez sélectionner le type d'utilisateur")
   else
   {
     // Not working because of ajax (ISSUE) X
     if (TUM.options[TUM.selectedIndex].value == 'Etudiant' || TUM.options[TUM.selectedIndex].value == 'Enseignant')
       printSuccess(TUM, errorTUM)
     else
-      printError(e, TUM, errorTUM, 'Invalid user type!')
+      printError(e, TUM, errorTUM, "Type d'utilisateur non valide!")
   }
 
   if (document.getElementById('radio1').checked)
@@ -177,25 +177,25 @@ formM.addEventListener('submit', (e) => {
   if (sexM == null)
   {
     e.preventDefault()
-    errorSexM.innerText = 'Sex is required'
+    errorSexM.innerText = 'Sexe est nécessaire'
   }
   else
     errorSexM.innerText = ''
 
   if (pwdM.value == '' && pwd2M.value != '')
-    printError(e, pwdM, errorPwdM, 'Password is required')
+    printError(e, pwdM, errorPwdM, 'Mot de passe est nécessaire')
   else if (pwdM.value != '')
   {
     if (pwdM.value.length < 5)
-      printError(e, pwdM, errorPwdM, 'Password is too short')
+      printError(e, pwdM, errorPwdM, 'Mot de passe est trop court')
     else if (pwdM.value.length > 16)
-      printError(e, pwdM, errorPwdM, 'Password is too long')
+      printError(e, pwdM, errorPwdM, 'Mot de passe est trop long')
     else if (pwd2M.value === '' || pwd2M == null)
-      printError(e, pwd2M, errorPwd2M, 'Password confirm is required')
+      printError(e, pwd2M, errorPwd2M, 'Mot de passe est nécessaire')
     else if (pwdM.value != pwd2M.value)
     {
       printSuccess(pwdM, errorPwdM)
-      printError(e, pwd2M, errorPwd2M, 'Passwords do not match')
+      printError(e, pwd2M, errorPwd2M, 'Mots de passe ne correspondent pas')
     }
     else
     {
