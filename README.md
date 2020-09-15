@@ -1,12 +1,12 @@
 # Dashboard recours
 
-Website to manage recourse in a university
+Website to manage recourses in a university
 
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/swellaby/opensource/12)
 ![Packagist PHP Version Support (specify version)](https://img.shields.io/packagist/php-v/symfony/symfony/v2.1.4)
 ![PHP-MySQL](https://img.shields.io/badge/php--mysql-required-yellow)
 
-Dashboard recours is a website that can manage recours concerning IT department in a univerity!
+Dashboard recours is a website that can manage recourses concerning IT department in a univerity!
 
 ![demo](./Plugins/demo.gif)
 
