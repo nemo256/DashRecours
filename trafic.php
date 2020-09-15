@@ -7,7 +7,7 @@ require_once (dirname(__FILE__) . '/Pages/header.php');
 <section class="content mt-3">
   <div class="container-fluid">
 
-    <div class="card card-info">
+    <div class="card card-primary">
       <div class="card-header">
         <h3 class="card-title"><b>Flux de trafic</b></h3>
       </div>
