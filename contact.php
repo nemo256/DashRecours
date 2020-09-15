@@ -13,9 +13,9 @@
           <div class="col-7">
             <h2 class="lead"><b>Département d'informatique</b></h2>
             <ul class="ml-4 mb-0 fa-ul text-muted">
-              <li class="pt-3"><span class="fa-li"><i class="fas fa-address-card"></i></span> <b>About: </b> Département d'informatique / Faculté des Sciences / Université de Boumerdes</li>
-              <li class="pt-3"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Address: </b> Université de Boumerdes, Boumerdes, 35000</li>
-              <li class="pt-3"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Phone #: </b> + 213 11 22 33 44</li>
+              <li class="pt-3"><span class="fa-li"><i class="fas fa-address-card"></i></span> <b>À propos: </b> Département d'informatique / Faculté des Sciences / Université de Boumerdes</li>
+              <li class="pt-3"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Adresse: </b> Université de Boumerdes, Boumerdes, 35000</li>
+              <li class="pt-3"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Téléphone #: </b> + 213 11 22 33 44</li>
             </ul>
           </div>
           <div class="col-5 text-center">
