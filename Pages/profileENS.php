@@ -110,7 +110,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   $ET = new etudiant($recours['idet']);
   $ET = $ET->getInfo();
 ?>
-          <td>
+          <td class="text-center">
             <img class="profile-user-img img-fluid img-circle"
             style="width: 47px; height: 45px; margin-top: -6px; margin-bottom: -4px"
             src="<?php echo 'Pics/'.$ET['photo'].'?t='.time(); ?>"
@@ -225,7 +225,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   $ET = new etudiant($recours['idet']);
   $ET = $ET->getInfo();
 ?>
-          <td>
+          <td class="text-center">
             <img class="profile-user-img img-fluid img-circle"
             style="width: 47px; height: 45px; margin-top: -6px; margin-bottom: -4px"
             src="<?php echo 'Pics/'.$ET['photo'].'?t='.time(); ?>"
@@ -341,7 +341,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   $ET = new etudiant($recours['idet']);
   $ET = $ET->getInfo();
 ?>
-          <td>
+          <td class="text-center">
             <img class="profile-user-img img-fluid img-circle"
             style="width: 47px; height: 45px; margin-top: -6px; margin-bottom: -4px"
             src="<?php echo 'Pics/'.$ET['photo'].'?t='.time(); ?>"

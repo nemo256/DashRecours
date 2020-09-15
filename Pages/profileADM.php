@@ -125,7 +125,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   <table id="dataTable" class="table table-sm table-striped table-bordered projects">
       <thead>
           <tr>
-              <th style="width: 1%">#</th>
+              <th style="width: 1%">Photo</th>
               <th style="width: 8%">Nom</th>
               <th style="width: 8%">Prénom</th>
               <th style="width: 20%">Email</th>
@@ -144,7 +144,12 @@ elseif ($user['type'] == 'Enseignant')
 if (isset($userInfo))
   $userInfo = $userInfo->getInfo();
 ?>
-            <td class="text-center"><?=$userInfo['matricule']?></td>
+          <td class="text-center">
+            <img class="profile-user-img img-fluid img-circle"
+            style="width: 47px; height: 45px; margin-top: -6px; margin-bottom: -4px"
+            src="<?php echo 'Pics/'.$userInfo['photo'].'?t='.time(); ?>"
+            alt="User profile picture">
+          </td>
             <td class="text-center"><?=$userInfo['nom']?></td>
             <td class="text-center"><?=$userInfo['prenom']?></td>
             <td class="text-center"><?=$userInfo['email']?></td>
