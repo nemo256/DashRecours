@@ -64,7 +64,7 @@ class recours extends database
   // Checking for valid description (Prevent any input)! //
   private function checkDescription()
   {
-    if (preg_match('/^[a-z0-9 .\-]+$/i', $this->info['desc']))
+    if (preg_match('/^[a-zA-Z0-9 .\-]+$', $this->info['desc']))
       redirect (
         $GLOBALS['MSG']['IDD'],
         'warning', 
