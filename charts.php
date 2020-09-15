@@ -35,7 +35,7 @@
         <!-- AREA CHART -->
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Area Chart</h3>
+            <h3 class="card-title">Graphique à aires</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -58,7 +58,7 @@
         <!-- DONUT CHART -->
         <div class="card card-danger">
           <div class="card-header">
-            <h3 class="card-title">Donut Chart</h3>
+            <h3 class="card-title">Graphique en anneau</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -79,7 +79,7 @@
         <!-- PIE CHART -->
         <div class="card card-danger">
           <div class="card-header">
-            <h3 class="card-title">Pie Chart</h3>
+            <h3 class="card-title">Diagramme circulaire</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -103,7 +103,7 @@
         <!-- LINE CHART -->
         <div class="card card-info">
           <div class="card-header">
-            <h3 class="card-title">Line Chart</h3>
+            <h3 class="card-title">Graphique en ligne</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -126,7 +126,7 @@
         <!-- BAR CHART -->
         <div class="card card-success">
           <div class="card-header">
-            <h3 class="card-title">Bar Chart</h3>
+            <h3 class="card-title">Diagramme à bandes</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -149,7 +149,7 @@
         <!-- STACKED BAR CHART -->
         <div class="card card-success">
           <div class="card-header">
-            <h3 class="card-title">Stacked Bar Chart</h3>
+            <h3 class="card-title">Graphique à barres empilées</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse">
