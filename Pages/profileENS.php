@@ -93,7 +93,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
     <table class="table table-striped table-bordered projects">
       <thead>
         <tr>
-          <th style="width: 1%" class="text-center">#</th>
+          <th style="width: 1%" class="text-center">Photo</th>
           <th style="width: 10%" class="text-center">Nom</th>
           <th style="width: 10%" class="text-center">Prénom</th>
           <th style="width: 15%" class="text-center">Spécialité</th>
@@ -104,14 +104,18 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
       </thead>
 <!-- Selecting everything from 'recours' table -->
       <tbody>
-<?php $idCounter = 1; ?>
 <?php foreach ($recNonTreated as $recours):?>
         <tr>
-          <td><?=$idCounter++?></td>
 <?php 
   $ET = new etudiant($recours['idet']);
   $ET = $ET->getInfo();
 ?>
+          <td>
+            <img class="profile-user-img img-fluid img-circle"
+            style="width: 47px; height: 45px; margin-top: -6px; margin-bottom: -4px"
+            src="<?php echo 'Pics/'.$ET['photo'].'?t='.time(); ?>"
+            alt="User profile picture">
+          </td>
           <td class="text-center"><?=$ET['nom']?></td>
           <td class="text-center"><?=$ET['prenom']?></td>
           <td class="text-center"><?=$ET['speciality']?></td>
