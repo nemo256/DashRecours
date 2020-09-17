@@ -23,11 +23,11 @@ require_once (dirname(__FILE__) . '/Pages/header.php');
   <table id="trafficDataTable" class="table table-sm table-striped table-bordered projects">
       <thead>
           <tr>
-              <th style="width: 1%">#</th>
-              <th style="width: 18%">Module</th>
-              <th style="width: 18%">Etudiant</th>
-              <th style="width: 18%">Enseignant</th>
-              <th style="width: 18%">Status</th>
+              <th class="text-center" style="width: 1%">#</th>
+              <th class="text-center" style="width: 18%">Module</th>
+              <th class="text-center" style="width: 18%">Etudiant</th>
+              <th class="text-center" style="width: 18%">Enseignant</th>
+              <th class="text-center" style="width: 18%">Status</th>
           </tr>
       </thead>
       <tbody>

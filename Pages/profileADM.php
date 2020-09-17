@@ -125,12 +125,12 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
   <table id="dataTable" class="table table-sm table-striped table-bordered projects">
       <thead>
           <tr>
-              <th style="width: 1%">Photo</th>
-              <th style="width: 8%">Nom</th>
-              <th style="width: 8%">Prénom</th>
-              <th style="width: 20%">Email</th>
-              <th style="width: 8%">Type</th>
-              <th style="width: 20%">Action</th>
+              <th class="text-center" style="width: 1%">Photo</th>
+              <th class="text-center" style="width: 8%">Nom</th>
+              <th class="text-center" style="width: 8%">Prénom</th>
+              <th class="text-center" style="width: 20%">Email</th>
+              <th class="text-center" style="width: 8%">Type</th>
+              <th class="text-center" style="width: 20%">Action</th>
           </tr>
       </thead>
       <tbody>
