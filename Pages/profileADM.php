@@ -257,13 +257,13 @@ if (isset($userInfo))
             </a>
           </div>
           <div class="col-sm-6 align-items-center text-center justify-content-center" style="margin-left: 15px">
-            <button type="button" style="width: 90%; font-size: 20px" class="btn btn-danger" data-toggle="modal" data-target="#modalDeleteUser<?php echo $viewUser['id'];?>">
+            <button type="button" style="width: 90%; font-size: 20px" class="btn btn-danger" data-toggle="modal" data-target="#modalDeleteVUser<?php echo $viewUser['id'];?>">
               <i class="fas fa-trash" style="margin-right: 4px"></i>
               Supprimer 
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="modalDeleteUser<?php echo $viewUser['id'];?>">
+            <div class="modal fade" id="modalDeleteVUser<?php echo $viewUser['id'];?>">
               <div class="modal-dialog">
                 <div class="modal-content bg-danger">
                   <div class="modal-header">
