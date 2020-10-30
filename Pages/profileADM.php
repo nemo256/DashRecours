@@ -467,19 +467,19 @@ if (isset($userInfo))
           </label>
           <div class="form-group clearfix ml-4">
             <div class="icheck-primary d-inline mr-2">
-              <input type="radio" id="radio1" name="sexe" value="Male"<?php if ($viewUser['sexe'] == 'Male') echo 'checked'; ?>>
+              <input type="radio" id="radio1" name="sexe" value="Male"<?php if ($viewUser['sexe'] == 'Male') echo 'checked'; ?> disabled>
               <label for="radio1">
                 Male
               </label>
             </div>
             <div class="icheck-primary d-inline mr-2">
-              <input type="radio" id="radio2" name="sexe" value="Female"<?php if ($viewUser['sexe'] == 'Female') echo 'checked'; ?>>
+              <input type="radio" id="radio2" name="sexe" value="Female"<?php if ($viewUser['sexe'] == 'Female') echo 'checked'; ?> disabled>
               <label for="radio2">
                 Female
               </label>
             </div>
             <div class="icheck-primary d-inline mr-2">
-              <input type="radio" id="radio3" name="sexe" value="Autre"<?php if ($viewUser['sexe'] == 'Autre') echo 'checked'; ?>>
+              <input type="radio" id="radio3" name="sexe" value="Autre"<?php if ($viewUser['sexe'] == 'Autre') echo 'checked'; ?> disabled>
               <label for="radio3">
                 Autre 
               </label>
