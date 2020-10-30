@@ -90,7 +90,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
     </div>
 
 <?php else: ?>
-    <table class="table table-striped table-bordered projects">
+    <table class="table table-responsive table-striped table-bordered projects">
       <thead>
         <tr>
           <th style="width: 1%" class="text-center">Photo</th>
@@ -205,7 +205,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
     </div>
 
 <?php else: ?>
-    <table class="table table-striped table-bordered projects">
+    <table class="table table-responsive table-striped table-bordered projects">
       <thead>
         <tr>
           <th style="width: 1%" class="text-center">Photo</th>
@@ -321,7 +321,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
     </div>
 
 <?php else: ?>
-    <table class="table table-striped table-bordered projects">
+    <table class="table table-responsive table-striped table-bordered projects">
       <thead>
         <tr>
           <th style="width: 1%" class="text-center">Photo</th>

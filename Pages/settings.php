@@ -92,7 +92,9 @@
       </div>
     </div>
 
-    <button type="submit" name="updatePR" class="btn btn-primary mt-3" style="width: 27%">Submit</button>
+    <button type="submit" name="updatePR" class="btn btn-primary btn-lg mt-3">
+      Submit
+    </button>
 
   </form>
 </div>

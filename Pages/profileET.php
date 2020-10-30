@@ -90,7 +90,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
         </div>
 
 <?php else: ?>
-          <table class="table table-striped table-bordered projects">
+          <table class="table table-responsive table-striped table-bordered projects">
             <thead>
               <tr>
                 <th style="width: 1%" class="text-center">#</th>
@@ -304,7 +304,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
         </div>
         <div id="errorDesc" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
-        <button name="submitET" class="btn btn-primary mt-2" style="width: 25%">
+        <button name="submitET" class="btn btn-primary btn-lg mt-2">
             Soumettre 
         </button>
       </form>
@@ -362,7 +362,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
           </div>
           <div id="errorDesc2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
-          <button name="submitET" class="btn btn-info mt-2" style="width: 25%">
+          <button name="submitET" class="btn btn-info btn-lg mt-2">
               Modifier
           </button>
         </form>

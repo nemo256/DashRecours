@@ -396,7 +396,7 @@ if (isset($userInfo))
           </div>
         </div>
 
-        <button name="submit" class="btn btn-primary mt-3" style="width: 25%">
+        <button name="submit" class="btn btn-primary btn-lg mt-3">
             Submit
         </button>
       </form>
@@ -559,7 +559,7 @@ if (isset($userInfo))
           </div>
         </div>
 
-        <button name="submit" class="btn btn-primary mt-3" style="width: 25%">
+        <button name="submit" class="btn btn-primary btn-lg mt-3">
             Submit
         </button>
       </form>
