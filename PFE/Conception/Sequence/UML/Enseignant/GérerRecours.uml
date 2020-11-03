@@ -1,0 +1,56 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gérer un recours soumis par un étudiant**</size></back>
+
+actor "Enseignant" as ENS #black 
+participant ":ListeDesRecours" as L #salmon
+participant ":ParamètresDeRecours" as P #springgreen
+database "Base de données" as BDD <<MySQL>> #blue
+participant "Boîte de réception" as ET <<Étudiant>> #sandybrown
+
+activate ENS
+ref over ENS, L, P, BDD : Authentification
+ref over ENS, L, P, BDD : Sélectionner tous les recours
+
+ENS -> L : choisissezRecoursPourTraitement()
+activate L
+L --> BDD : obtenirRecours()
+activate BDD
+BDD -> BDD : sélectionnezRecours()
+activate BDD #turquoise
+BDD --> P : envoyerRecours() 
+deactivate BDD
+deactivate BDD
+activate P
+P --> ENS : afficheRecours()
+alt Accepter le recours
+    ENS -> P : accepter()
+    P -> BDD : accepterEtEnregistrer()
+    activate BDD
+    BDD -[#green]-> P : enregistrerAvecSuccès()
+    deactivate BDD
+    P -[#green]-> ENS : afficheSuccès()
+    opt Notifier nouvelle note
+        ENS -[#orange]>> P : notifierÉtudiant()
+        P -[#orange]>> ET : nouvelleNote()
+        activate ET
+        deactivate ET
+    end
+else Refuser le recours
+    ENS -> P : refuser()
+    P -> BDD : refuserEtEnregistrer()
+    activate BDD
+    BDD -[#green]-> P : enregistrerAvecSuccès()
+    deactivate BDD
+    P -[#green]-> ENS : afficheSuccès()
+    opt Donner une explication
+        ENS -[#orange]>> P : donnerExplication()
+        P -[#orange]>> ET : explication()
+        activate ET
+        deactivate ET
+    end
+end
+
+@enduml

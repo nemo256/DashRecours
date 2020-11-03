@@ -1,0 +1,31 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gestion d'enseignant**</size></back>
+
+|<size:22>**__Enseignant__**</size>|
+start
+:S'authentifier;
+|<size:22>**__Système__**</size>|
+:Afiicher tableaux\ndes recours;
+|<size:22>**__Enseignant__**</size>|
+:Choisissez le\nrecours à traiter;
+|<size:22>**__Système__**</size>|
+:Afiicher le\nrecours à traiter;
+|<size:22>**__Enseignant__**</size>|
+if (Opération) then
+    :Accepter;
+    :Notifier nouvelle note;
+else
+    :Refuser;
+endif
+:Donner une explication;
+|<size:22>**__Système__**</size>|
+:Enregistrer les modifications;
+|<size:22>**__Étudiant (Boite de réception)__**</size>|
+:Envoyer une\nnotification;
+stop
+
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Supprimer un recours**</size></back>
+
+actor "Etudiant" as ET #black 
+participant ":Interface" as I #yellow
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate ET
+ref over ET, I, BDD : Authentification
+ref over ET, I, BDD : Sélectionner tous les recours
+
+note over I, BDD #FFAAAA
+    Pour générer une table des recours contenant des informations sur chaque recours
+    avec différentes options (Modifier / Supprimer)
+end note
+
+ET -> I : choisissezRecours()
+note right of I #lightgreen : Générez un modal pour confirmer la suppression!
+activate I
+I -> ET : confirmerSuppression()
+
+alt Annuler
+    ET -[#red]-> I : Non!
+    I ->> ET : retournePageAccueil()
+else Confirmer
+    ET -[#green]-> I : Oui!
+    I -> BDD : SupprimerRecours()
+    activate BDD
+    BDD -[#green]-> I : recoursSuppriméAvecSuccès()
+    deactivate BDD
+    I -[#green]-> ET : afficheSuccès()
+    deactivate I
+end
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Ajouter un recours**</size></back>
+
+actor "Etudiant" as ET #black 
+participant ":Formulaire" as F #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate ET
+ref over ET, F, BDD : Authentification
+
+ET -> F : remplirInfos(username, email, module, ...)
+activate F
+F -> F : validationFormulaire()
+activate F #orange
+note right F #aqua : Champs vides, email invalid(@x,y)...
+alt Les infos n'ont pas été saisies
+    F -[#red]-> ET : validationErreur()
+    deactivate F
+else Les infos ont été saisies
+    F -> BDD : détailsFormulaire()
+    activate BDD
+    BDD -> BDD : findEnseignant()
+    activate BDD #blue
+    alt Enseignant n'est pas trouvé
+        BDD -[#red]-> F : enseignantInvalid()
+        deactivate BDD
+        F -[#red]-> ET : afficheErreur()
+    else Enseignant est trouvé
+        BDD ->> BDD : envoyerEnseignant()
+        BDD -[#green]-> F : recoursEnvoyé()
+        deactivate BDD
+        F -[#green]-> ET : afficheSuccès()
+        deactivate F
+    end
+end
+
+@enduml

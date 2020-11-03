@@ -1,0 +1,29 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Sélectionnez tous les recours**</size></back>
+
+actor "Etudiant" as ET #black 
+participant ":Interface" as I #yellow
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate ET
+ET -> I : demandeAffichageRecours()
+activate I
+I -> BDD : obtenirTousRecours()
+activate BDD
+BDD -> BDD : sélectionnezTousRecours()
+activate BDD #blue
+alt il n'y a pas de recours
+    BDD -[#red]-> I : aucunRecours()
+    deactivate BDD
+    I -[#red]-> ET : afficheErreur()
+else il y a (un / plusieurs) recours
+    BDD -[#green]-> I : TableDesRecours()
+    deactivate BDD
+    I -[#green]-> ET : afficheTableDesRecours()
+    deactivate I
+end
+
+@enduml

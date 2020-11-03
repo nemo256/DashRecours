@@ -1,0 +1,39 @@
+@startuml
+
+!include ../../Styles.plantuml
+
+hide circle
+
+class Login {
+    - Username : string
+    - Password : string
+
+    - vérifierInfo() : bool
+}
+
+interface "<size:14><<Utilisateur>></size>" {
+    + Nom : string
+    + Prénom : string
+    + Email : string
+
+    - {abstract} inscrire() : void = 0
+    - {abstract} accéderPlateforme() : void = 0
+    - updateInfos() : void
+    - consulterActualités() : void
+}
+
+class Role {
+    - Description : string
+}
+
+note left of Role : Niveau de permission\npour chaque Utilisateur.
+
+
+"<size:14><<Utilisateur>></size>" *-left- Login
+"<size:14><<Utilisateur>></size>" "1 " -up-> "0..*" Role
+"<size:14><<Utilisateur>></size>" <|-right- Étudiant
+"<size:14><<Utilisateur>></size>" <|-- Enseignant
+"<size:14><<Utilisateur>></size>" <|-- Administrateur
+
+
+@enduml

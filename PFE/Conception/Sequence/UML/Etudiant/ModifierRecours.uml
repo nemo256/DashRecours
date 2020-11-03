@@ -1,0 +1,37 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Modifier un recours**</size></back>
+
+actor "Etudiant" as ET #black 
+participant ":Interface" as I #yellow
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate ET
+ref over ET, I, BDD : Authentification
+ref over ET, I, BDD : Sélectionner tous les recours
+
+note over I, BDD #FFAAAA
+    Pour générer une table des recours contenant des informations sur chaque recours
+    avec différentes options (Modifier / Supprimer)
+end note
+
+ET -> I : choisissezRecours()
+activate I
+I -> BDD : obtenirRecours()
+activate BDD
+BDD --> I : envoyerRecours()
+deactivate BDD
+I --> ET : afficheRecours()
+deactivate I
+ET -> I : remplirLesModifications()
+activate I
+I -> BDD : sauvegarderModifications()
+activate BDD
+BDD -[#green]-> I : modificationsEnregistrées()
+deactivate BDD
+I -[#green]-> ET : afficheMessageSuccès()
+deactivate I
+
+@enduml

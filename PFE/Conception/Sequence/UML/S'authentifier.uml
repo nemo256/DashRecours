@@ -1,0 +1,46 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>S'authentifier</size></back>
+
+actor "User" as U #black
+participant ":Page Login" as L #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate U
+U -> L : entrerDétails(username, password, ...)
+activate L
+L -> L : validationFormulaire()
+note right #aqua : Champs vides, email invalid (@x.y)...
+activate L #orange
+alt Les infos n'ont pas été saisies
+    L -[#red]->> U : validationErreur()
+    deactivate L
+else Les infos ont été saisies
+    L -> BDD : détailsLogin(username, password)
+    activate BDD
+    BDD ->> BDD : hashPassword()
+    BDD -> BDD : selectUser()
+    activate BDD #blue
+    alt L'utilisateur n'est pas présent
+        BDD -[#red]->> L : utilisateurInvalid()
+        deactivate BDD
+        L -[#red]->> U : afficheErreur()
+    else L'utilisateur est présent
+        BDD -> BDD : vérifierPassword()
+        activate BDD #blue
+        alt Password Incorrecte!
+            BDD -[#red]->> L : passwordInvalid()
+            deactivate BDD
+            L -[#red]->> U : afficheErreur()
+        else Password Correcte!
+            BDD -[#green]->> L : connexionRéussie()
+            deactivate BDD
+            L -[#green]->> U : redirigerVersProfile()
+            deactivate L
+        end
+    end
+end
+
+@enduml

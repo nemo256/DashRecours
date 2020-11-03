@@ -1,0 +1,37 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**S'authentifier**</size></back>
+
+|<size:22>**__Utilisateur__**</size>|
+start
+if () then (Déjà connecté)
+    stop
+else (Sinon)
+    repeat
+    :Entrez le\nNom d'utilisateur;
+    |<size:22>**__Système__**</size>|
+    :Chercher l'utilisateur;
+    if () then (Utilisateur trouvé)
+        repeat
+        :Entrez mot\nde passe;
+        if (Vérifier\nmot de passe) then (Correcte)
+            stop
+        else (Incorrecte)
+            :Afficher erreur;
+        endif
+        repeat while () is (Répéter)
+        ->Annuler;
+        stop
+    else (Utilisateur Non trouvé)
+        :Afficher erreur;
+    endif
+    repeat while () is (Répéter)
+    ->Annuler;
+    stop
+endif
+
+
+
+@enduml

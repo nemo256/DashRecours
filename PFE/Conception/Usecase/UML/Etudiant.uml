@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../Styles.plantuml
+
+hide footbox
+left to right direction
+
+actor "Étudiant" as E #black
+
+rectangle "**<u>Gestion des étudiants</u>**" {
+    E -- (S'inscrire)
+    E -- (Gérer les recours)
+
+    (S'authentifier) #yellow
+    (Gérer les recours) #orange
+
+    (Ajouter\nun recours) -left-|> (Gérer les recours)
+    (Modifier\nun recours) -right-|> (Gérer les recours)
+    (Gérer les recours) ..down.> (S'authentifier) : <<include>>
+    (Gérer les recours) <|-down- (Supprimer\nun recours)
+    (Gérer les recours) <|-down- (Consulter\nun recours) 
+
+}
+
+
+@enduml

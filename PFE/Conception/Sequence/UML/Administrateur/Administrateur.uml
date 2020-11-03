@@ -1,0 +1,26 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gérer un utilisateur**</size></back>
+
+actor "Administrateur" as AD #black 
+participant ":Interface" as P #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate AD
+ref over AD, P, BDD : Authentification
+opt Ajouter un utilisateur
+    ref over AD, P, BDD : Ajouter un utilisateur
+end
+
+opt Modifier un utilisateur
+    ref over AD, P, BDD : Modifier un utilisateur
+end
+
+opt Supprimer un utilisateur
+    ref over AD, P, BDD : Supprimer un utilisateur
+end
+
+
+@enduml

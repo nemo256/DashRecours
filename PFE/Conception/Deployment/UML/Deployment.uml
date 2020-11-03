@@ -1,0 +1,36 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+left to right direction
+
+node "**<<Utilisateur>>**" as User {
+    node "PC" {
+        component "Navigateur" as NAV
+    }
+    node "Smartphone" {
+        component "Application mobile"
+    }
+}
+
+node "**<<Serveur Web>>**" as Server {
+    component "Interface" as UI{
+        artifact "index.html\nstyle.css\njavascript.js"
+    }
+    component "Back-end" {
+        artifact "process.php" as PHP
+    }
+}
+
+database "**<<Base de données>>**" as Database{
+    component "<<Database>>\n{OS : Linux\nVendor : MySQL\nVersion : 14.14}" as MySQL
+}
+
+User == Server : "<<Https>>        "
+NAV == UI
+Server .. Database : "      requête <<SQL>>\n\n"
+PHP .. MySQL 
+
+
+
+@enduml

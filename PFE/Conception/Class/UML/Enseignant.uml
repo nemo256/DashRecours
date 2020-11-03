@@ -1,0 +1,48 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide circle
+
+
+class Recours {
+    - Explication : string
+    - Type d'erreur : string
+    - Fichier : string
+    - Type de test {Examin ou Devoir}
+}
+
+class Enseignant {
+    - Addresse : string
+    - NumTel : long
+
+    - validerRecours() : bool
+    - refuserRecours() : bool
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+class Diplôme {
+    - TypeDiplome : TypeD
+    - Experience : int {ex: 3ans, 6ans, ...} 
+    - Grade : string {MCA, MCB, Prof, ...}
+}
+
+enum TypeD <<Énumération>> {
+    LICENCE
+    MASTER
+    DOCTORAT
+}
+
+
+hide TypeD methods
+hide Diplôme methods
+hide Recours methods
+
+
+Enseignant "1 " -up- "1..*" Recours
+Enseignant *-- "1" Diplôme
+Diplôme .right.> TypeD : <<use>>
+
+
+@enduml

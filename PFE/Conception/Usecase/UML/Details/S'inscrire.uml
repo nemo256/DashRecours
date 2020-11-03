@@ -1,0 +1,16 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide footbox
+left to right direction
+
+actor "Utilisateur" as USER #black
+
+rectangle "Diagramme cas d'utilisation générale" {
+    usecase "S'inscrire" as INS #orange
+
+    USER -- INS
+}
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide footbox
+left to right direction
+
+actor "Étudiant" as E #black
+
+rectangle "Gestion des étudiants" {
+    (S'authentifier) #yellow
+
+    E -- (Ajouter\nun recours)
+    (Ajouter\nun recours) ..> (S'authentifier) : <<include>>
+
+}
+
+@enduml

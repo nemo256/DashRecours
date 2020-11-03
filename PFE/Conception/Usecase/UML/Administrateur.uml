@@ -1,0 +1,39 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide footbox
+left to right direction
+
+actor "Administrateur" as AD #black
+actor "Enseignant" as ENS #black
+actor "Étudiant" as ET #black
+
+rectangle "**<u>Gestion d'administration</u>**" {
+    usecase "S'authentifier" as AUTH #yellow
+    usecase "Gérer\nles étudiants" as GET #orange
+    usecase "Gérer\nles enseignants" as GENS #orange
+    usecase "Ajouter\nétudiant" as AET
+    usecase "Modifier\nétudiant" as MET
+    usecase "Supprimer\nétudiant" as SET
+    usecase "Ajouter\nenseignant" as AENS
+    usecase "Modifier\nenseignant" as MENS
+    usecase "Supprimer\nenseignant" as SENS
+    usecase "Gérer les notes\ndes étudiants" as TT
+
+    AD -- GET
+    AD -- GENS
+    AD -- TT
+    GET <|-right- AET
+    GET <|-- MET
+    GET <|-left- SET
+    GENS <|-right- AENS
+    GENS <|-- MENS
+    GENS <|-left- SENS
+    GET ...> AUTH : <<include>>\n
+    GENS ...> AUTH : <<include>>
+    GET ------ ET
+    GENS ------ ENS
+}
+
+@enduml

@@ -1,0 +1,55 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gestion d'étudiant**</size></back>
+
+|<size:22>**__Étudiant__**</size>|
+start
+:S'authentifier;
+:Choisissez l'opération\nà exécuter;
+|<size:22>**__Interface__**</size>|
+if () then
+    split
+    :Ajouter;
+    :Remplir\nrecours;
+    split again
+    :Modifier;
+    :Remplir\nmodifications;
+    split again
+    :Supprimer;
+    :Choisissez\nrecours\nà supprimer;
+    end split
+else
+    ->
+    :Consulter;
+    stop
+endif
+|<size:22>**__BDD__**</size>|
+-[dotted]->
+:__recours__;
+-[dashed]->
+fork
+:Enregistrer\nrecours;
+fork again
+:Enregistrer\nmodifications;
+fork again
+:Supprimer\nrecours;
+end fork
+|<size:22>**__Interface__**</size>|
+if (Opération réussie?) then (Oui!)
+    -[#green,dashed]->
+    :Message succès;
+    -[#green,dashed]->
+else (Non!)
+    -[#red,dashed]->
+    :Message erreur;
+    -[#red,dashed]->
+endif
+|<size:22>**__Étudiant__**</size>|
+:Message\n(Bootstrap alert);
+stop
+
+
+
+@enduml

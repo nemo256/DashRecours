@@ -1,0 +1,34 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Modifier un utilisateur**</size></back>
+
+actor "Administrateur" as AD #black 
+participant ":Interface" as P #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate AD
+ref over AD, P, BDD : Authentification
+ref over AD, P, BDD : Sélectionner un utilisateur
+note right AD #aqua : Générer une table des utilisateurs avec des options (Modifier, Supprimer)
+AD -> P : choisissezUtilisateur()
+activate P
+P -> BDD : obtenirUtilisateur()
+activate BDD
+BDD --> P : envoyerUtilisateur()
+deactivate BDD
+P --> AD : afficheUtilisateur()
+deactivate P
+AD -> P : remplirModifications()
+activate P
+P -> BDD : sauvegarderModifications()
+activate BDD
+BDD -[#green]-> P : modificationsEnregistrées()
+deactivate BDD
+P -[#green]-> AD : afficheSuccès()
+deactivate P
+
+
+
+@enduml

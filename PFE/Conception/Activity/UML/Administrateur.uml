@@ -1,0 +1,59 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gestion d'administration**</size></back>
+
+|<size:22>**__Administrateur__**</size>|
+start
+:S'authentifier;
+:Choisissez l'utilisateur;
+|<size:22>**__Interface__**</size>|
+repeat
+if () then
+    :Enseignant;
+else
+    :Étudiant;
+endif
+if () then
+    split
+    :Ajouter;
+    :Remplir\nles informations\nd'utilisateur;
+    split again
+    :Modifier;
+    :Remplir\nles modifications;
+    split again
+    :Supprimer;
+    :Choisissez\nutilisateur\nà supprimer;
+    end split
+else
+    stop
+endif
+|<size:22>**__BDD__**</size>|
+-[dotted]->
+:__Utilisateur__;
+-[dashed]->
+fork
+:Enregistrer\nutilisateur;
+fork again
+:Sauvegarder\nmodifications;
+fork again
+:Supprimer\nutilisateur;
+end fork
+|<size:22>**__Interface__**</size>|
+if (Opération réussie?) then (Oui!)
+    -[#green,dashed]->
+    :Message succès;
+    -[#green,dashed]->
+else (Non!)
+    -[#red,dashed]->
+    :Message erreur;
+    -[#red,dashed]->
+endif
+|<size:22>**__Administrateur__**</size>|
+:Message (Bootstrap alert);
+:Déconnecter;
+stop
+
+
+@enduml

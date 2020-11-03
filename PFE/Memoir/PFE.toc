@@ -1,0 +1,92 @@
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{D\IeC {\'e}dicace}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Remerciement}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{R\IeC {\'e}sum\IeC {\'e}}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Abstract}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Table des mati\IeC {\`e}res}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Liste des figures}}{}{figure.caption.1}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Liste des tableaux}}{}{figure.caption.1}
+\renewcommand {\cftsecleader }{\cftdotfill {\cftsecdotsep }}
+\thispagestyle {empty}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Introduction g\IeC {\'e}n\IeC {\'e}rale}}{1}{figure.caption.1}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Planification}}{2}{figure.caption.1}
+\contentsline {chapter}{\color {Blue}{Chapitre I : \IeC {\'E}tude G\IeC {\'e}n\IeC {\'e}ral}}{5}{figure.caption.4}
+\contentsline {section}{\numberline {1}Introduction}{6}{section.0.1}
+\contentsline {section}{\numberline {2}Le d\IeC {\'e}veloppement Web}{7}{section.0.2}
+\contentsline {section}{\numberline {3}Outils de d\IeC {\'e}veloppement Web}{8}{section.0.3}
+\contentsline {section}{\numberline {4}\IeC {\'E}tude sur la gestion des recours}{9}{section.0.4}
+\contentsline {subsection}{\numberline {4.1}C'est quoi un recours?}{9}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {4.2}Mod\IeC {\`e}le d\IeC {\textquoteright }un recours}{9}{subsection.0.4.2}
+\contentsline {section}{\numberline {5}La solution actuelle}{10}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Les points forts}{10}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {5.2}Les points faibles}{10}{subsection.0.5.2}
+\contentsline {section}{\numberline {6}Le brainstorming}{10}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Introduction}{10}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {6.2}Les r\IeC {\`e}gles du brainstorming}{10}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {6.3}Le brainstorming avec les \IeC {\'e}tudiants}{11}{subsection.0.6.3}
+\contentsline {section}{\numberline {7}La solution propos\IeC {\'e}e}{11}{section.0.7}
+\contentsline {section}{\numberline {8}Conclusion}{11}{section.0.8}
+\contentsline {chapter}{\color {Blue}{Chapitre II : Analyse \& Conception}}{12}{section.0.8}
+\contentsline {section}{\numberline {1}Introduction}{13}{section.0.1}
+\contentsline {subsection}{\numberline {1.1}Objectifs de l\IeC {\textquoteright }analyse}{13}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {1.2}Objectifs de la conception}{13}{subsection.0.1.2}
+\contentsline {section}{\numberline {2}M\IeC {\'e}thodes utilis\IeC {\'e}e}{14}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}UML}{14}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}PlantUML}{14}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.3}PlantUML Previewer}{15}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Graphviz}{15}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}Vim}{16}{subsection.0.2.5}
+\contentsline {section}{\numberline {3}Diagrammes}{16}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}Diagrammes de cas d'utilisation}{16}{subsection.0.3.1}
+\contentsline {subsubsection}{Identification des acteurs}{17}{subsubsection*.16}
+\contentsline {subsubsection}{Identification des cas d'utilisation et description textuelle}{17}{subsubsection*.17}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de cas d'utilisation avec descriptions}}{17}{subsubsection*.19}
+\contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quence}{25}{subsection.0.3.2}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de s\IeC {\'e}quences avec descriptions}}{26}{subsubsection*.38}
+\contentsline {subsection}{\numberline {3.3}Diagrammes d'activit\IeC {\'e}}{37}{subsection.0.3.3}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} de l'authentification}{38}{subsubsection*.51}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} de l'administrateur}{39}{subsubsection*.53}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} de l'enseignant}{40}{subsubsection*.55}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} de l'\IeC {\'e}tudiant}{41}{subsubsection*.57}
+\contentsline {subsection}{\numberline {3.4}Diagramme de d\IeC {\'e}ploiement}{42}{subsection.0.3.4}
+\contentsline {subsubsection}{Le diagramme de d\IeC {\'e}ploiement}{42}{subsubsection*.59}
+\contentsline {subsection}{\numberline {3.5}Diagrammes des classes}{43}{subsection.0.3.5}
+\contentsline {subsubsection}{Diagramme de classe G\IeC {\'e}n\IeC {\'e}ral}{43}{subsubsection*.61}
+\contentsline {subsubsection}{Diagramme de classe pour l'administrateur}{44}{subsubsection*.63}
+\contentsline {subsubsection}{Diagramme de classe pour l'enseignant}{45}{subsubsection*.65}
+\contentsline {subsubsection}{Diagramme de classe pour l'\IeC {\'e}tudiant}{46}{subsubsection*.67}
+\contentsline {section}{\numberline {4}Conclusion}{46}{section.0.4}
+\contentsline {chapter}{\color {Blue}{Chapitre III : R\IeC {\'e}alisation}}{47}{section.0.4}
+\contentsline {section}{\numberline {1}Introduction}{48}{section.0.1}
+\contentsline {section}{\numberline {2}Les langages de programmation utilis\IeC {\'e}s}{48}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{48}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}CSS}{49}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.3}Bootstrap}{49}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Javascript}{50}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}PHP}{50}{subsection.0.2.5}
+\contentsline {subsection}{\numberline {2.6}MySQL}{51}{subsection.0.2.6}
+\contentsline {section}{\numberline {3}Les outils utilis\IeC {\'e}s}{52}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}Vim}{52}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2}Mycli}{52}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.3}Apache}{53}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {3.4}PhpMyAdmin}{53}{subsection.0.3.4}
+\contentsline {section}{\numberline {4}Architecture}{54}{section*.79}
+\contentsline {section}{\numberline {5}Mat\IeC {\'e}riaux utilis\IeC {\'e}s}{55}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Environnement mat\IeC {\'e}riel}{55}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {5.2}Signification des abr\IeC {\'e}viations}{55}{subsection.0.5.2}
+\contentsline {section}{\numberline {6}Le site Web}{56}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Page de connexion}{56}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {6.2}Page d'inscription}{57}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {6.3}Page d'inscription compl\IeC {\`e}te}{58}{subsection.0.6.3}
+\contentsline {subsection}{\numberline {6.4}Page d'accueil}{59}{subsection.0.6.4}
+\contentsline {subsection}{\numberline {6.5}Page de profil pour un \IeC {\'e}tudiant}{60}{subsection.0.6.5}
+\contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{63}{subsection.0.6.6}
+\contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{64}{subsection.0.6.7}
+\contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{66}{subsection.0.6.8}
+\contentsline {subsection}{\numberline {6.9}Page de trafic}{69}{subsection.0.6.9}
+\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{70}{subsection.0.6.10}
+\contentsline {subsection}{\numberline {6.11}Page des graphiques}{71}{subsection.0.6.11}
+\contentsline {subsection}{\numberline {6.12}Page contactez-nous}{73}{subsection.0.6.12}
+\contentsline {section}{\numberline {7}Conclusion}{73}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{74}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{75}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Webographie}}{76}{section.0.7}

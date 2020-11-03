@@ -1,0 +1,34 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Supprimer un utilisateur**</size></back>
+
+actor "Administrateur" as AD #black 
+participant ":Interface" as P #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate AD
+ref over AD, P, BDD : Authentification
+ref over AD, P, BDD : Sélectionner un utilisateur
+note right AD #aqua : Générer une table des utilisateurs avec des options (Modifier, Supprimer)
+AD -> P : choisissezUtilisateur()
+activate P
+P --> AD : confirmerSuppression()
+alt Annuler
+    AD -[#red]-> P : Non!
+    P ->> AD : retournePageAccueil()                         
+else Confirmer
+    AD -[#green]-> P : Oui!
+    P -> BDD : SupprimerUtilisateur()
+    activate BDD
+    BDD -[#green]-> P : utilisateurSuppriméAvecSuccès()
+    deactivate BDD
+    P -[#green]-> AD : afficheSuccès()
+    deactivate P
+end
+deactivate AD
+
+
+
+@enduml

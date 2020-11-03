@@ -1,0 +1,73 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide circle
+
+
+class Étudiant {
+    + Matricule : long
+    + Sexe : string {Male | Female}
+    + Age : int {age >= 17}
+    + DateDeNaissance : date
+    + Addresse : string
+    + NumTel : long
+    + Spécialité : Speciality {Enum}
+    - Note : double
+
+    + setNote(n : double) : void
+    + getNote() : double
+    - ajouterRecours(R : Recours) : bool
+    - modifierRecours(R : Recours) : bool
+    - supprimerRecours(R : Recours) : bool
+    - consulterRecours() : Recours
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+class Recours {
+    - Explication : string
+    - Type d'erreur : string
+    - Fichier : string
+    - Type de test {Examin ou Devoir}
+}
+
+class date {
+    - Jour : int
+    - Mois : int {1 => 12}
+    - Année : int
+}
+
+class Enseignant {
+    - Addresse : string
+    - NumTel : long
+
+    - validerRecours() : bool
+    - refuserRecours() : bool
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+enum Speciality <<Énumération>> {
+    L1 - MI
+    L2 - INFO
+    L3 - ISIL
+    L3 - SI
+    M1 - ILTI
+    M1 - SIR
+    M1 - TI
+}
+
+
+hide Speciality methods
+hide Recours methods
+hide date methods
+
+
+Étudiant .right.> Speciality : <<use>>
+Étudiant .left.> date : <<use>>
+Étudiant "1 " -up- "0..*" Recours
+Enseignant "1 " -down- "1..*" Recours
+
+
+@enduml

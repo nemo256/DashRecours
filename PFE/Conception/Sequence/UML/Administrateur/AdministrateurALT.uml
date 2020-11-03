@@ -1,0 +1,74 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**Gérer un utilisateur**</size></back>
+
+actor "Administrateur" as AD #black 
+participant ":Page" as P #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate AD
+ref over AD, P, BDD : Authentification
+opt Ajouter un utilisateur
+    note right P #aqua : Utilisateur (Étudiant / Enseignant)
+    AD -> P : remplirInfos(Nom, Prénom, NumTel, ...)
+    activate P
+    P -> P : validationInfos()
+    activate P #orange
+    note right P #aqua : Champs vides, email invalid(@x,y)...
+    P -> BDD : envoyerInfos()
+    deactivate P
+    activate BDD
+    BDD -> BDD : sauvegarderUtilisateur()
+    activate BDD #blue
+    deactivate BDD
+    BDD -[#green]-> P : utilisateurEnregistrer()
+    deactivate BDD
+    P -[#green]-> AD : afficheSuccès()
+    deactivate P
+end
+
+opt Modifier un utilisateur
+    ref over AD, P, BDD : Sélectionner un utilisateur
+    note right AD #aqua : Générer une table des utilisateurs avec des options (Modifier, Supprimer)
+    AD -> P : choisissezUtilisateur()
+    activate P
+    P -> BDD : obtenirUtilisateur()
+    activate BDD
+    BDD --> P : envoyerUtilisateur()
+    deactivate BDD
+    P --> AD : afficheUtilisateur()
+    deactivate P
+    AD -> P : remplirModifications()
+    activate P
+    P -> BDD : sauvegarderModifications()
+    activate BDD
+    BDD -[#green]-> P : modificationsEnregistrées()
+    deactivate BDD
+    P -[#green]-> AD : afficheSuccès()
+    deactivate P
+end
+
+opt Supprimer un utilisateur
+    ref over AD, P, BDD : Sélectionner un utilisateur
+    AD -> P : choisissezUtilisateur()
+    activate P
+    P --> AD : confirmerSuppression()
+    alt Annuler
+        AD -[#red]-> P : Non!
+        P ->> AD : retournePageAccueil()                         
+    else Confirmer
+        AD -[#green]-> P : Oui!
+        P -> BDD : SupprimerUtilisateur()
+        activate BDD
+        BDD -[#green]-> P : utilisateurSuppriméAvecSuccès()
+        deactivate BDD
+        P -[#green]-> AD : afficheSuccès()
+        deactivate P
+    end
+    deactivate AD
+end
+
+
+@enduml

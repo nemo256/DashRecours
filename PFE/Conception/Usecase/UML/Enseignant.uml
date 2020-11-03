@@ -1,0 +1,33 @@
+@startuml
+
+!include ../../Styles.plantuml
+
+hide footbox
+left to right direction
+
+actor "Enseignant" as ENS #black
+
+rectangle "**<u>Gestion des enseignants</u>**" {
+    (S'inscrire) as INS
+    (S'authentifier) as AUTH #yellow
+    (Voir les recours) as VR
+    (Gérer les recours\nqui ont été soumis) as GR #orange
+    (Refuser le recours) as REF 
+    (Validation recours) as AUT
+    (Donner une explication) as EXP
+    (Notifier la nouvelle note) as NNN
+    
+    ENS -- INS
+    ENS -- GR
+    GR <.. AUT : <<extend>>
+    AUT <.. NNN : <<extend>>
+    GR <.. REF : <<extend>>
+    REF <.. EXP : <<extend>>
+    GR <... VR : <<extend>>
+    GR ...> AUTH : <<include>>
+    'NNN -- ET
+    'EXP -- ET
+}
+
+
+@enduml

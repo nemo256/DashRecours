@@ -1,0 +1,61 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide circle
+
+
+class Administrateur {
+    - Poste : string
+    --
+    .. Gestion étudiants ..
+    - ajouterÉtudiant() : void
+    - modifierÉtudiant() : void
+    - supprimerÉtudiant() : void
+    .. Gestion enseignants ..
+    - ajouterEnseignant() : void
+    - modifierEnseignant() : void
+    - supprimerEnseignant() : void
+}
+
+class Étudiant {
+    + Sexe : string {Male | Female}
+    + Age : int {age >= 17}
+    + Addresse : string
+    + NumTel : long
+    + Spécialité : SPC {Enum}
+    - Note : double
+
+    + setNote(n : double) : void
+    + getNote() : double
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+class Enseignant {
+    - Addresse : string
+    - NumTel : long
+
+    - validerRecours() : bool                                          
+    - refuserRecours() : bool
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+enum Speciality <<Énumération>> {
+    L1 - MI
+    L2 - INFO
+    L3 - ISIL
+    L3 - SI
+    M1 - ILTI
+    M1 - SIR
+    M1 - TI
+}
+
+hide Speciality methods
+
+Administrateur "1" -- "1..*  " Étudiant
+Administrateur "1    " -- "1..*" Enseignant
+Étudiant .left.> Speciality : <<use>>
+
+@enduml

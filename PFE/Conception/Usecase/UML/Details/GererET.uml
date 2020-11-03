@@ -1,0 +1,18 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+hide footbox
+left to right direction
+
+actor "Administrateur" as AD #black
+
+rectangle "Gestion d'administration" {
+    usecase "S'authentifier" as AUTH #yellow
+    usecase "Gérer\nles étudiants" as GET #orange
+
+    AD -- GET
+    GET ..> AUTH : <<include>>
+}
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+
+!include ../../Styles.plantuml
+
+hide footbox
+left to right direction
+
+actor "User" as USER #black
+actor "Administration" as AD #yellow
+actor "Enseignant" as ENS #yellow
+actor "Étudiant" as ET #yellow
+
+rectangle "**<u>Diagramme cas d'utilisation générale</u>**" {
+    usecase "S'authentifier" as AUTH #yellow
+    usecase "Accéder à sa plateforme" as AP
+    usecase "S'inscrire" as INS
+    usecase "Mettre à jour ses infos" as MAJI
+    usecase "Consultez les actualités" as CA
+
+    USER <|-right- AD
+    USER <|-up- ENS
+    USER <|-up- ET
+
+    USER -- AP
+    USER -- MAJI
+    USER -- CA
+    USER - INS
+    AP ..> AUTH : <<include>>
+    MAJI ..> AUTH : <<include>>
+    CA ..> AUTH : <<include>>
+}
+
+
+@enduml

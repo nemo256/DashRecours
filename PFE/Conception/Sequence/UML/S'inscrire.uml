@@ -1,0 +1,38 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
+
+title <back:gray><size:36>**S'inscrire**</size></back>
+
+actor "Utilisateur" as U #black
+participant ":Formulaire" as F #orange
+database "Base de données" as BDD <<MySQL>> #blue
+
+activate U
+U -> F : choisissezModeUtilisateur()
+activate F
+note right of F #DarkKhaki : Choisissez entre (étudiant / enseignant)!
+alt Si c'est un enseignant
+    F --> U : afficheOptionsSupplémentaires()
+    note right of F #DarkKhaki : (module, diplôme, ...)
+end
+U -> F : remplirInformations()
+F -> F : validationFormulaire()
+activate F #orange
+note right F #DarkKhaki : Champs vides, email invalid(@x,y)...
+alt Les infos n'ont pas été saisies
+    F -[#red]-> U : validationErreur()
+    deactivate F
+else Les infos ont été saisies
+    F -> BDD : détailsFormulaire()
+    activate BDD
+    BDD ->> BDD : enregistrerLesDonnées()
+    activate BDD #blue
+    deactivate BDD
+    BDD -[#green]-> F : donnéesEnregistrées()
+    deactivate BDD
+    F -[#green]-> U : afficheSuccès()
+    deactivate F
+end
+
+@enduml
