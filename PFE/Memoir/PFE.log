@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.23)  4 NOV 2020 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.23)  4 NOV 2020 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2471,7 +2471,7 @@ r/sftt1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /home/nemo/Work/DashRecours/PFE/Memoir/PFE.pdf (85 pages, 644
-6496 bytes).
+6487 bytes).
 PDF statistics:
  1122 PDF objects out of 1200 (max. 8388607)
  851 compressed objects within 9 object streams
