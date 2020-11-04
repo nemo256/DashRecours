@@ -140,7 +140,7 @@
    \renewcommand{\footrulewidth}{0pt}%
    \fancyhead{}
    \fancyfoot{}
-   \fancyfoot[C]{\vspace{-0.35in}\textcolor{Gray}{\Large{Page}}\hspace{0.04in} \large{\thepage}\hspace{0.07in}\large{|}\hspace{0.07in}\large{72}}%\pageref{LastPage}}}
+   \fancyfoot[C]{\vspace{-0.35in}\textcolor{Gray}{\Large{Page}}\hspace{0.04in} \large{\thepage}\hspace{0.07in}\large{|}\hspace{0.07in}\large{71}}%\pageref{LastPage}}}
 }%
 \pagestyle{empty}
 
@@ -179,7 +179,7 @@
 {}[]
 
 \titleformat{\subsubsection}
-{\bfseries}
+{\bfseries\large}
 {\hspace{0.40in}}
 {0em}
 {}[]
@@ -860,9 +860,11 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 
 \begin{figure}[h]
 \centering
-    \centerline{\fbox{\includegraphics[width = 6.6in, height = 6in]{../Conception/Usecase/PNG/Administrateur.png}}}
+    \centerline{\fbox{\includegraphics[width = 6.6in, height = 6.2in]{../Conception/Usecase/PNG/Administrateur.png}}}
     \caption{Diagramme de cas d'utilisation pour l'administrateur}
 \end{figure}
+
+\vspace{0.2in}
 
 \textbf{Description :}
 
@@ -1155,7 +1157,7 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
-\subsubsection{\large{Les diagrammes de séquences avec descriptions}}
+\subsubsection{Diagramme de séquences <<S'inscrire>>}
 
 \begin{figure}[h]
 \centering
@@ -1171,11 +1173,13 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
         \item Enseignant. (Diplôme, Module...)
         \item Étudiant.
     \end{itemize}
-    \item Validation formulaire ``email sous la forme @x.y, Caractères spéciaux''
+    \item Validation formulaire (email sous la forme @x.y, Caractères spéciaux).
     \item Sauvegarde des données.
 \end{itemize}
 
 \newpage
+
+\subsubsection{Diagramme de séquences <<S'authentifier>>}
 
 \begin{figure}[h]
 \centering
@@ -1194,6 +1198,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
+\subsubsection{Diagramme de séquences <<Gérer un recours soumis par un étudiant>>}
+
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 7.2in]{../Conception/Sequence/PNG/Enseignant/GererRecours.png}}}
@@ -1209,6 +1215,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 \end{itemize}
 
 \newpage
+
+\subsubsection{Diagramme de séquences <<Sélectionnez tous les recours>>}
 
 \begin{figure}[h]
 \centering
@@ -1229,10 +1237,12 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
+\subsubsection{Diagramme de séquences <<Sélectionnez tous les recours>>}
+
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 6.2in]{../Conception/Sequence/PNG/Etudiant/AjouterRecours.png}}}
-    \caption{Diagramme de séquences <<Ajouter un recours>>}
+    \caption{diagramme de séquences <<ajouter un recours>>}
 \end{figure}
 
 \textbf{Description :}
@@ -1245,6 +1255,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 \end{itemize}
 
 \newpage
+
+\subsubsection{Diagramme de séquences <<Modifier un recours>>}
 
 \begin{figure}[h]
 \centering
@@ -1265,6 +1277,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
+\subsubsection{Diagramme de séquences <<Supprimer un recours>>}
+
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 6.2in]{../Conception/Sequence/PNG/Etudiant/SupprimerRecours.png}}}
@@ -1283,6 +1297,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 \end{itemize}
 
 \newpage
+
+\subsubsection{Diagramme de séquences <<G\'erer un utilisateur>>}
 
 \begin{figure}[h]
 \centering
@@ -1306,6 +1322,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
+\subsubsection{Diagramme de séquences <<Ajouter un utilisateur>>}
+
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 6.2in]{../Conception/Sequence/PNG/Administrateur/AjouterUtilisateur.png}}}
@@ -1325,6 +1343,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 
 \newpage
 
+\subsubsection{Diagramme de séquences <<Modifier un utilisateur>>}
+
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 6.2in]{../Conception/Sequence/PNG/Administrateur/ModifierUtilisateur.png}}}
@@ -1343,6 +1363,8 @@ Un diagramme de séquence montre les interactions d'objets organisées en séque
 \end{itemize}
 
 \newpage
+
+\subsubsection{Diagramme de séquences <<Supprimer un utilisateur>>}
 
 \begin{figure}[h]
 \centering
@@ -1376,11 +1398,11 @@ plusieurs magasins de données.
 \\
 Les diagrammes d'activités sont construits à partir d'un nombre limité de formes, relié par des flèches. Les types de formes les plus importants :
 \begin{itemize}
-    \item les ellipses représentent des actions.
-    \item les diamants représentent des décisions.
-    \item les barres représentent le début (fractionnement) ou la fin (jointure) des activités simultanées.
-    \item un cercle noir représente le début (nœud initial) du flux de travail.
-    \item un cercle noir encerclé représente la fin (nœud final).
+    \item Les ellipses représentent des actions.
+    \item Les diamants représentent des décisions.
+    \item Les barres représentent le début (fractionnement) ou la fin (jointure) des activités simultanées.
+    \item Un cercle noir représente le début (nœud initial) du flux de travail.
+    \item Un cercle noir encerclé représente la fin (nœud final).
 \end{itemize}
 Les flèches vont du début à la fin et représentent l'ordre dans lequel les activités se déroulent.
 
@@ -1392,51 +1414,77 @@ Les flèches vont du début à la fin et représentent l'ordre dans lequel les a
 
 \newpage
 
-\subsubsection{Diagramme d'activité de l'authentification}
-
-\vspace{0.3in}
+\subsubsection{Diagramme d'activité <<S'authentifier>>}
 
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 7.2in]{../Conception/Activity/PNG/Authentification.png}}}
-    \caption{Diagramme d'activité <<Authentification>>}
+    \caption{Diagramme d'activité <<S'authentifier>>}
 \end{figure}
+
+\textbf{Description :}
+
+\begin{itemize}
+    \item Rediriger l’utilisateur vers la page d’accueil s’il est déjà connecté.
+    \item Si l’utilisateur est dans notre base de données et que le mot de passe est correct, nous redirigeons l’utilisateur vers la page d’accueil.
+    \item Si l’utilisateur n’est pas trouvé dans la base de données ou si le mot de passe est incorrect, nous affichons un message d’erreur.
+\end{itemize}
 
 \newpage
 
-\subsubsection{Diagramme d'activité de l'administrateur}
-
-\vspace{0.3in}
+\subsubsection{Diagramme d'activité <<Gestion d'administration>>}
 
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 7.2in]{../Conception/Activity/PNG/Administrateur.png}}}
-    \caption{Diagramme d'activité <<Administrateur>>}
+    \caption{Diagramme d'activité <<Gestion d'administration>>}
 \end{figure}
+
+\textbf{Description :}
+
+\begin{itemize}
+    \item L’administrateur doit d’abord s’authentifier.
+    \item L’administrateur choisit un utilisateur (étudiant, enseignant) et l’action à faire.
+    \item L’administrateur peut quitter quand il le veut.
+    \item Les modifications seront enregistrées et l’administrateur sera notifié.
+\end{itemize}
 
 \newpage
 
-\subsubsection{Diagramme d'activité de l'enseignant}
-
-\vspace{0.3in}
+\subsubsection{Diagramme d'activité <<Gestion des enseignants>>}
 
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 7.2in]{../Conception/Activity/PNG/Enseignant.png}}}
-    \caption{Diagramme d'activité <<Enseignant>>}
+    \caption{Diagramme d'activité <<Gestion des enseignants>>}
 \end{figure}
+
+\textbf{Description :}
+
+\begin{itemize}
+    \item L’enseignant doit d’abord s’authentifier.
+    \item L’enseignant choisit le recours pour le traiter.
+    \item L’enseignant valide ou refuse le recours.
+    \item L’état du recours sera mis à jour sur les deux plateformes (enseignant, étudiant).
+\end{itemize}
 
 \newpage
 
-\subsubsection{Diagramme d'activité de l'étudiant}
-
-\vspace{0.3in}
+\subsubsection{Diagramme d'activité <<Gestion des étudiants>>}
 
 \begin{figure}[h]
 \centering
     \centerline{\fbox{\includegraphics[width = 6.6in, height = 7.2in]{../Conception/Activity/PNG/Etudiant.png}}}
-    \caption{Diagramme d'activité <<Étudiant>>}
+    \caption{Diagramme d'activité <<Gestion des étudiants>>}
 \end{figure}
+
+\textbf{Description :}
+
+\begin{itemize}
+    \item L'étudiant doit d’abord s’authentifier.
+    \item L'étudiant choisit l'opération à faire.
+    \item Les modifications seront enregistrées et l’étudiant sera notifié.
+\end{itemize}
 
 \newpage
 
@@ -1653,21 +1701,13 @@ Il a été utilisé pour manipuler le code HTML CSS et MySQL pour établir des r
 \subsection{MySQL}
 
 MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Son nom est une combinaison de "My", le nom de la fille du co-fondateur Michael Widenius, et "SQL", l'abréviation de Structured Query Language. Une base de données relationnelle organise les données en une ou plusieurs tables de données dans lesquelles les types de données peuvent être liés les uns aux autres, ces relations aident à structurer les données.
-\\
-SQL est un langage utilisé par les programmeurs pour créer, modifier et extraire des données de la base de données relationnelle, ainsi que pour contrôler l'accès des utilisateurs à la base de données. En plus des bases de données relationnelles et SQL, un SGBDR comme MySQL fonctionne avec un système d'exploitation pour implémenter une base de données relationnelle dans le système de stockage d'un ordinateur, gère les utilisateurs, permet l'accès au réseau et facilite les tests de l'intégrité de la base de données et la création de sauvegardes.
-\\\\
-MySQL est un logiciel libre et open source sous les termes de la licence publique générale GNU, et est également disponible sous une variété de licences propriétaires. MySQL était détenu et sponsorisé par la société \\suédoise MySQL AB, qui a été rachetée par Sun Microsystems (aujourd'hui Oracle Corporation). En 2010, lors de l'acquisition de Sun par Oracle, Widenius a lancé le projet open source MySQL pour créer MariaDB.
-
-\vspace{0.7in}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 3.8in, height = 2in]{../Images/MySQL.png}
+    \includegraphics[width = 2.2in, height = 1in]{../Images/MySQL.png}
 \vspace{0.1in}
 \caption{Logo MySQL}
 \end{figure}
-
-\newpage
 
 \section{Les outils utilisés}
 
@@ -1675,7 +1715,7 @@ MySQL est un logiciel libre et open source sous les termes de la licence publiqu
 
 Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fiable qui aide beaucoup en termes de flux de travail et pour couronner le tout, il a divers plugins qui aident tellement avec tout travail qui doit être fait, pour cela section du développement Web, nous avons utilisé des plugins comme Syntastic pour générer des erreurs de syntaxe en temps réel et YouCompletMe pour une auto-complétion de code facile, également Emmet pour générer des extraits (Code Snippets) comme des balises HTML en très peu de clics de clavier, et bien d'autres plugins...
 
-\vspace{0.1in}
+\vspace{0.3in}
 
 \begin{figure}[h]
 \centering
@@ -1683,6 +1723,8 @@ Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fi
 \vspace{0.0in}
 \caption{Logo Vim}
 \end{figure}
+
+\newpage
 
 \vspace{-0.15in}
 
@@ -1693,11 +1735,9 @@ MyCLI est une interface de ligne de commande pour MySQL, MariaDB et Percona avec
 \begin{figure}[h]
 \centering
     \includegraphics[width = 6in, height = 2.4in]{../Images/mycli.png}
-\vspace{-0.1in}
+\vspace{-0.2in}
 \caption{Exemple Mycli}
 \end{figure}
-
-\newpage
 
 \subsection{Apache}
 
@@ -1709,9 +1749,12 @@ Utilisé pour afficher notre page Web dans un navigateur (Chrome principalement)
 
 \begin{figure}[h]
 \centering
+  \vspace{0.1in}
     \includegraphics[width = 3.4in, height = 1.3in]{../Images/Apache.png}
 \caption{Logo Apache}
 \end{figure}
+
+\newpage
 
 \subsection{PhpMyAdmin}
 
@@ -1721,25 +1764,19 @@ PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et Ma
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 3.4in, height = 2in]{../Images/PhpMyAdmin.png}
+    \includegraphics[width = 3in, height = 1.7in]{../Images/PhpMyAdmin.png}
 \caption{Logo PhpMyAdmin}
 \end{figure}
-
-\newpage
 
 \section{Architecture}
 
 Pour nous aider à construire un site Web bien formé, nous avons choisi d'adopter MVC :
-\\\\
+\\
 Model - View - Controller (généralement connu sous le nom de MVC) est un modèle de conception de logiciel couramment utilisé pour développer des interfaces utilisateur qui divise la logique de programme associée en trois éléments inter-connectés. Ceci est fait pour séparer les représentations internes des informations de la manière dont les informations sont présentées et acceptées par l'utilisateur. Ce type de motif est utilisé pour concevoir la mise en page de la page.
-\\\\
-Traditionnellement utilisé pour les interfaces utilisateur graphiques (GUIs) de bureau, ce modèle est devenu populaire pour la conception d'applications Web. Les langages de programmation populaires tels que JavaScript, Python, Ruby, PHP, Java, C\# et Swift ont des frameworks MVC qui sont utilisés pour le développement d'applications Web ou mobiles dès la sortie de la boîte.
-
-\vspace{0.5in}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 4.0in, height = 4.2in]{../Images/MVC.png}
+    \includegraphics[width = 2.9in, height = 3.2in]{../Images/MVC.png}
 \caption{Architecture MVC}
 \end{figure}
 
@@ -1921,11 +1958,13 @@ Les quatre figures suivantes porteront sur la manière dont un étudiant interag
 \subsection{Page des paramètres}
 \vspace{0.2in}
 
-Cet onglet dans la page de profil déverrouille la possibilité pour tout utilisateur (étudiant, enseignant, administrateur) de mettre à jour / modifier ses paramètres, y compris certaines informations et de changer la photo de profil, également tout utilisateur peut mettre à jour son compte avec un nouveau mot de passe pour rester toujours sécurisé.
+Cet onglet dans la page de profil déverrouille la possibilité pour tout utilisateur (étudiant, enseignant, administrateur) de mettre à jour / modifier ses paramètres, y compris certaines informations et de changer la photo de profil, également tout utilisateur peut mettre à jour son compte avec un nouveau mot de passe pour rester toujours sécurisé. <<Figure 66>>
 \\\\
-Un étudiant a la possibilité de modifier ses informations spéciales (spécialité, groupe) pour rester à jour chaque année, et pour ne pas avoir à créer un nouveau compte chaque année. <<Figure 66>>
+Un étudiant a la possibilité de modifier ses informations spéciales (spécialité, groupe) pour rester à jour chaque année, et pour ne pas avoir à créer un nouveau compte chaque année.
+\\\\
+Un enseignant a également la possibilité de modifier ses informations particulières (diplôme, note) en cas de promotions ou juste une faute de frappe.
 
-\vspace{0.8in}
+\vspace{0.6in}
 
 \begin{figure}[h]
 \centering

@@ -2,9 +2,9 @@
 
 !includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
 
-title <back:gray><size:36>S'authentifier</size></back>
+title <back:gray><size:36>**S'authentifier**</size></back>
 
-actor "User" as U #black
+actor "Utilisateur" as U #black
 participant ":Page Login" as L #orange
 database "Base de données" as BDD <<MySQL>> #blue
 
