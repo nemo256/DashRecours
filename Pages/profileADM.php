@@ -364,12 +364,6 @@ if (isset($userInfo))
                 Female
               </label>
             </div>
-            <div class="icheck-primary d-inline mr-2">
-              <input type="radio" id="radioPrimary3" name="sexe" value="Autre"<?php if (!strcmp($sex, 'Autre')) echo 'checked'; ?>>
-              <label for="radioPrimary3">
-                Autre 
-              </label>
-            </div>
           </div>
         <div id="errorSex" class="text-red text-sm mb-2" style="margin-top: -12px; margin-left: 20px"></div>
         </div>

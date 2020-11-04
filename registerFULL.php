@@ -101,12 +101,6 @@ endif;
               Female
             </label>
           </div>
-          <div class="icheck-primary d-inline mr-2">
-            <input type="radio" id="radioPrimary3" name="sex" value="Autre"<?php if (!strcmp($sex, 'Autre')) echo 'checked'; ?>>
-            <label for="radioPrimary3">
-              Autre 
-            </label>
-          </div>
         </div>
         <div id="errorSex" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
