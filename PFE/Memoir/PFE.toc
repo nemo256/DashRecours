@@ -82,11 +82,11 @@
 \contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{61}{subsection.0.6.6}
 \contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{62}{subsection.0.6.7}
 \contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{64}{subsection.0.6.8}
-\contentsline {subsection}{\numberline {6.9}Page de trafic}{67}{subsection.0.6.9}
-\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{68}{subsection.0.6.10}
-\contentsline {subsection}{\numberline {6.11}Page des graphiques}{69}{subsection.0.6.11}
-\contentsline {subsection}{\numberline {6.12}Page contactez-nous}{71}{subsection.0.6.12}
-\contentsline {section}{\numberline {7}Conclusion}{71}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{72}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{73}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Webographie}}{74}{section.0.7}
+\contentsline {subsection}{\numberline {6.9}Page de trafic}{66}{subsection.0.6.9}
+\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{67}{subsection.0.6.10}
+\contentsline {subsection}{\numberline {6.11}Page des graphiques}{68}{subsection.0.6.11}
+\contentsline {subsection}{\numberline {6.12}Page contactez-nous}{70}{subsection.0.6.12}
+\contentsline {section}{\numberline {7}Conclusion}{70}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{71}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{72}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Webographie}}{73}{section.0.7}
