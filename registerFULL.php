@@ -128,7 +128,7 @@ endif;
 
         <div class="form-group">
           <label>Type Utilisateur<span class="text-red ml-1">*</span></label>
-          <select name="TU" id="select" class="form-control select2bs4" style="width: 50%;">
+          <select name="TU" id="select" class="form-control select2bs4">
             <option selected="selected" value="">Choisissez le type d'utilisateur</option>
             <option value="Etudiant">Etudiant</option>
             <option value="Enseignant">Enseignant</option>
@@ -142,7 +142,7 @@ endif;
         <div id="myOptions"> 
         </div>
 
-        <button type="submit" name="submit" class="btn btn-warning mt-3" style="width: 30%">Soumettre</button>
+        <button type="submit" name="submit" class="btn btn-lg btn-warning mt-3">Soumettre</button>
 
       </form>
     </div>
