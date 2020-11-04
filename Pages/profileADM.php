@@ -472,12 +472,6 @@ if (isset($userInfo))
                 Female
               </label>
             </div>
-            <div class="icheck-primary d-inline mr-2">
-              <input type="radio" id="radio3" name="sexe" value="Autre"<?php if ($viewUser['sexe'] == 'Autre') echo 'checked'; ?> disabled>
-              <label for="radio3">
-                Autre 
-              </label>
-            </div>
           </div>
         <div id="errorSexM" class="text-red text-sm mb-2" style="margin-top: -12px; margin-left: 20px"></div>
         </div>
