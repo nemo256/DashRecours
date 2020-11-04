@@ -6,8 +6,6 @@ hide footbox
 left to right direction
 
 actor "Administrateur" as AD #black
-actor "Enseignant" as ENS #black
-actor "Étudiant" as ET #black
 
 rectangle "**<u>Gestion d'administration</u>**" {
     usecase "S'authentifier" as AUTH #yellow
@@ -19,21 +17,23 @@ rectangle "**<u>Gestion d'administration</u>**" {
     usecase "Ajouter\nenseignant" as AENS
     usecase "Modifier\nenseignant" as MENS
     usecase "Supprimer\nenseignant" as SENS
-    usecase "Gérer les notes\ndes étudiants" as TT
+    usecase "Examiner le flux de\n trafic des recours" as TT
+    usecase "Gérer les notes\ndes étudiants" as TTT
 
     AD -- GET
     AD -- GENS
     AD -- TT
+    AD -- TTT
     GET <|-right- AET
     GET <|-- MET
     GET <|-left- SET
     GENS <|-right- AENS
     GENS <|-- MENS
     GENS <|-left- SENS
-    GET ...> AUTH : <<include>>\n
-    GENS ...> AUTH : <<include>>
-    GET ------ ET
-    GENS ------ ENS
+    GET ...> AUTH : <<include>>\n\n\n\n\n\n
+    GENS ...> AUTH
+    TT ...> AUTH : <<include>>\n\n\n\n
+    TTT ...> AUTH : <<include>>
 }
 
 @enduml
