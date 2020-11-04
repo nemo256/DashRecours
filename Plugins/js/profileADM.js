@@ -92,8 +92,6 @@ form.addEventListener('submit', (e) => {
     sex = 'Male'
   else if (document.getElementById('radioPrimary2').checked)
     sex = 'Female'
-  else if (document.getElementById('radioPrimary3').checked)
-    sex = 'Autre'
   else
     sex = null
 
@@ -169,8 +167,6 @@ formM.addEventListener('submit', (e) => {
     sexM = 'Male'
   else if (document.getElementById('radio2').checked)
     sexM = 'Female'
-  else if (document.getElementById('radio3').checked)
-    sexM = 'Autre'
   else
     sexM = null
 

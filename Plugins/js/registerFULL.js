@@ -71,8 +71,6 @@ form.addEventListener('submit', (e) => {
     sex = 'Male'
   else if (document.getElementById('radioPrimary2').checked)
     sex = 'Female'
-  else if (document.getElementById('radioPrimary3').checked)
-    sex = 'Autre'
   else
     sex = null
 
