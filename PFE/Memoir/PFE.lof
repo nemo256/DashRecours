@@ -15,67 +15,67 @@
 \contentsline {figure}{\numberline {14}{\ignorespaces Diagramme de cas d'utilisation pour un Utilisateur\relax }}{17}{figure.caption.20}
 \contentsline {figure}{\numberline {15}{\ignorespaces Diagramme de cas d'utilisation pour l'administrateur\relax }}{18}{figure.caption.21}
 \contentsline {figure}{\numberline {16}{\ignorespaces Cas d'utilisation <<G\IeC {\'e}rer les \IeC {\'e}tudiants>>\relax }}{19}{figure.caption.22}
-\contentsline {figure}{\numberline {17}{\ignorespaces Diagramme de cas d'utilisation pour l'enseignant\relax }}{20}{figure.caption.24}
-\contentsline {figure}{\numberline {18}{\ignorespaces Cas d'utilisation <<G\IeC {\'e}rer les recours qui on \IeC {\'e}t\IeC {\'e} soumis>>\relax }}{21}{figure.caption.25}
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme de cas d'utilisation pour l'\IeC {\'e}tudiant\relax }}{22}{figure.caption.27}
-\contentsline {figure}{\numberline {20}{\ignorespaces Cas d'utilisation <<Ajouter un recours>>\relax }}{23}{figure.caption.28}
-\contentsline {figure}{\numberline {21}{\ignorespaces Cas d'utilisation <<Modifier un recours>>\relax }}{24}{figure.caption.30}
-\contentsline {figure}{\numberline {22}{\ignorespaces Cas d'utilisation <<Supprimer un recours>>\relax }}{25}{figure.caption.32}
-\contentsline {figure}{\numberline {23}{\ignorespaces Cas d'utilisation <<S'inscrire>>\relax }}{25}{figure.caption.34}
-\contentsline {figure}{\numberline {24}{\ignorespaces Exemple de diagramme de s\IeC {\'e}quence\relax }}{26}{figure.caption.36}
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S'inscrire>>\relax }}{27}{figure.caption.38}
-\contentsline {figure}{\numberline {26}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S'authentifier>>\relax }}{28}{figure.caption.39}
-\contentsline {figure}{\numberline {27}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>\relax }}{29}{figure.caption.40}
-\contentsline {figure}{\numberline {28}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>\relax }}{30}{figure.caption.41}
-\contentsline {figure}{\numberline {29}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Ajouter un recours>>\relax }}{31}{figure.caption.42}
-\contentsline {figure}{\numberline {30}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Modifier un recours>>\relax }}{32}{figure.caption.43}
-\contentsline {figure}{\numberline {31}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>\relax }}{33}{figure.caption.44}
-\contentsline {figure}{\numberline {32}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>\relax }}{34}{figure.caption.45}
-\contentsline {figure}{\numberline {33}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Ajouter un utilisateur>>\relax }}{35}{figure.caption.46}
-\contentsline {figure}{\numberline {34}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Modifier un utilisateur>>\relax }}{36}{figure.caption.47}
-\contentsline {figure}{\numberline {35}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Supprimer un utilisateur>>\relax }}{37}{figure.caption.48}
-\contentsline {figure}{\numberline {36}{\ignorespaces Exemple de diagramme d'activit\IeC {\'e}\relax }}{38}{figure.caption.49}
-\contentsline {figure}{\numberline {37}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Authentification>>\relax }}{39}{figure.caption.51}
-\contentsline {figure}{\numberline {38}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Administrateur>>\relax }}{40}{figure.caption.53}
-\contentsline {figure}{\numberline {39}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Enseignant>>\relax }}{41}{figure.caption.55}
-\contentsline {figure}{\numberline {40}{\ignorespaces Diagramme d'activit\IeC {\'e} <<\IeC {\'E}tudiant>>\relax }}{42}{figure.caption.57}
-\contentsline {figure}{\numberline {41}{\ignorespaces Diagramme de d\IeC {\'e}ploiement\relax }}{43}{figure.caption.59}
-\contentsline {figure}{\numberline {42}{\ignorespaces Diagramme de classe <<Utilisateur>>\relax }}{44}{figure.caption.61}
-\contentsline {figure}{\numberline {43}{\ignorespaces Diagramme de classe <<Administrateur>>\relax }}{45}{figure.caption.63}
-\contentsline {figure}{\numberline {44}{\ignorespaces Diagramme de classe <<Enseignant>>\relax }}{46}{figure.caption.65}
-\contentsline {figure}{\numberline {45}{\ignorespaces Diagramme de classe <<\IeC {\'E}tudiant>>\relax }}{47}{figure.caption.67}
-\contentsline {figure}{\numberline {46}{\ignorespaces Logo HTML\relax }}{49}{figure.caption.68}
-\contentsline {figure}{\numberline {47}{\ignorespaces Logo CSS\relax }}{50}{figure.caption.69}
-\contentsline {figure}{\numberline {48}{\ignorespaces Logo Bootstrap\relax }}{50}{figure.caption.70}
-\contentsline {figure}{\numberline {49}{\ignorespaces Logo Javascript\relax }}{51}{figure.caption.71}
-\contentsline {figure}{\numberline {50}{\ignorespaces Logo PHP\relax }}{51}{figure.caption.72}
-\contentsline {figure}{\numberline {51}{\ignorespaces Logo MySQL\relax }}{52}{figure.caption.73}
-\contentsline {figure}{\numberline {52}{\ignorespaces Logo Vim\relax }}{53}{figure.caption.74}
-\contentsline {figure}{\numberline {53}{\ignorespaces Exemple Mycli\relax }}{53}{figure.caption.75}
-\contentsline {figure}{\numberline {54}{\ignorespaces Logo Apache\relax }}{54}{figure.caption.76}
-\contentsline {figure}{\numberline {55}{\ignorespaces Logo PhpMyAdmin\relax }}{54}{figure.caption.77}
-\contentsline {figure}{\numberline {56}{\ignorespaces Architecture MVC\relax }}{55}{figure.caption.79}
-\contentsline {figure}{\numberline {57}{\ignorespaces Page de connexion\relax }}{57}{figure.caption.81}
-\contentsline {figure}{\numberline {58}{\ignorespaces Page d'inscription\relax }}{58}{figure.caption.82}
-\contentsline {figure}{\numberline {59}{\ignorespaces Page d'inscription compl\IeC {\`e}te\relax }}{59}{figure.caption.83}
-\contentsline {figure}{\numberline {60}{\ignorespaces Page d'inscription\relax }}{60}{figure.caption.84}
-\contentsline {figure}{\numberline {61}{\ignorespaces Page d'accueil\relax }}{61}{figure.caption.85}
-\contentsline {figure}{\numberline {62}{\ignorespaces Liste des recours pour un \IeC {\'e}tudiant\relax }}{62}{figure.caption.86}
-\contentsline {figure}{\numberline {63}{\ignorespaces Ajouter Un Recours\relax }}{62}{figure.caption.87}
-\contentsline {figure}{\numberline {64}{\ignorespaces Modifier Un Recours\relax }}{63}{figure.caption.88}
-\contentsline {figure}{\numberline {65}{\ignorespaces Consulter Un Recours (\IeC {\'E}tudiant)\relax }}{63}{figure.caption.89}
-\contentsline {figure}{\numberline {66}{\ignorespaces Param\IeC {\`e}tres\relax }}{64}{figure.caption.90}
-\contentsline {figure}{\numberline {67}{\ignorespaces Liste des recours pour un enseignant\relax }}{65}{figure.caption.91}
-\contentsline {figure}{\numberline {68}{\ignorespaces Recours Refus\IeC {\'e}s\relax }}{66}{figure.caption.92}
-\contentsline {figure}{\numberline {69}{\ignorespaces Consulter Un Recours (Enseignant)\relax }}{66}{figure.caption.93}
-\contentsline {figure}{\numberline {70}{\ignorespaces Liste des utilisateurs\relax }}{67}{figure.caption.94}
-\contentsline {figure}{\numberline {71}{\ignorespaces Liste des utilisateurs (Recherche)\relax }}{68}{figure.caption.95}
-\contentsline {figure}{\numberline {72}{\ignorespaces Ajouter Un Utilisateur\relax }}{68}{figure.caption.96}
-\contentsline {figure}{\numberline {73}{\ignorespaces Modifier Un Utilisateur\relax }}{69}{figure.caption.97}
-\contentsline {figure}{\numberline {74}{\ignorespaces Consulter Un Utilisateur\relax }}{69}{figure.caption.98}
-\contentsline {figure}{\numberline {75}{\ignorespaces Page de trafic\relax }}{70}{figure.caption.99}
-\contentsline {figure}{\numberline {76}{\ignorespaces Page du tableau de bord\relax }}{71}{figure.caption.100}
-\contentsline {figure}{\numberline {77}{\ignorespaces Page du tableau de bord 2\relax }}{72}{figure.caption.101}
-\contentsline {figure}{\numberline {78}{\ignorespaces Page des graphiques\relax }}{73}{figure.caption.102}
-\contentsline {figure}{\numberline {79}{\ignorespaces Page des graphiques 2\relax }}{73}{figure.caption.103}
-\contentsline {figure}{\numberline {80}{\ignorespaces Page contactez-nous\relax }}{74}{figure.caption.104}
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagramme de cas d'utilisation pour l'enseignant\relax }}{19}{figure.caption.24}
+\contentsline {figure}{\numberline {18}{\ignorespaces Cas d'utilisation <<G\IeC {\'e}rer les recours qui on \IeC {\'e}t\IeC {\'e} soumis>>\relax }}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme de cas d'utilisation pour l'\IeC {\'e}tudiant\relax }}{21}{figure.caption.27}
+\contentsline {figure}{\numberline {20}{\ignorespaces Cas d'utilisation <<Modifier un recours>>\relax }}{21}{figure.caption.28}
+\contentsline {figure}{\numberline {21}{\ignorespaces Cas d'utilisation <<Ajouter un recours>>\relax }}{22}{figure.caption.30}
+\contentsline {figure}{\numberline {22}{\ignorespaces Cas d'utilisation <<Supprimer un recours>>\relax }}{22}{figure.caption.32}
+\contentsline {figure}{\numberline {23}{\ignorespaces Cas d'utilisation <<S'inscrire>>\relax }}{23}{figure.caption.34}
+\contentsline {figure}{\numberline {24}{\ignorespaces Exemple de diagramme de s\IeC {\'e}quence\relax }}{23}{figure.caption.36}
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S'inscrire>>\relax }}{24}{figure.caption.38}
+\contentsline {figure}{\numberline {26}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S'authentifier>>\relax }}{25}{figure.caption.39}
+\contentsline {figure}{\numberline {27}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>\relax }}{26}{figure.caption.40}
+\contentsline {figure}{\numberline {28}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>\relax }}{27}{figure.caption.41}
+\contentsline {figure}{\numberline {29}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Ajouter un recours>>\relax }}{28}{figure.caption.42}
+\contentsline {figure}{\numberline {30}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Modifier un recours>>\relax }}{29}{figure.caption.43}
+\contentsline {figure}{\numberline {31}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>\relax }}{30}{figure.caption.44}
+\contentsline {figure}{\numberline {32}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>\relax }}{31}{figure.caption.45}
+\contentsline {figure}{\numberline {33}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Ajouter un utilisateur>>\relax }}{32}{figure.caption.46}
+\contentsline {figure}{\numberline {34}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Modifier un utilisateur>>\relax }}{33}{figure.caption.47}
+\contentsline {figure}{\numberline {35}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Supprimer un utilisateur>>\relax }}{34}{figure.caption.48}
+\contentsline {figure}{\numberline {36}{\ignorespaces Exemple de diagramme d'activit\IeC {\'e}\relax }}{35}{figure.caption.49}
+\contentsline {figure}{\numberline {37}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Authentification>>\relax }}{36}{figure.caption.51}
+\contentsline {figure}{\numberline {38}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Administrateur>>\relax }}{37}{figure.caption.53}
+\contentsline {figure}{\numberline {39}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Enseignant>>\relax }}{38}{figure.caption.55}
+\contentsline {figure}{\numberline {40}{\ignorespaces Diagramme d'activit\IeC {\'e} <<\IeC {\'E}tudiant>>\relax }}{39}{figure.caption.57}
+\contentsline {figure}{\numberline {41}{\ignorespaces Diagramme de d\IeC {\'e}ploiement\relax }}{40}{figure.caption.59}
+\contentsline {figure}{\numberline {42}{\ignorespaces Diagramme de classe <<Utilisateur>>\relax }}{41}{figure.caption.61}
+\contentsline {figure}{\numberline {43}{\ignorespaces Diagramme de classe <<Administrateur>>\relax }}{42}{figure.caption.63}
+\contentsline {figure}{\numberline {44}{\ignorespaces Diagramme de classe <<Enseignant>>\relax }}{43}{figure.caption.65}
+\contentsline {figure}{\numberline {45}{\ignorespaces Diagramme de classe <<\IeC {\'E}tudiant>>\relax }}{44}{figure.caption.67}
+\contentsline {figure}{\numberline {46}{\ignorespaces Logo HTML\relax }}{46}{figure.caption.68}
+\contentsline {figure}{\numberline {47}{\ignorespaces Logo CSS\relax }}{47}{figure.caption.69}
+\contentsline {figure}{\numberline {48}{\ignorespaces Logo Bootstrap\relax }}{47}{figure.caption.70}
+\contentsline {figure}{\numberline {49}{\ignorespaces Logo Javascript\relax }}{48}{figure.caption.71}
+\contentsline {figure}{\numberline {50}{\ignorespaces Logo PHP\relax }}{48}{figure.caption.72}
+\contentsline {figure}{\numberline {51}{\ignorespaces Logo MySQL\relax }}{49}{figure.caption.73}
+\contentsline {figure}{\numberline {52}{\ignorespaces Logo Vim\relax }}{50}{figure.caption.74}
+\contentsline {figure}{\numberline {53}{\ignorespaces Exemple Mycli\relax }}{50}{figure.caption.75}
+\contentsline {figure}{\numberline {54}{\ignorespaces Logo Apache\relax }}{51}{figure.caption.76}
+\contentsline {figure}{\numberline {55}{\ignorespaces Logo PhpMyAdmin\relax }}{51}{figure.caption.77}
+\contentsline {figure}{\numberline {56}{\ignorespaces Architecture MVC\relax }}{52}{figure.caption.79}
+\contentsline {figure}{\numberline {57}{\ignorespaces Page de connexion\relax }}{54}{figure.caption.81}
+\contentsline {figure}{\numberline {58}{\ignorespaces Page d'inscription\relax }}{55}{figure.caption.82}
+\contentsline {figure}{\numberline {59}{\ignorespaces Page d'inscription compl\IeC {\`e}te\relax }}{56}{figure.caption.83}
+\contentsline {figure}{\numberline {60}{\ignorespaces Page d'inscription\relax }}{57}{figure.caption.84}
+\contentsline {figure}{\numberline {61}{\ignorespaces Page d'accueil\relax }}{58}{figure.caption.85}
+\contentsline {figure}{\numberline {62}{\ignorespaces Liste des recours pour un \IeC {\'e}tudiant\relax }}{59}{figure.caption.86}
+\contentsline {figure}{\numberline {63}{\ignorespaces Ajouter Un Recours\relax }}{59}{figure.caption.87}
+\contentsline {figure}{\numberline {64}{\ignorespaces Modifier Un Recours\relax }}{60}{figure.caption.88}
+\contentsline {figure}{\numberline {65}{\ignorespaces Consulter Un Recours (\IeC {\'E}tudiant)\relax }}{60}{figure.caption.89}
+\contentsline {figure}{\numberline {66}{\ignorespaces Param\IeC {\`e}tres\relax }}{61}{figure.caption.90}
+\contentsline {figure}{\numberline {67}{\ignorespaces Liste des recours pour un enseignant\relax }}{62}{figure.caption.91}
+\contentsline {figure}{\numberline {68}{\ignorespaces Recours Refus\IeC {\'e}s\relax }}{63}{figure.caption.92}
+\contentsline {figure}{\numberline {69}{\ignorespaces Consulter Un Recours (Enseignant)\relax }}{63}{figure.caption.93}
+\contentsline {figure}{\numberline {70}{\ignorespaces Liste des utilisateurs\relax }}{64}{figure.caption.94}
+\contentsline {figure}{\numberline {71}{\ignorespaces Liste des utilisateurs (Recherche)\relax }}{65}{figure.caption.95}
+\contentsline {figure}{\numberline {72}{\ignorespaces Ajouter Un Utilisateur\relax }}{65}{figure.caption.96}
+\contentsline {figure}{\numberline {73}{\ignorespaces Modifier Un Utilisateur\relax }}{66}{figure.caption.97}
+\contentsline {figure}{\numberline {74}{\ignorespaces Consulter Un Utilisateur\relax }}{66}{figure.caption.98}
+\contentsline {figure}{\numberline {75}{\ignorespaces Page de trafic\relax }}{67}{figure.caption.99}
+\contentsline {figure}{\numberline {76}{\ignorespaces Page du tableau de bord\relax }}{68}{figure.caption.100}
+\contentsline {figure}{\numberline {77}{\ignorespaces Page du tableau de bord 2\relax }}{69}{figure.caption.101}
+\contentsline {figure}{\numberline {78}{\ignorespaces Page des graphiques\relax }}{70}{figure.caption.102}
+\contentsline {figure}{\numberline {79}{\ignorespaces Page des graphiques 2\relax }}{70}{figure.caption.103}
+\contentsline {figure}{\numberline {80}{\ignorespaces Page contactez-nous\relax }}{71}{figure.caption.104}

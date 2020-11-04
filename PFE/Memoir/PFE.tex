@@ -913,8 +913,6 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Fiche descriptive <<Gérer les étudiants>>}
 \end{table}
 
-\newpage
-
 \begin{figure}[H]
 \centering
   \vspace{-0.1in}
@@ -922,6 +920,8 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Diagramme de cas d'utilisation pour l'enseignant}
   \vspace*{-0.3in}
 \end{figure}
+
+\newpage
 
 \vspace{0.1in}
 
@@ -937,9 +937,11 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \item L'enseignant doit s'authentifier pour gérer les recours qui ont été soumis.
 \end{itemize}
 
-\newpage
+\vspace{0.2in}
 
 \textbf{Cas d'utilisation détaillée :}
+
+\vspace{0.2in}
 
 \begin{figure}[h]
 \centering
@@ -977,7 +979,7 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 
 \begin{figure}[h]
 \centering
-    \centerline{\fbox{\includegraphics[width = 6.6in, height = 3.0in]{../Conception/Usecase/PNG/Etudiant.png}}}
+    \centerline{\fbox{\includegraphics[width = 6.6in, height = 3in]{../Conception/Usecase/PNG/Etudiant.png}}}
     \caption{Diagramme de cas d'utilisation pour l'étudiant}
 \end{figure}
 
@@ -987,49 +989,12 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 
 \begin{itemize}
     \item L'étudiant peut s'inscrire.
-    \item L'étudiant choisira d'ajouter, modifier, supprimer ou bien consulter un recours.
-    \item L'étudiant doit s'authentifier pour gérer ses recours.
+    \item L'étudiant choisira d'ajouter, modifier, supprimer ou consulter un recours après l’authentifié.
 \end{itemize}
-
-\newpage
 
 \textbf{Cas d'utilisation détaillée :}
 
-\begin{figure}[h]
-\centering
-    \centerline{\fbox{\includegraphics[width = 6in, height = 1in]{../Conception/Usecase/PNG/Details/AjouterRecours.png}}}
-    \caption{Cas d'utilisation <<Ajouter un recours>>}
-\end{figure}
-
-%\vspace{0.6in}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|l|}
-\hline
-\rowcolor[HTML]{ECF4FF}
-\textbf{Nom de cas d'utilisation}  & Ajouter un recours                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
-\rowcolor[HTML]{DAE8FC}
-\textbf{Acteur Principale}         & Étudiant                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
-\rowcolor[HTML]{ECF4FF}
-\textbf{Acteur Secondaire}         & Site Web                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
-\rowcolor[HTML]{DAE8FC}
-\textbf{Objectif}                  & \begin{tabular}[c]{@{}l@{}}Donner à l'étudiant la possibilité d'ajouter un recours avec\\ ses informations (module, enseignant, description,...).\end{tabular}                                                                                                                                                                                                                                                                          \\ \hline
-\rowcolor[HTML]{ECF4FF}
-\textbf{Pré condition}             & Authentification                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
-\rowcolor[HTML]{DAE8FC}
-\textbf{Séquencement nominal}      & \begin{tabular}[c]{@{}l@{}}1. Lancer l’application Web et s’authentifier en tant qu’étudiant.\\ 2. Remplir les informations (nom, prénom, matricule,...).\\ 3. Choisissez le module et la filière.\\ 4. Ajouter une explication (commentaire) sur l'endroit où le\\ défaut pourrait être (nombre d'exercice ou question...).\\ 5. Ajoutez une photo pour une description détaillée (facultative).\\ 6. Soumettre le recours.\end{tabular}   \\ \hline
-\rowcolor[HTML]{ECF4FF}
-    \textbf{Séquencement alternatif}   & \begin{tabular}[c]{@{}l@{}}A1. Si les informations ne correspondent pas à l'étudiant, nous\\ générons un message d'erreur.\end{tabular}                                                                                                                                                                                                                                                                                                                           \\ \hline
-\rowcolor[HTML]{DAE8FC}
-\textbf{Séquencement exceptionnel} & \begin{tabular}[c]{@{}l@{}}- En cas ou la connexion ou le serveur n’est pas disponible on\\ actualise la page et retourne l’étudiant à la page d’accueil.\end{tabular}                                                                                                                                                                                                                                                                                             \\ \hline
-\rowcolor[HTML]{ECF4FF}
-\textbf{Post condition}            & \begin{tabular}[c]{@{}l@{}}- Nous devons nous assurer qu'une copie de ce que l'étudiant a\\ entré est enregistrée en temps réel afin de ne pas perdre\\ d'informations (dans la machine de l'utilisateur en tant que fichier\\ temporaire et dans notre serveur si la connexion est bien établie).\\ - Assurer la livraison du recours aux enseignant.\\ - Nous voulons nous assurer que l'étudiant est informé de la\\ livraison du recours.\end{tabular} \\ \hline
-\end{tabular}
-    \caption{Fiche descriptive <<Ajouter un recours>>}
-\end{table}
-
-\newpage
+\vspace*{0.1in}
 
 \begin{figure}[h]
 \centering
@@ -1037,9 +1002,10 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Cas d'utilisation <<Modifier un recours>>}
 \end{figure}
 
-\vspace{-0.15in}
+\vspace*{-0.1in}
 
 \begin{table}[h]
+  \vspace*{-0.01in}
 \centering
 \begin{tabular}{|c|l|}
 \hline
@@ -1063,16 +1029,54 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 \textbf{Post condition}            & \begin{tabular}[c]{@{}l@{}}- Assurer la livraison du nouveau recours aux enseignant.\\ - Informer l’étudiant que le recours à été modifié avec succès.\end{tabular}                                                         \\ \hline
 \end{tabular}
     \caption{Fiche descriptive <<Modifier un recours>>}
+  \vspace*{-0.7in}
 \end{table}
 
 \newpage
 
 \begin{figure}[h]
 \centering
+    \centerline{\fbox{\includegraphics[width = 6in, height = 1in]{../Conception/Usecase/PNG/Details/AjouterRecours.png}}}
+    \caption{Cas d'utilisation <<Ajouter un recours>>}
+\end{figure}
+
+\vspace*{-0.1in}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\rowcolor[HTML]{ECF4FF}
+\textbf{Nom de cas d'utilisation}  & Ajouter un recours                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+\rowcolor[HTML]{DAE8FC}
+\textbf{Acteur Principale}         & Étudiant                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\rowcolor[HTML]{ECF4FF}
+\textbf{Acteur Secondaire}         & Site Web                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\rowcolor[HTML]{DAE8FC}
+\textbf{Objectif}                  & \begin{tabular}[c]{@{}l@{}}Donner à l'étudiant la possibilité d'ajouter un recours avec\\ ses informations (module, enseignant, description,...).\end{tabular}                                                                                                                                                                                                                                                                          \\ \hline
+\rowcolor[HTML]{ECF4FF}
+\textbf{Pré condition}             & Authentification                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
+\rowcolor[HTML]{DAE8FC}
+\textbf{Séquencement nominal}      & \begin{tabular}[c]{@{}l@{}}1. Lancer l’application Web et s’authentifier en tant qu’étudiant.\\ 2. Remplir les informations (nom, prénom, matricule,...).\\ 3. Choisissez le module et la filière.\\ 4. Ajouter une explication (commentaire) sur l'endroit où le\\ défaut pourrait être (nombre d'exercice ou question...).\\ 5. Ajoutez une photo pour une description détaillée (facultative).\\ 6. Soumettre le recours.\end{tabular}   \\ \hline
+\rowcolor[HTML]{ECF4FF}
+    \textbf{Séquencement alternatif}   & \begin{tabular}[c]{@{}l@{}}A1. Si les informations ne correspondent pas à l'étudiant, nous\\ générons un message d'erreur.\end{tabular}                                                                                                                                                                                                                                                                                                                           \\ \hline
+\rowcolor[HTML]{DAE8FC}
+\textbf{Séquencement exceptionnel} & \begin{tabular}[c]{@{}l@{}}- En cas ou la connexion ou le serveur n’est pas disponible on\\ actualise la page et retourne l’étudiant à la page d’accueil.\end{tabular}                                                                                                                                                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{ECF4FF}
+\textbf{Post condition}            & \begin{tabular}[c]{@{}l@{}}- Enregistrez plusieurs copies pour ne pas perdre le recours.\\ - Assurer la livraison du recours aux enseignant.\\ - Nous voulons nous assurer que l'étudiant est informé de la\\ livraison du recours.\end{tabular} \\ \hline
+\end{tabular}
+    \caption{Fiche descriptive <<Ajouter un recours>>}
+  \vspace*{-0.2in}
+\end{table}
+
+\begin{figure}[H]
+\centering
     \centerline{\fbox{\includegraphics[width = 6in, height = 1in]{../Conception/Usecase/PNG/Details/SupprimerRecours.png}}}
     \vspace{-0.08in}
     \caption{Cas d'utilisation <<Supprimer un recours>>}
 \end{figure}
+
+\vspace{-0.15in}
 
 \begin{table}[h]
 \centering
@@ -1096,9 +1100,10 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 \textbf{Post condition}            & - Informer l'étudiant que le recours a bien été supprimé.                                                                                                                                    \\ \hline
 \end{tabular}
     \caption{Fiche descriptive <<Supprimer un recours>>}
+  \vspace*{-2in}
 \end{table}
 
-\vspace{-0.1in}
+\newpage
 
 \begin{figure}[h]
 \centering
@@ -1107,7 +1112,9 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Cas d'utilisation <<S'inscrire>>}
 \end{figure}
 
-\begin{table}[H]
+\vspace*{-0.1in}
+
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|l|}
 \hline
@@ -1122,9 +1129,9 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 \rowcolor[HTML]{ECF4FF}
 \textbf{Pré condition}             & Connexion internet                                                                                                                                                                                                            \\ \hline
 \rowcolor[HTML]{DAE8FC}
-\textbf{Séquencement nominal}      & \begin{tabular}[c]{@{}l@{}}1. Choisissez l'option d'inscription dans l'écran de ‘Login’.\\ 2. Remplir les informations (nom, prénom, matricule,...).\\ 3. Validez l'émail par le code reçu dans la boite émail.\end{tabular} \\ \hline
+\textbf{Séquencement nominal}      & \begin{tabular}[c]{@{}l@{}}1. Choisissez l'option d'inscription dans l'écran de ‘Login’.\\ 2. Remplir les informations (nom, prénom, matricule,...).\\ 3. Validez l'email par le code reçu dans la boite email.\end{tabular} \\ \hline
 \rowcolor[HTML]{ECF4FF}
-\textbf{Séquencement alternatif}   & \begin{tabular}[c]{@{}l@{}}A1. Validation du formulaire s'il y a des champs vides ou un\\ émail invalide (doit être au format émail '@ x.z') ou les mots\\ de passe ne correspondent pas.\end{tabular}                       \\ \hline
+\textbf{Séquencement alternatif}   & \begin{tabular}[c]{@{}l@{}}A1. Validation du formulaire s'il y a des champs vides ou un\\ email invalide (doit être au format email '@ x.z') ou les mots\\ de passe ne correspondent pas.\end{tabular}                       \\ \hline
 \rowcolor[HTML]{DAE8FC}
 \textbf{Séquencement exceptionnel} & \begin{tabular}[c]{@{}l@{}}- En cas ou la connexion ou le serveur n’est pas disponible on\\ actualise la page ou affiche un erreur de connexion.\end{tabular}                                                                 \\ \hline
 \end{tabular}
@@ -1132,25 +1139,21 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Fiche descriptive <<S'inscrire>>}
 \end{table}
 
-\newpage
+\vspace{-0.15in}
 
 \subsection{Diagrammes de séquence}
 
 Un diagramme de séquence montre les interactions d'objets organisées en séquence temporelle. Il décrit les objets et les classes impliqués dans le scénario et la séquence de messages échangés entre les objets nécessaires pour exécuter la fonctionnalité du scénario. Les diagrammes de séquence sont généralement associés aux réalisations de cas d'utilisation dans la vue logique du système en cours de développement. Les diagrammes de séquence sont parfois appelés diagrammes d'événements ou scénarios d'événements.
-\\
-Un diagramme de séquence montre, sous forme de lignes verticales parallèles (lignes de vie), différents processus ou objets qui vivent simultanément, et, sous forme de flèches horizontales, les messages échangés entre eux, dans l'ordre dans lequel ils se produisent. Cela permet de spécifier des scénarios d'exécution simples de manière graphique.
-\\
-Si la ligne de vie est celle d'un objet, elle démontre un rôle. Laisser le nom d'instance vide peut représenter des instances anonymes et sans nom.
-\\
-Les messages, écrits avec des flèches horizontales avec le nom du message écrit au-dessus d'eux, affichent une interaction. Les flèches pleines représentent les appels synchrones, les flèches ouvertes représentent les messages asynchrones et les lignes en pointillés représentent les messages de réponse. Si un appelant envoie un message synchrone, il doit attendre que le message soit terminé, par exemple en invoquant un sous-programme. Si un appelant envoie un message asynchrone, il peut continuer le traitement et n’a pas à attendre de réponse. Les appels asynchrones sont présents dans les applications multithreads, les applications événementielles et les middleware orientés message. Les boîtes d'activation, ou boîtes d'appel de méthode, sont des rectangles opaques dessinés au-dessus des lignes de vie pour représenter que les processus sont exécutés en réponse au message\\ (ExecutionSpecifications in UML).
 
 \vspace{0.2in}
 
 \begin{figure}[h]
 \centering
-    \centerline{\includegraphics[width = 3.5in, height = 2.6in]{../Images/DiagSeqEX.png}}
+    \centerline{\includegraphics[width = 3.2in, height = 2.5in]{../Images/DiagSeqEX.png}}
     \caption{Exemple de diagramme de séquence}
 \end{figure}
+
+\newpage
 
 \subsubsection{\large{Les diagrammes de séquences avec descriptions}}
 
@@ -1168,7 +1171,7 @@ Les messages, écrits avec des flèches horizontales avec le nom du message écr
         \item Enseignant. (Diplôme, Module...)
         \item Étudiant.
     \end{itemize}
-    \item Validation formulaire ``émail sous la forme @x.y, Caractères spéciaux''
+    \item Validation formulaire ``email sous la forme @x.y, Caractères spéciaux''
     \item Sauvegarde des données.
 \end{itemize}
 
