@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{robbins2012learning}
+Robbins, J.~N. (2012)
+Learning web design: A beginner's guide to HTML, CSS, JavaScript, and web
+  graphics,
+" O'Reilly Media, Inc.", .
+
+\bibitem{osmani2012learning}
+Osmani, A. (2012)
+Learning JavaScript Design Patterns: A JavaScript and jQuery Developer's Guide,
+" O'Reilly Media, Inc.", .
+
+\bibitem{schulz2007hacking}
+Schulz, K. (2007)
+Hacking Vim: a cookbook to get the most out of the latest Vim editor,
+Packt Publishing Ltd, .
+
+\bibitem{prettyman2016learn}
+Prettyman, S. (2016)
+Learn PHP 7,
+Springer, .
+
+\bibitem{supaartagorn2011php}
+Supaartagorn, C. (2011)
+PHP Framework for database management based on MVC pattern.
+{\em International Journal of Computer Science \& Information Technology
+  (IJCSIT),} {\bf 3}(2), 251--258.
+
+\bibitem{converse2004php5}
+Converse, T., Park, J., and Morgan, C. (2004)
+PHP5 and MySQL bible, Vol. 147,
+John Wiley \& Sons, .
+
+\end{thebibliography}

@@ -63,6 +63,9 @@
 % Redifining from 0.1 to 1 ... 2 ... and so on
 \renewcommand{\thesection}{\arabic{section}}
 
+% Renaming Bibliography name
+\renewcommand\bibname{Bibliographie}
+
 % Redifining from 1.1 to 1.a ... 1.b ... and so on
 %\renewcommand{\thesubsection}{\alph{subsection}}
 
@@ -140,7 +143,7 @@
    \renewcommand{\footrulewidth}{0pt}%
    \fancyhead{}
    \fancyfoot{}
-   \fancyfoot[C]{\vspace{-0.35in}\textcolor{Gray}{\Large{Page}}\hspace{0.04in} \large{\thepage}\hspace{0.07in}\large{|}\hspace{0.07in}\large{71}}%\pageref{LastPage}}}
+   \fancyfoot[C]{\vspace{-0.35in}\textcolor{Gray}{\Large{Page}}\hspace{0.04in} \large{\thepage}\hspace{0.07in}\large{|}\hspace{0.07in}\large{70}}%\pageref{LastPage}}}
 }%
 \pagestyle{empty}
 
@@ -566,7 +569,7 @@ Les outils de développement Web (souvent appelés devtools) permettent aux dév
 \\\\
 Les outils de développement Web sont des modules complémentaires de navigateur ou des fonctionnalités intégrées dans les navigateurs Web. Les navigateurs Web les plus populaires, tels que Google Chrome, Firefox, Internet Explorer, Safari et Opera, ont des outils intégrés pour aider les développeurs Web, et de nombreux modules complémentaires peuvent être trouvés dans leurs centres de téléchargement de plugins respectifs.
 \\\\
-Les outils de développement Web permettent aux développeurs de travailler avec diverses technologies Web, notamment HTML, CSS, DOM, JavaScript et d'autres composants gérés par le navigateur Web. En raison de la demande croissante des navigateurs Web pour en faire plus, les navigateurs Web populaires ont inclus plus de fonctionnalités destinées aux développeurs.
+Les outils de développement Web permettent aux développeurs de travailler avec diverses technologies Web, notamment HTML, CSS, DOM, JavaScript et d'autres composants gérés par le navigateur Web. En raison de la demande croissante des navigateurs Web pour en faire plus, les navigateurs Web populaires ont inclus plus de fonctionnalités destinées aux développeurs. \cite{robbins2012learning} \cite{osmani2012learning}
 \\\\
 Nous allons utiliser la plupart des outils listés ci-dessus.
 \\
@@ -785,7 +788,7 @@ Graphviz est un logiciel de visualisation graphique open source. La visualisatio
 \newpage
 
 \subsection{Vim}
-Vim est le programme le plus important (une contraction de Vi IMproved) est un clone, avec des ajouts, Il est conçu pour être utilisé à la fois à partir d'une interface de ligne de commande (TUI) et en tant qu'application autonome dans une interface utilisateur graphique. Vim est un logiciel gratuit et open-source et est publié sous une licence qui inclut des clauses de charityware, encourageant les utilisateurs qui apprécient le logiciel à envisager de faire un don à des enfants en Ouganda. La licence est compatible avec la Licence Publique Générale GNU grâce à une clause spéciale permettant la distribution de copies modifiées "sous la version 2 de GNU GPL ou toute version ultérieure".
+Vim est le programme le plus important (une contraction de Vi IMproved) est un clone, avec des ajouts, Il est conçu pour être utilisé à la fois à partir d'une interface de ligne de commande (TUI) et en tant qu'application autonome dans une interface utilisateur graphique. Vim est un logiciel gratuit et open-source et est publié sous une licence qui inclut des clauses de charityware, encourageant les utilisateurs qui apprécient le logiciel à envisager de faire un don à des enfants en Ouganda. La licence est compatible avec la Licence Publique Générale GNU grâce à une clause spéciale permettant la distribution de copies modifiées "sous la version 2 de GNU GPL ou toute version ultérieure". \cite{schulz2007hacking}
 
 \vspace{0.2in}
 
@@ -1624,7 +1627,7 @@ Nous allons creuser profondément dans le backend et le frontend et comment nous
 \subsection{HTML}
 
 Hyper Text Markup Language (HTML) est le langage de balisage standard pour les documents conçus pour être affichés dans un navigateur Web. Il peut être assisté par des technologies telles que les feuilles de style en cascade (CSS) et des langages de script tels que JavaScript.
-Les navigateurs Web reçoivent des documents HTML d'un serveur Web ou d'un stockage local et convertissent les documents en pages Web multimédias. HTML décrit la structure d'une page Web de manière sémantique et inclut à l'origine des indices pour l'apparence du document.
+Les navigateurs Web reçoivent des documents HTML d'un serveur Web ou d'un stockage local et convertissent les documents en pages Web multimédias. HTML décrit la structure d'une page Web de manière sémantique et inclut à l'origine des indices pour l'apparence du document. \cite{robbins2012learning}
 
 \vspace{0.6in}
 
@@ -1640,7 +1643,7 @@ Les navigateurs Web reçoivent des documents HTML d'un serveur Web ou d'un stock
 
 Cascading Style Sheets (CSS) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit dans un langage de balisage comme HTML. CSS est une technologie de base du World Wide Web, avec HTML et JavaScript.
 \\
-CSS est conçu pour permettre la séparation de la présentation et du contenu, y compris la mise en page, les couleurs et les polices. Cette séparation peut améliorer l'accessibilité du contenu, fournir plus de flexibilité et de contrôle dans la spécification des caractéristiques de présentation, permettre à plusieurs pages Web de partager le formatage en spécifiant le CSS pertinent dans un fichier .css séparé, ce qui réduit la complexité et la répétition dans le contenu structurel et permet le fichier .css à mettre en cache pour améliorer la vitesse de chargement des pages entre les pages qui partagent le fichier et son formatage.
+CSS est conçu pour permettre la séparation de la présentation et du contenu, y compris la mise en page, les couleurs et les polices. Cette séparation peut améliorer l'accessibilité du contenu, fournir plus de flexibilité et de contrôle dans la spécification des caractéristiques de présentation, permettre à plusieurs pages Web de partager le formatage en spécifiant le CSS pertinent dans un fichier .css séparé, ce qui réduit la complexité et la répétition dans le contenu structurel et permet le fichier .css à mettre en cache pour améliorer la vitesse de chargement des pages entre les pages qui partagent le fichier et son formatage. \cite{robbins2012learning}
 
 \vspace{0.22in}
 
@@ -1665,7 +1668,7 @@ Bootstrap est un framework CSS gratuit et open-source destiné au développement
 
 \subsection{Javascript}
 
-JavaScript, souvent abrégé en JS, est un langage de programmation conforme à la spécification ECMAScript. JavaScript est de haut niveau, souvent compilé juste à temps et multi-paradigme. Il a une syntaxe entre crochets, un typage dynamique, une orientation d'objet basée sur un prototype et des fonctions de première classe.
+JavaScript, souvent abrégé en JS, est un langage de programmation conforme à la spécification ECMAScript. JavaScript est de haut niveau, souvent compilé juste à temps et multi-paradigme. Il a une syntaxe entre crochets, un typage dynamique, une orientation d'objet basée sur un prototype et des fonctions de première classe. \cite{robbins2012learning} \cite{osmani2012learning}
 \\
 JavaScript est l'une des technologies de base du World Wide Web.
 \\
@@ -1683,7 +1686,7 @@ Nous avons utilisé javascript principalement pour la validation des utilisateur
 
 \subsection{PHP}
 
-PHP est un langage de script à usage général qui est particulièrement adapté au développement Web. Il a été créé à l'origine par le programmeur danois-canadien Rasmus Lerdorf en 1994, l'implémentation de référence PHP est maintenant produite par The PHP Group. PHP signifiait à l'origine Personal Home Page, mais il représente maintenant l'initialisme récursif PHP : Hypertext Preprocessor.
+PHP est un langage de script à usage général qui est particulièrement adapté au développement Web. Il a été créé à l'origine par le programmeur danois-canadien Rasmus Lerdorf en 1994, l'implémentation de référence PHP est maintenant produite par The PHP Group. PHP signifiait à l'origine Personal Home Page, mais il représente maintenant l'initialisme récursif PHP : Hypertext Preprocessor. \cite{prettyman2016learn} \cite{supaartagorn2011php} \cite{converse2004php5}
 \\
 Il a été utilisé pour manipuler le code HTML CSS et MySQL pour établir des relations entre la base de données et la page Web principale.
 
@@ -1700,7 +1703,7 @@ Il a été utilisé pour manipuler le code HTML CSS et MySQL pour établir des r
 
 \subsection{MySQL}
 
-MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Son nom est une combinaison de "My", le nom de la fille du co-fondateur Michael Widenius, et "SQL", l'abréviation de Structured Query Language. Une base de données relationnelle organise les données en une ou plusieurs tables de données dans lesquelles les types de données peuvent être liés les uns aux autres, ces relations aident à structurer les données.
+MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Son nom est une combinaison de "My", le nom de la fille du co-fondateur Michael Widenius, et "SQL", l'abréviation de Structured Query Language. Une base de données relationnelle organise les données en une ou plusieurs tables de données dans lesquelles les types de données peuvent être liés les uns aux autres, ces relations aident à structurer les données. \cite{converse2004php5}
 
 \begin{figure}[h]
 \centering
@@ -1713,7 +1716,7 @@ MySQL est un système de gestion de base de données relationnelle (SGBDR) open 
 
 \subsection{Vim}
 
-Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fiable qui aide beaucoup en termes de flux de travail et pour couronner le tout, il a divers plugins qui aident tellement avec tout travail qui doit être fait, pour cela section du développement Web, nous avons utilisé des plugins comme Syntastic pour générer des erreurs de syntaxe en temps réel et YouCompletMe pour une auto-complétion de code facile, également Emmet pour générer des extraits (Code Snippets) comme des balises HTML en très peu de clics de clavier, et bien d'autres plugins...
+Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fiable qui aide beaucoup en termes de flux de travail et pour couronner le tout, il a divers plugins qui aident tellement avec tout travail qui doit être fait, pour cela section du développement Web, nous avons utilisé des plugins comme Syntastic pour générer des erreurs de syntaxe en temps réel et YouCompletMe pour une auto-complétion de code facile, également Emmet pour générer des extraits (Code Snippets) comme des balises HTML en très peu de clics de clavier, et bien d'autres plugins... \cite{schulz2007hacking}
 
 \vspace{0.3in}
 
@@ -1758,7 +1761,7 @@ Utilisé pour afficher notre page Web dans un navigateur (Chrome principalement)
 
 \subsection{PhpMyAdmin}
 
-PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et MariaDB, En tant qu'application Web portable écrite principalement en PHP, elle est devenue l'un des outils d'administration MySQL les plus populaires, en particulier pour les services d'hébergement Web (Web hosting).
+PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et MariaDB, En tant qu'application Web portable écrite principalement en PHP, elle est devenue l'un des outils d'administration MySQL les plus populaires, en particulier pour les services d'hébergement Web (Web hosting). \cite{prettyman2016learn} \cite{supaartagorn2011php} \cite{converse2004php5}
 
 \vspace{0.2in}
 
@@ -1772,7 +1775,7 @@ PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et Ma
 
 Pour nous aider à construire un site Web bien formé, nous avons choisi d'adopter MVC :
 \\
-Model - View - Controller (généralement connu sous le nom de MVC) est un modèle de conception de logiciel couramment utilisé pour développer des interfaces utilisateur qui divise la logique de programme associée en trois éléments inter-connectés. Ceci est fait pour séparer les représentations internes des informations de la manière dont les informations sont présentées et acceptées par l'utilisateur. Ce type de motif est utilisé pour concevoir la mise en page de la page.
+Model - View - Controller (généralement connu sous le nom de MVC) est un modèle de conception de logiciel couramment utilisé pour développer des interfaces utilisateur qui divise la logique de programme associée en trois éléments inter-connectés. Ceci est fait pour séparer les représentations internes des informations de la manière dont les informations sont présentées et acceptées par l'utilisateur. Ce type de motif est utilisé pour concevoir la mise en page de la page. \cite{supaartagorn2011php}
 
 \begin{figure}[h]
 \centering
@@ -2156,93 +2159,55 @@ C'est grâce a ce projet que nous avons eu l'opportunité de rumuler les connais
 
 \newpage
 
-\vspace*{-0.2in}
-
-\begin{center}
-    {\color{Blue} \rule{5.5in}{1.4mm} }\\
-    \vspace{0.1in}
-    \scshape{\fontsize{34}{46}{\bfseries{\color{Blue}{Bibliographie}}}}
-    \\
-    \vspace{0.5in}
-\end{center}
 \addcontentsline{toc}{chapter}{\vspace{-0.12in}\color{Blue}{Bibliographie}}
-\large
-\renewcommand{\ULdepth}{1.8pt}
 
-{[1]} \quad Robbins, JN. (2012). Learning web design: A beginner's guide to HTML,
-\\
-\hspace*{0.43in}
-CSS, JavaScript, and web graphics. O'Reilly Media, Canada.
-\\\\
-{[2]} \quad Prettyman, S. (2016). Learn PHP 7: Object-Oriented Modular Programming
-\\
-\hspace*{0.43in}
-using HTML5, CSS3, JavaScript, XML, JSON, and MySQL. Apress, USA.
-\\\\
-{[3]} \quad Supaartagorn, C. (2011). PHP Framework for database management based
-\\
-\hspace*{0.43in}
-on MVC pattern. International Journal of Computer Science \& Information
-\\
-\hspace*{0.43in}
-Technology (IJCSIT), Vol.3, No.2, pp.251-257.
-\\\\
-{[4]} \quad Converse, T. and Park, J. and Morgan, C. (2004). PHP5 and MySQL bible.
-\\
-\hspace*{0.43in}
-Wiley Publishing, Inc. USA.
-\\\\
-{[5]} \quad Schulz, K. (2007). Hacking Vim: a cookbook to get the most out of the latest
-\\
-\hspace*{0.43in}
-Vim editor. Packt Publishing Ltd, Birmingham, UK.
-\\\\
-{[6]} \quad Osmani, A. (2012). Learning JavaScript Design Patterns. O’Reilly Media.
-
+\def\thispagestyle#1{}
+\bibliography{PFE}
+\bibliographystyle{nar}
 
 \newpage
-
-\vspace*{-0.2in}
-
-\begin{center}
-    {\color{Blue} \rule{5.5in}{1.4mm} }\\
-    \vspace{0.1in}
-    \scshape{\fontsize{34}{46}{\bfseries{\color{Blue}{Webographie}}}}
-    \\
-    \vspace{0.5in}
-\end{center}
-\addcontentsline{toc}{chapter}{\vspace{-0.12in}\color{Blue}{Webographie}}
-\large
-\renewcommand{\ULdepth}{1.8pt}
-\textbf{[Github][}Notre Site-Web sur github\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.github.com/nemo256/DashRecours}}}
-\\
-\textbf{[Wikipedia][}Où nous avons obtenu la plupart de nos informations\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.wikipedia.org}}}
-\\
-\textbf{[PlantUML][}Comment nous avons codé les diagrammes UML\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://plantuml.com}}}
-\\
-\textbf{[University Information System][}Un projet proche du nôtre\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}}}
-\\
-\textbf{[ProjectLibre Wiki][}Obtenu quelques réponses sur projectlibre\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.projectlibre.com/wiki/projectlibre-documentation}}}
-\\
-\textbf{[StackOverflow][}Obtenu des réponses à plusieurs de nos questions\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://stackoverflow.com}}}
-\\
-\textbf{[PHP][}Documentation très utile pour php\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.php.net/manual/en/}}}
-\\
-\textbf{[ChartJS][}Comment nous avons généré tous nos graphiques\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://www.chartjs.org/docs/latest/}}}
-\\
-\textbf{[MySQL][}Documentation de MySQL\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://dev.mysql.com/doc/refman/8.0/en/}}}
-\\
-\textbf{[Latex Package Documentation][}Documentation de chaque package de latex\textbf{]}\\
-\textcolor{blue}{\uline{\url{https://texdoc.net}}}
+%
+%\vspace*{-0.2in}
+%
+%\begin{center}
+%    {\color{Blue} \rule{5.5in}{1.4mm} }\\
+%    \vspace{0.1in}
+%    \scshape{\fontsize{34}{46}{\bfseries{\color{Blue}{Webographie}}}}
+%    \\
+%    \vspace{0.5in}
+%\end{center}
+%\addcontentsline{toc}{chapter}{\vspace{-0.12in}\color{Blue}{Webographie}}
+%\large
+%\renewcommand{\ULdepth}{1.8pt}
+%\textbf{[Github][}Notre Site-Web sur github\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.github.com/nemo256/DashRecours}}}
+%\\
+%\textbf{[Wikipedia][}Où nous avons obtenu la plupart de nos informations\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.wikipedia.org}}}
+%\\
+%\textbf{[PlantUML][}Comment nous avons codé les diagrammes UML\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://plantuml.com}}}
+%\\
+%\textbf{[University Information System][}Un projet proche du nôtre\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}}}
+%\\
+%\textbf{[ProjectLibre Wiki][}Obtenu quelques réponses sur projectlibre\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.projectlibre.com/wiki/projectlibre-documentation}}}
+%\\
+%\textbf{[StackOverflow][}Obtenu des réponses à plusieurs de nos questions\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://stackoverflow.com}}}
+%\\
+%\textbf{[PHP][}Documentation très utile pour php\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.php.net/manual/en/}}}
+%\\
+%\textbf{[ChartJS][}Comment nous avons généré tous nos graphiques\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://www.chartjs.org/docs/latest/}}}
+%\\
+%\textbf{[MySQL][}Documentation de MySQL\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://dev.mysql.com/doc/refman/8.0/en/}}}
+%\\
+%\textbf{[Latex Package Documentation][}Documentation de chaque package de latex\textbf{]}\\
+%\textcolor{blue}{\uline{\url{https://texdoc.net}}}
 
 
 
