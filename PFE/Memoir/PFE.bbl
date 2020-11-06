@@ -2,7 +2,7 @@
 
 \bibitem{hadoop}
 {Apache Software Foundation}.
-\newblock Hadoop.
+\newblock Hadoop, 2010.
 \newblock URL: \url{https://hadoop.apache.org}.
 
 \bibitem{berners2001semantic}
@@ -17,7 +17,7 @@ Grady Booch.
 
 \bibitem{vim}
 {Bram Moolenaar}.
-\newblock Vim.
+\newblock Vim, 2019.
 \newblock URL: \url{https://www.vim.org/}.
 
 \bibitem{converse2004php5}
@@ -50,7 +50,7 @@ Jennifer~Niederst Robbins.
 
 \bibitem{roques2017plantuml}
 Arnaud Roques.
-\newblock Plantuml.
+\newblock Plantuml, 2017.
 \newblock URL: \url{https://plantuml.com/}.
 
 \bibitem{schulz2007hacking}
@@ -61,7 +61,7 @@ Kim Schulz.
 
 \bibitem{UIS}
 Shaswat Shukla.
-\newblock University information sysytem.
+\newblock University information sysytem, 2014.
 \newblock URL:
   \url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}.
 

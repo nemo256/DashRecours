@@ -92,4 +92,4 @@
 \contentsline {subsection}{\numberline {6.13}Page contactez-nous}{66}{subsection.0.6.13}
 \contentsline {section}{\numberline {7}Conclusion}{66}{section.0.7}
 \contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{67}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{68}{section.0.7}
+\contentsline {part}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{}{section.0.7}
