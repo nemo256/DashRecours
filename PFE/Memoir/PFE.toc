@@ -1,8 +1,3 @@
-\contentsline {part}{\vspace {-0.12in}\color {Blue}{D\IeC {\'e}dicace}}{}{figure.caption.1}
-\contentsline {part}{\vspace {-0.12in}\color {Blue}{Remerciement}}{}{figure.caption.1}
-\contentsline {part}{\vspace {-0.12in}\color {Blue}{R\IeC {\'e}sum\IeC {\'e}}}{}{figure.caption.1}
-\contentsline {part}{\vspace {-0.12in}\color {Blue}{Abstract}}{}{figure.caption.1}
-\contentsline {part}{\vspace {-0.12in}\color {Blue}{Table des mati\IeC {\`e}res}}{}{figure.caption.1}
 \contentsline {part}{\vspace {-0.12in}\color {Blue}{Liste des figures}}{}{figure.caption.1}
 \contentsline {part}{\vspace {-0.12in}\color {Blue}{Liste des tableaux}}{}{figure.caption.1}
 \renewcommand {\cftsecleader }{\cftdotfill {\cftsecdotsep }}
