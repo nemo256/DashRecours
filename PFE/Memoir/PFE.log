@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.23)  6 NOV 2020 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.23)  6 NOV 2020 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1618,7 +1618,7 @@ name{page.6}) has been already used, duplicate ignored
                    \relax 
 l.549 \newpage
                [6]
-<../Images/webDev.jpeg, id=673, 1204.5pt x 632.3625pt>
+<../Images/webDev.jpeg, id=674, 1204.5pt x 632.3625pt>
 File: ../Images/webDev.jpeg Graphic file (type jpg)
 <use ../Images/webDev.jpeg>
 Package pdftex.def Info: ../Images/webDev.jpeg  used on input line 561.
@@ -1629,7 +1629,7 @@ been already used, duplicate ignored
                    \relax 
 l.565 \newpage
                [7 <../Images/webDev.jpeg>]
-<../Images/webDevTools.jpg, id=679, 513.92pt x 225.84375pt>
+<../Images/webDevTools.jpg, id=681, 513.92pt x 225.84375pt>
 File: ../Images/webDevTools.jpg Graphic file (type jpg)
 <use ../Images/webDevTools.jpg>
 Package pdftex.def Info: ../Images/webDevTools.jpg  used on input line 583.
@@ -1640,7 +1640,7 @@ been already used, duplicate ignored
                    \relax 
 l.587 \newpage
                [8 <../Images/webDevTools.jpg>]
-<../Images/ModeleRecours.png, id=685, 496.85625pt x 536.0025pt>
+<../Images/ModeleRecours.png, id=687, 496.85625pt x 536.0025pt>
 File: ../Images/ModeleRecours.png Graphic file (type png)
 <use ../Images/ModeleRecours.png>
 Package pdftex.def Info: ../Images/ModeleRecours.png  used on input line 604.
@@ -1692,7 +1692,7 @@ l.703 \newpage
                    \relax 
 l.705 \section{Introduction}
                             
-<../Images/Analyse_Conception.png, id=701, 931.48pt x 707.64375pt>
+<../Images/Analyse_Conception.png, id=703, 931.48pt x 707.64375pt>
 File: ../Images/Analyse_Conception.png Graphic file (type png)
 <use ../Images/Analyse_Conception.png>
 Package pdftex.def Info: ../Images/Analyse_Conception.png  used on input line 7
@@ -1705,18 +1705,18 @@ ed
                    \relax 
 l.738 \section{Méthodes utilisée}
                                    
-<../Images/UMLlogo.png, id=708, 1204.5pt x 876.27374pt>
+<../Images/UMLlogo.png, id=710, 1204.5pt x 876.27374pt>
 File: ../Images/UMLlogo.png Graphic file (type png)
 <use ../Images/UMLlogo.png>
 Package pdftex.def Info: ../Images/UMLlogo.png  used on input line 747.
 (pdftex.def)             Requested size: 289.0859pt x 144.5388pt.
-<../Images/plantuml.png, id=711, 225.84375pt x 225.84375pt>
+<../Images/plantuml.png, id=713, 225.84375pt x 225.84375pt>
 File: ../Images/plantuml.png Graphic file (type png)
 <use ../Images/plantuml.png>
 Package pdftex.def Info: ../Images/plantuml.png  used on input line 759.
 (pdftex.def)             Requested size: 260.20763pt x 137.31993pt.
  [14 <../Images/UMLlogo.png> <../Images/plantuml.png>]
-<../Images/PlantumlPreviewer.png, id=721, 2750.275pt x 1345.025pt>
+<../Images/PlantumlPreviewer.png, id=723, 2750.275pt x 1345.025pt>
 File: ../Images/PlantumlPreviewer.png Graphic file (type png)
 <use ../Images/PlantumlPreviewer.png>
 Package pdftex.def Info: ../Images/PlantumlPreviewer.png  used on input line 77
@@ -1727,7 +1727,7 @@ Overfull \hbox (2.13101pt too wide) in paragraph at lines 775--776
  [][] 
  []
 
-<../Images/GraphvizLogo.png, id=723, 317.185pt x 317.185pt>
+<../Images/GraphvizLogo.png, id=724, 317.185pt x 317.185pt>
 File: ../Images/GraphvizLogo.png Graphic file (type png)
 <use ../Images/GraphvizLogo.png>
 Package pdftex.def Info: ../Images/GraphvizLogo.png  used on input line 785.
@@ -1744,13 +1744,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
                    \relax 
 l.802 \section{Diagrammes}
                           
-<../Images/usecaseEG.png, id=735, 244.915pt x 94.3525pt>
+<../Images/usecaseEG.png, id=736, 244.915pt x 94.3525pt>
 File: ../Images/usecaseEG.png Graphic file (type png)
 <use ../Images/usecaseEG.png>
 Package pdftex.def Info: ../Images/usecaseEG.png  used on input line 812.
 (pdftex.def)             Requested size: 216.81514pt x 72.27011pt.
  [16 <../Images/Vim.png> <../Images/usecaseEG.png (PNG copy)>]
-<../Conception/Usecase/PNG/General/Utilisateur3.png, id=742, 1327.96124pt x 533
+<../Conception/Usecase/PNG/General/Utilisateur3.png, id=744, 1327.96124pt x 533
 .995pt>
 File: ../Conception/Usecase/PNG/General/Utilisateur3.png Graphic file (type png
 )
@@ -1759,7 +1759,7 @@ Package pdftex.def Info: ../Conception/Usecase/PNG/General/Utilisateur3.png  us
 ed on input line 859.
 (pdftex.def)             Requested size: 476.97148pt x 224.04007pt.
  [17 <../Conception/Usecase/PNG/General/Utilisateur3.png>]
-<../Conception/Usecase/PNG/Administrateur.png, id=750, 1093.08376pt x 902.37125
+<../Conception/Usecase/PNG/Administrateur.png, id=752, 1093.08376pt x 902.37125
 pt>
 File: ../Conception/Usecase/PNG/Administrateur.png Graphic file (type png)
 <use ../Conception/Usecase/PNG/Administrateur.png>
@@ -1767,14 +1767,14 @@ Package pdftex.def Info: ../Conception/Usecase/PNG/Administrateur.png  used on
 input line 867.
 (pdftex.def)             Requested size: 476.98871pt x 448.07271pt.
  [18 <../Conception/Usecase/PNG/Administrateur.png>]
-<../Conception/Usecase/PNG/Details/GererET.png, id=756, 1444.39626pt x 283.0575
+<../Conception/Usecase/PNG/Details/GererET.png, id=758, 1444.39626pt x 283.0575
 pt>
 File: ../Conception/Usecase/PNG/Details/GererET.png Graphic file (type png)
 <use ../Conception/Usecase/PNG/Details/GererET.png>
 Package pdftex.def Info: ../Conception/Usecase/PNG/Details/GererET.png  used on
  input line 892.
 (pdftex.def)             Requested size: 433.60873pt x 72.26724pt.
-<../Conception/Usecase/PNG/Enseignant.png, id=757, 1444.39626pt x 470.75874pt>
+<../Conception/Usecase/PNG/Enseignant.png, id=759, 1444.39626pt x 470.75874pt>
 File: ../Conception/Usecase/PNG/Enseignant.png Graphic file (type png)
 <use ../Conception/Usecase/PNG/Enseignant.png>
 Package pdftex.def Info: ../Conception/Usecase/PNG/Enseignant.png  used on inpu
@@ -1782,7 +1782,7 @@ t line 925.
 (pdftex.def)             Requested size: 476.98283pt x 216.81024pt.
  [19 <../Conception/Usecase/PNG/Details/GererET.png> <../Conception/Usecase/PNG
 /Enseignant.png>]
-<../Conception/Usecase/PNG/Details/GererRecoursSoumis.png, id=762, 1444.39626pt
+<../Conception/Usecase/PNG/Details/GererRecoursSoumis.png, id=764, 1444.39626pt
  x 269.005pt>
 File: ../Conception/Usecase/PNG/Details/GererRecoursSoumis.png Graphic file (ty
 pe png)
@@ -1791,13 +1791,13 @@ Package pdftex.def Info: ../Conception/Usecase/PNG/Details/GererRecoursSoumis.p
 ng  used on input line 954.
 (pdftex.def)             Requested size: 433.60873pt x 72.2711pt.
  [20 <../Conception/Usecase/PNG/Details/GererRecoursSoumis.png>]
-<../Conception/Usecase/PNG/Etudiant.png, id=767, 1444.39626pt x 603.25375pt>
+<../Conception/Usecase/PNG/Etudiant.png, id=769, 1444.39626pt x 603.25375pt>
 File: ../Conception/Usecase/PNG/Etudiant.png Graphic file (type png)
 <use ../Conception/Usecase/PNG/Etudiant.png>
 Package pdftex.def Info: ../Conception/Usecase/PNG/Etudiant.png  used on input 
 line 988.
 (pdftex.def)             Requested size: 476.98283pt x 216.80298pt.
-<../Conception/Usecase/PNG/Details/ModifierRecours.png, id=768, 1444.39626pt x 
+<../Conception/Usecase/PNG/Details/ModifierRecours.png, id=770, 1444.39626pt x 
 273.02pt>
 File: ../Conception/Usecase/PNG/Details/ModifierRecours.png Graphic file (type 
 png)
@@ -1807,7 +1807,7 @@ Package pdftex.def Info: ../Conception/Usecase/PNG/Details/ModifierRecours.png
 (pdftex.def)             Requested size: 433.60873pt x 72.2708pt.
  [21 <../Conception/Usecase/PNG/Etudiant.png> <../Conception/Usecase/PNG/Detail
 s/ModifierRecours.png>]
-<../Conception/Usecase/PNG/Details/AjouterRecours.png, id=773, 1444.39626pt x 2
+<../Conception/Usecase/PNG/Details/AjouterRecours.png, id=775, 1444.39626pt x 2
 85.065pt>
 File: ../Conception/Usecase/PNG/Details/AjouterRecours.png Graphic file (type p
 ng)
@@ -1815,7 +1815,7 @@ ng)
 Package pdftex.def Info: ../Conception/Usecase/PNG/Details/AjouterRecours.png  
 used on input line 1045.
 (pdftex.def)             Requested size: 433.60873pt x 72.26651pt.
-<../Conception/Usecase/PNG/Details/SupprimerRecours.png, id=774, 1444.39626pt x
+<../Conception/Usecase/PNG/Details/SupprimerRecours.png, id=776, 1444.39626pt x
  282.05376pt>
 File: ../Conception/Usecase/PNG/Details/SupprimerRecours.png Graphic file (type
  png)
@@ -1825,28 +1825,28 @@ Package pdftex.def Info: ../Conception/Usecase/PNG/Details/SupprimerRecours.png
 (pdftex.def)             Requested size: 433.60873pt x 72.2692pt.
  [22 <../Conception/Usecase/PNG/Details/AjouterRecours.png> <../Conception/Usec
 ase/PNG/Details/SupprimerRecours.png>]
-<../Conception/Usecase/PNG/Details/S'inscrire.png, id=779, 1444.39626pt x 346.2
+<../Conception/Usecase/PNG/Details/S'inscrire.png, id=781, 1444.39626pt x 346.2
 9375pt>
 File: ../Conception/Usecase/PNG/Details/S'inscrire.png Graphic file (type png)
 <use ../Conception/Usecase/PNG/Details/S'inscrire.png>
 Package pdftex.def Info: ../Conception/Usecase/PNG/Details/S'inscrire.png  used
  on input line 1116.
 (pdftex.def)             Requested size: 433.60873pt x 72.2694pt.
-<../Images/DiagSeqEX.png, id=780, 329.23pt x 285.065pt>
+<../Images/DiagSeqEX.png, id=783, 329.23pt x 285.065pt>
 File: ../Images/DiagSeqEX.png Graphic file (type png)
 <use ../Images/DiagSeqEX.png>
 Package pdftex.def Info: ../Images/DiagSeqEX.png  used on input line 1158.
 (pdftex.def)             Requested size: 231.26822pt x 180.67497pt.
  [23 <../Conception/Usecase/PNG/Details/S'inscrire.png> <../Images/DiagSeqEX.pn
 g (PNG copy)>]
-<../Conception/Sequence/PNG/S'inscrire.png, id=785, 851.18pt x 902.37125pt>
+<../Conception/Sequence/PNG/S'inscrire.png, id=788, 851.18pt x 902.37125pt>
 File: ../Conception/Sequence/PNG/S'inscrire.png Graphic file (type png)
 <use ../Conception/Sequence/PNG/S'inscrire.png>
 Package pdftex.def Info: ../Conception/Sequence/PNG/S'inscrire.png  used on inp
 ut line 1168.
 (pdftex.def)             Requested size: 476.98224pt x 448.07271pt.
  [24 <../Conception/Sequence/PNG/S'inscrire.png>]
-<../Conception/Sequence/PNG/S'authentifier.png, id=792, 873.2625pt x 902.37125p
+<../Conception/Sequence/PNG/S'authentifier.png, id=795, 873.2625pt x 902.37125p
 t>
 File: ../Conception/Sequence/PNG/S'authentifier.png Graphic file (type png)
 <use ../Conception/Sequence/PNG/S'authentifier.png>
@@ -1854,7 +1854,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/S'authentifier.png  used on
  input line 1190.
 (pdftex.def)             Requested size: 476.97795pt x 476.98773pt.
  [25 <../Conception/Sequence/PNG/S'authentifier.png>]
-<../Conception/Sequence/PNG/Enseignant/GererRecours.png, id=798, 880.28876pt x 
+<../Conception/Sequence/PNG/Enseignant/GererRecours.png, id=801, 880.28876pt x 
 898.35625pt>
 File: ../Conception/Sequence/PNG/Enseignant/GererRecours.png Graphic file (type
  png)
@@ -1863,7 +1863,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Enseignant/GererRecours.png
   used on input line 1209.
 (pdftex.def)             Requested size: 476.97414pt x 520.3616pt.
  [26 <../Conception/Sequence/PNG/Enseignant/GererRecours.png>]
-<../Conception/Sequence/PNG/Etudiant/SelectTousRecours.png, id=804, 1159.33125p
+<../Conception/Sequence/PNG/Etudiant/SelectTousRecours.png, id=807, 1159.33125p
 t x 902.37125pt>
 File: ../Conception/Sequence/PNG/Etudiant/SelectTousRecours.png Graphic file (t
 ype png)
@@ -1872,7 +1872,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Etudiant/SelectTousRecours.
 png  used on input line 1227.
 (pdftex.def)             Requested size: 476.97406pt x 419.17145pt.
  [27 <../Conception/Sequence/PNG/Etudiant/SelectTousRecours.png>]
-<../Conception/Sequence/PNG/Etudiant/AjouterRecours.png, id=810, 854.19125pt x 
+<../Conception/Sequence/PNG/Etudiant/AjouterRecours.png, id=813, 854.19125pt x 
 902.37125pt>
 File: ../Conception/Sequence/PNG/Etudiant/AjouterRecours.png Graphic file (type
  png)
@@ -1881,7 +1881,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Etudiant/AjouterRecours.png
   used on input line 1248.
 (pdftex.def)             Requested size: 476.97528pt x 448.07271pt.
  [28 <../Conception/Sequence/PNG/Etudiant/AjouterRecours.png>]
-<../Conception/Sequence/PNG/Etudiant/ModifierRecours.png, id=816, 938.50626pt x
+<../Conception/Sequence/PNG/Etudiant/ModifierRecours.png, id=820, 938.50626pt x
  902.37125pt>
 File: ../Conception/Sequence/PNG/Etudiant/ModifierRecours.png Graphic file (typ
 e png)
@@ -1890,7 +1890,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Etudiant/ModifierRecours.pn
 g  used on input line 1267.
 (pdftex.def)             Requested size: 476.97069pt x 448.07271pt.
  [29 <../Conception/Sequence/PNG/Etudiant/ModifierRecours.png>]
-<../Conception/Sequence/PNG/Etudiant/SupprimerRecours.png, id=823, 852.18375pt 
+<../Conception/Sequence/PNG/Etudiant/SupprimerRecours.png, id=826, 852.18375pt 
 x 902.37125pt>
 File: ../Conception/Sequence/PNG/Etudiant/SupprimerRecours.png Graphic file (ty
 pe png)
@@ -1900,7 +1900,7 @@ ng  used on input line 1288.
 (pdftex.def)             Requested size: 476.98558pt x 448.07271pt.
 
 [30 <../Conception/Sequence/PNG/Etudiant/SupprimerRecours.png>]
-<../Conception/Sequence/PNG/Administrateur/Administrateur.png, id=830, 1059.96p
+<../Conception/Sequence/PNG/Administrateur/Administrateur.png, id=833, 1059.96p
 t x 902.37125pt>
 File: ../Conception/Sequence/PNG/Administrateur/Administrateur.png Graphic file
  (type png)
@@ -1909,7 +1909,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Administrateur/Administrate
 ur.png  used on input line 1309.
 (pdftex.def)             Requested size: 476.9776pt x 448.07271pt.
  [31 <../Conception/Sequence/PNG/Administrateur/Administrateur.png>]
-<../Conception/Sequence/PNG/Administrateur/AjouterUtilisateur.png, id=836, 1101
+<../Conception/Sequence/PNG/Administrateur/AjouterUtilisateur.png, id=839, 1101
 .11375pt x 902.37125pt>
 File: ../Conception/Sequence/PNG/Administrateur/AjouterUtilisateur.png Graphic 
 file (type png)
@@ -1918,7 +1918,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Administrateur/AjouterUtili
 sateur.png  used on input line 1333.
 (pdftex.def)             Requested size: 476.98123pt x 448.07271pt.
  [32 <../Conception/Sequence/PNG/Administrateur/AjouterUtilisateur.png>]
-<../Conception/Sequence/PNG/Administrateur/ModifierUtilisateur.png, id=842, 922
+<../Conception/Sequence/PNG/Administrateur/ModifierUtilisateur.png, id=845, 922
 .44624pt x 902.37125pt>
 File: ../Conception/Sequence/PNG/Administrateur/ModifierUtilisateur.png Graphic
  file (type png)
@@ -1927,7 +1927,7 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Administrateur/ModifierUtil
 isateur.png  used on input line 1354.
 (pdftex.def)             Requested size: 476.97234pt x 448.07271pt.
  [33 <../Conception/Sequence/PNG/Administrateur/ModifierUtilisateur.png>]
-<../Conception/Sequence/PNG/Administrateur/SupprimerUtilisateur.png, id=848, 92
+<../Conception/Sequence/PNG/Administrateur/SupprimerUtilisateur.png, id=851, 92
 0.43875pt x 902.37125pt>
 File: ../Conception/Sequence/PNG/Administrateur/SupprimerUtilisateur.png Graphi
 c file (type png)
@@ -1936,13 +1936,13 @@ Package pdftex.def Info: ../Conception/Sequence/PNG/Administrateur/SupprimerUti
 lisateur.png  used on input line 1375.
 (pdftex.def)             Requested size: 476.98767pt x 448.07271pt.
  [34 <../Conception/Sequence/PNG/Administrateur/SupprimerUtilisateur.png>]
-<../Images/DiagActEX.png, id=854, 458.71375pt x 577.15625pt>
+<../Images/DiagActEX.png, id=857, 458.71375pt x 577.15625pt>
 File: ../Images/DiagActEX.png Graphic file (type png)
 <use ../Images/DiagActEX.png>
 Package pdftex.def Info: ../Images/DiagActEX.png  used on input line 1415.
 (pdftex.def)             Requested size: 325.22708pt x 267.40614pt.
  [35 <../Images/DiagActEX.png>]
-<../Conception/Activity/PNG/Authentification.png, id=860, 713.66624pt x 902.371
+<../Conception/Activity/PNG/Authentification.png, id=863, 713.66624pt x 902.371
 25pt>
 File: ../Conception/Activity/PNG/Authentification.png Graphic file (type png)
 <use ../Conception/Activity/PNG/Authentification.png>
@@ -1950,7 +1950,7 @@ Package pdftex.def Info: ../Conception/Activity/PNG/Authentification.png  used
 on input line 1425.
 (pdftex.def)             Requested size: 476.97781pt x 520.37404pt.
  [36 <../Conception/Activity/PNG/Authentification.png>]
-<../Conception/Activity/PNG/Administrateur.png, id=867, 968.61874pt x 902.37125
+<../Conception/Activity/PNG/Administrateur.png, id=870, 968.61874pt x 902.37125
 pt>
 File: ../Conception/Activity/PNG/Administrateur.png Graphic file (type png)
 <use ../Conception/Activity/PNG/Administrateur.png>
@@ -1958,7 +1958,7 @@ Package pdftex.def Info: ../Conception/Activity/PNG/Administrateur.png  used on
  input line 1443.
 (pdftex.def)             Requested size: 476.99213pt x 520.37404pt.
  [37 <../Conception/Activity/PNG/Administrateur.png>]
-<../Conception/Activity/PNG/Enseignant.png, id=873, 1042.89626pt x 902.37125pt>
+<../Conception/Activity/PNG/Enseignant.png, id=876, 1042.89626pt x 902.37125pt>
 
 File: ../Conception/Activity/PNG/Enseignant.png Graphic file (type png)
 <use ../Conception/Activity/PNG/Enseignant.png>
@@ -1966,28 +1966,28 @@ Package pdftex.def Info: ../Conception/Activity/PNG/Enseignant.png  used on inp
 ut line 1462.
 (pdftex.def)             Requested size: 476.9851pt x 520.37404pt.
  [38 <../Conception/Activity/PNG/Enseignant.png>]
-<../Conception/Activity/PNG/Etudiant.png, id=879, 1037.8775pt x 902.37125pt>
+<../Conception/Activity/PNG/Etudiant.png, id=882, 1037.8775pt x 902.37125pt>
 File: ../Conception/Activity/PNG/Etudiant.png Graphic file (type png)
 <use ../Conception/Activity/PNG/Etudiant.png>
 Package pdftex.def Info: ../Conception/Activity/PNG/Etudiant.png  used on input
  line 1481.
 (pdftex.def)             Requested size: 476.98602pt x 520.37404pt.
  [39 <../Conception/Activity/PNG/Etudiant.png>]
-<../Conception/Deployment/PNG/Deployment.png, id=885, 1304.875pt x 572.1375pt>
+<../Conception/Deployment/PNG/Deployment.png, id=889, 1304.875pt x 572.1375pt>
 File: ../Conception/Deployment/PNG/Deployment.png Graphic file (type png)
 <use ../Conception/Deployment/PNG/Deployment.png>
 Package pdftex.def Info: ../Conception/Deployment/PNG/Deployment.png  used on i
 nput line 1509.
 (pdftex.def)             Requested size: 476.98225pt x 289.07993pt.
  [40 <../Conception/Deployment/PNG/Deployment.png>]
-<../Conception/Class/PNG/Utilisateur.png, id=891, 1276.77pt x 902.37125pt>
+<../Conception/Class/PNG/Utilisateur.png, id=896, 1276.77pt x 902.37125pt>
 File: ../Conception/Class/PNG/Utilisateur.png Graphic file (type png)
 <use ../Conception/Class/PNG/Utilisateur.png>
 Package pdftex.def Info: ../Conception/Class/PNG/Utilisateur.png  used on input
  line 1529.
 (pdftex.def)             Requested size: 476.97575pt x 361.35518pt.
  [41 <../Conception/Class/PNG/Utilisateur.png>]
-<../Conception/Class/PNG/Administrateur.png, id=897, 1273.75874pt x 902.37125pt
+<../Conception/Class/PNG/Administrateur.png, id=902, 1273.75874pt x 902.37125pt
 >
 File: ../Conception/Class/PNG/Administrateur.png Graphic file (type png)
 <use ../Conception/Class/PNG/Administrateur.png>
@@ -1995,14 +1995,14 @@ Package pdftex.def Info: ../Conception/Class/PNG/Administrateur.png  used on in
 put line 1541.
 (pdftex.def)             Requested size: 476.9781pt x 361.35518pt.
  [42 <../Conception/Class/PNG/Administrateur.png>]
-<../Conception/Class/PNG/Enseignant.png, id=904, 928.46875pt x 902.37125pt>
+<../Conception/Class/PNG/Enseignant.png, id=909, 928.46875pt x 902.37125pt>
 File: ../Conception/Class/PNG/Enseignant.png Graphic file (type png)
 <use ../Conception/Class/PNG/Enseignant.png>
 Package pdftex.def Info: ../Conception/Class/PNG/Enseignant.png  used on input 
 line 1566.
 (pdftex.def)             Requested size: 476.98378pt x 448.07271pt.
  [43 <../Conception/Class/PNG/Enseignant.png>]
-<../Conception/Class/PNG/Etudiant.png, id=910, 996.72375pt x 902.37125pt>
+<../Conception/Class/PNG/Etudiant.png, id=915, 996.72375pt x 902.37125pt>
 File: ../Conception/Class/PNG/Etudiant.png Graphic file (type png)
 <use ../Conception/Class/PNG/Etudiant.png>
 Package pdftex.def Info: ../Conception/Class/PNG/Etudiant.png  used on input li
@@ -2035,7 +2035,7 @@ duplicate ignored
                    \relax 
 l.1628 \subsection{HTML}
                         
-<../Images/Html.png, id=921, 1204.5pt x 1204.5pt>
+<../Images/Html.png, id=926, 1204.5pt x 1204.5pt>
 File: ../Images/Html.png Graphic file (type png)
 <use ../Images/Html.png>
 Package pdftex.def Info: ../Images/Html.png  used on input line 1637.
@@ -2046,7 +2046,7 @@ tifier (name{subsection.0.2.2}) has been already used, duplicate ignored
                    \relax 
 l.1643 \subsection{CSS}
                        
-<../Images/CSS.png, id=928, 1204.5pt x 1699.34875pt>
+<../Images/CSS.png, id=933, 1204.5pt x 1699.34875pt>
 File: ../Images/CSS.png Graphic file (type png)
 <use ../Images/CSS.png>
 Package pdftex.def Info: ../Images/CSS.png  used on input line 1653.
@@ -2057,7 +2057,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.1657 \subsection{Bootstrap}
                              
-<../Images/Bootstrap.png, id=929, 722.7pt x 341.275pt>
+<../Images/Bootstrap.png, id=934, 722.7pt x 341.275pt>
 File: ../Images/Bootstrap.png Graphic file (type png)
 <use ../Images/Bootstrap.png>
 Package pdftex.def Info: ../Images/Bootstrap.png  used on input line 1663.
@@ -2069,7 +2069,7 @@ nation with the same identifier (name{subsection.0.2.4}) has been already used,
                    \relax 
 l.1670 \subsection{Javascript}
                               
-<../Images/JS.png, id=938, 1505.625pt x 1629.08624pt>
+<../Images/JS.png, id=943, 1505.625pt x 1629.08624pt>
 File: ../Images/JS.png Graphic file (type png)
 <use ../Images/JS.png>
 Package pdftex.def Info: ../Images/JS.png  used on input line 1682.
@@ -2080,13 +2080,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.1688 \subsection{PHP}
                        
-<../Images/PHP.png, id=942, 513.92pt x 513.92pt>
+<../Images/PHP.png, id=947, 513.92pt x 513.92pt>
 File: ../Images/PHP.png Graphic file (type png)
 <use ../Images/PHP.png>
 Package pdftex.def Info: ../Images/PHP.png  used on input line 1698.
 (pdftex.def)             Requested size: 202.35706pt x 144.53964pt.
  [48 <../Images/JS.png> <../Images/PHP.png>]
-<../Images/MySQL.png, id=955, 1204.5pt x 621.32124pt>
+<../Images/MySQL.png, id=960, 1204.5pt x 621.32124pt>
 File: ../Images/MySQL.png Graphic file (type png)
 <use ../Images/MySQL.png>
 Package pdftex.def Info: ../Images/MySQL.png  used on input line 1711.
@@ -2113,7 +2113,7 @@ ntifier (name{subsection.0.3.2}) has been already used, duplicate ignored
                    \relax 
 l.1735 \subsection{Mycli}
                          
-<../Images/mycli.png, id=963, 1529.715pt x 553.06625pt>
+<../Images/mycli.png, id=968, 1529.715pt x 553.06625pt>
 File: ../Images/mycli.png Graphic file (type png)
 <use ../Images/mycli.png>
 Package pdftex.def Info: ../Images/mycli.png  used on input line 1741.
@@ -2124,7 +2124,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.1746 \subsection{Apache}
                           
-<../Images/Apache.png, id=965, 752.8125pt x 414.54875pt>
+<../Images/Apache.png, id=970, 752.8125pt x 414.54875pt>
 File: ../Images/Apache.png Graphic file (type png)
 <use ../Images/Apache.png>
 Package pdftex.def Info: ../Images/Apache.png  used on input line 1757.
@@ -2136,7 +2136,7 @@ eady used, duplicate ignored
                    \relax 
 l.1763 \subsection{PhpMyAdmin}
                               
-<../Images/PhpMyAdmin.png, id=975, 903.375pt x 474.27188pt>
+<../Images/PhpMyAdmin.png, id=980, 903.375pt x 474.27188pt>
 File: ../Images/PhpMyAdmin.png Graphic file (type png)
 <use ../Images/PhpMyAdmin.png>
 Package pdftex.def Info: ../Images/PhpMyAdmin.png  used on input line 1771.
@@ -2151,7 +2151,7 @@ l.1775 \section{Architecture}
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1775.
 
-<../Images/MVC.png, id=977, 1204.5pt x 1324.95pt>
+<../Images/MVC.png, id=982, 1204.5pt x 1324.95pt>
 File: ../Images/MVC.png Graphic file (type png)
 <use ../Images/MVC.png>
 Package pdftex.def Info: ../Images/MVC.png  used on input line 1783.
@@ -2186,7 +2186,7 @@ entifier (name{subsection.0.6.1}) has been already used, duplicate ignored
                    \relax 
 l.1836 \subsection{Page de connexion}
                                      
-<../Site/login.png, id=988, 1445.4pt x 903.375pt>
+<../Site/login.png, id=993, 1445.4pt x 903.375pt>
 File: ../Site/login.png Graphic file (type png)
 <use ../Site/login.png>
 Package pdftex.def Info: ../Site/login.png  used on input line 1848.
@@ -2202,7 +2202,7 @@ fier (name{subsection.0.6.2}) has been already used, duplicate ignored
                    \relax 
 l.1854 \subsection{Page d'inscription}
                                       
-<../Site/register.png, id=993, 1445.4pt x 903.375pt>
+<../Site/register.png, id=998, 1445.4pt x 903.375pt>
 File: ../Site/register.png Graphic file (type png)
 <use ../Site/register.png>
 Package pdftex.def Info: ../Site/register.png  used on input line 1866.
@@ -2218,7 +2218,7 @@ ntifier (name{subsection.0.6.3}) has been already used, duplicate ignored
                    \relax 
 l.1872 \subsection{Page d'inscription complète}
                                                 
-<../Site/registerFULL.png, id=999, 1445.4pt x 903.375pt>
+<../Site/registerFULL.png, id=1004, 1445.4pt x 903.375pt>
 File: ../Site/registerFULL.png Graphic file (type png)
 <use ../Site/registerFULL.png>
 Package pdftex.def Info: ../Site/registerFULL.png  used on input line 1886.
@@ -2229,7 +2229,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1886--1887
  []
 
 [55 <../Site/registerFULL.png>]
-<../Site/registerFULL2.png, id=1004, 1445.4pt x 903.375pt>
+<../Site/registerFULL2.png, id=1009, 1445.4pt x 903.375pt>
 File: ../Site/registerFULL2.png Graphic file (type png)
 <use ../Site/registerFULL2.png>
 Package pdftex.def Info: ../Site/registerFULL2.png  used on input line 1894.
@@ -2240,7 +2240,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1894--1895
  []
 
 [56 <../Site/registerFULL2.png>]
-<../Site/index.png, id=1009, 1445.4pt x 903.375pt>
+<../Site/index.png, id=1014, 1445.4pt x 903.375pt>
 File: ../Site/index.png Graphic file (type png)
 <use ../Site/index.png>
 Package pdftex.def Info: ../Site/index.png  used on input line 1914.
@@ -2251,7 +2251,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1914--1915
  []
 
 [57 <../Site/index.png>]
-<../Site/profileETList.png, id=1014, 1445.4pt x 903.375pt>
+<../Site/profileETList.png, id=1019, 1445.4pt x 903.375pt>
 File: ../Site/profileETList.png Graphic file (type png)
 <use ../Site/profileETList.png>
 Package pdftex.def Info: ../Site/profileETList.png  used on input line 1932.
@@ -2261,7 +2261,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1932--1933
  [][] 
  []
 
-<../Site/profileETAdd.png, id=1015, 1445.4pt x 903.375pt>
+<../Site/profileETAdd.png, id=1020, 1445.4pt x 903.375pt>
 File: ../Site/profileETAdd.png Graphic file (type png)
 <use ../Site/profileETAdd.png>
 Package pdftex.def Info: ../Site/profileETAdd.png  used on input line 1940.
@@ -2272,7 +2272,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1940--1941
  []
 
 [58 <../Site/profileETList.png> <../Site/profileETAdd.png>]
-<../Site/profileETUpdate.png, id=1020, 1445.4pt x 903.375pt>
+<../Site/profileETUpdate.png, id=1025, 1445.4pt x 903.375pt>
 File: ../Site/profileETUpdate.png Graphic file (type png)
 <use ../Site/profileETUpdate.png>
 Package pdftex.def Info: ../Site/profileETUpdate.png  used on input line 1948.
@@ -2282,7 +2282,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1948--1949
  [][] 
  []
 
-<../Site/profileETRead.png, id=1021, 1445.4pt x 903.375pt>
+<../Site/profileETRead.png, id=1026, 1445.4pt x 903.375pt>
 File: ../Site/profileETRead.png Graphic file (type png)
 <use ../Site/profileETRead.png>
 Package pdftex.def Info: ../Site/profileETRead.png  used on input line 1956.
@@ -2293,7 +2293,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1956--1957
  []
 
 [59 <../Site/profileETUpdate.png> <../Site/profileETRead.png>]
-<../Site/settings.png, id=1026, 1445.4pt x 903.375pt>
+<../Site/settings.png, id=1031, 1445.4pt x 903.375pt>
 File: ../Site/settings.png Graphic file (type png)
 <use ../Site/settings.png>
 Package pdftex.def Info: ../Site/settings.png  used on input line 1975.
@@ -2304,7 +2304,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 1975--1976
  []
 
 [60 <../Site/settings.png>]
-<../Site/profileENSList.png, id=1032, 1445.4pt x 903.375pt>
+<../Site/profileENSList.png, id=1037, 1445.4pt x 903.375pt>
 File: ../Site/profileENSList.png Graphic file (type png)
 <use ../Site/profileENSList.png>
 Package pdftex.def Info: ../Site/profileENSList.png  used on input line 2000.
@@ -2315,7 +2315,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2000--2001
  []
 
 [61 <../Site/profileENSList.png>]
-<../Site/profileENSRefused.png, id=1037, 1445.4pt x 903.375pt>
+<../Site/profileENSRefused.png, id=1042, 1445.4pt x 903.375pt>
 File: ../Site/profileENSRefused.png Graphic file (type png)
 <use ../Site/profileENSRefused.png>
 Package pdftex.def Info: ../Site/profileENSRefused.png  used on input line 2008
@@ -2326,7 +2326,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2008--2009
  [][] 
  []
 
-<../Site/profileENSRead.png, id=1038, 1445.4pt x 903.375pt>
+<../Site/profileENSRead.png, id=1043, 1445.4pt x 903.375pt>
 File: ../Site/profileENSRead.png Graphic file (type png)
 <use ../Site/profileENSRead.png>
 Package pdftex.def Info: ../Site/profileENSRead.png  used on input line 2016.
@@ -2337,7 +2337,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2016--2017
  []
 
 [62 <../Site/profileENSRefused.png> <../Site/profileENSRead.png>]
-<../Site/profileADMList.png, id=1043, 1445.4pt x 903.375pt>
+<../Site/profileADMList.png, id=1048, 1445.4pt x 903.375pt>
 File: ../Site/profileADMList.png Graphic file (type png)
 <use ../Site/profileADMList.png>
 Package pdftex.def Info: ../Site/profileADMList.png  used on input line 2039.
@@ -2348,7 +2348,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2039--2040
  []
 
 [63 <../Site/profileADMList.png>]
-<../Site/profileADMAdd.png, id=1048, 1445.4pt x 903.375pt>
+<../Site/profileADMAdd.png, id=1053, 1445.4pt x 903.375pt>
 File: ../Site/profileADMAdd.png Graphic file (type png)
 <use ../Site/profileADMAdd.png>
 Package pdftex.def Info: ../Site/profileADMAdd.png  used on input line 2047.
@@ -2358,7 +2358,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2047--2048
  [][] 
  []
 
-<../Site/profileADMRead.png, id=1049, 1445.4pt x 903.375pt>
+<../Site/profileADMRead.png, id=1054, 1445.4pt x 903.375pt>
 File: ../Site/profileADMRead.png Graphic file (type png)
 <use ../Site/profileADMRead.png>
 Package pdftex.def Info: ../Site/profileADMRead.png  used on input line 2055.
@@ -2369,7 +2369,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2055--2056
  []
 
 [64 <../Site/profileADMAdd.png> <../Site/profileADMRead.png>]
-<../Site/trafic.png, id=1054, 1445.4pt x 903.375pt>
+<../Site/trafic.png, id=1059, 1445.4pt x 903.375pt>
 File: ../Site/trafic.png Graphic file (type png)
 <use ../Site/trafic.png>
 Package pdftex.def Info: ../Site/trafic.png  used on input line 2077.
@@ -2380,7 +2380,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2077--2078
  []
 
 [65 <../Site/trafic.png>]
-<../Site/dashboard.png, id=1059, 1445.4pt x 903.375pt>
+<../Site/dashboard.png, id=1064, 1445.4pt x 903.375pt>
 File: ../Site/dashboard.png Graphic file (type png)
 <use ../Site/dashboard.png>
 Package pdftex.def Info: ../Site/dashboard.png  used on input line 2100.
@@ -2391,7 +2391,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2100--2101
  []
 
 [66 <../Site/dashboard.png>]
-<../Site/charts.png, id=1065, 1445.4pt x 903.375pt>
+<../Site/charts.png, id=1071, 1445.4pt x 903.375pt>
 File: ../Site/charts.png Graphic file (type png)
 <use ../Site/charts.png>
 Package pdftex.def Info: ../Site/charts.png  used on input line 2121.
@@ -2402,7 +2402,7 @@ Overfull \hbox (2.13162pt too wide) in paragraph at lines 2121--2122
  []
 
 [67 <../Site/charts.png>]
-<../Site/dashboardMobile.png, id=1071, 752.8125pt x 1339.0025pt>
+<../Site/dashboardMobile.png, id=1076, 752.8125pt x 1339.0025pt>
 File: ../Site/dashboardMobile.png Graphic file (type png)
 <use ../Site/dashboardMobile.png>
 Package pdftex.def Info: ../Site/dashboardMobile.png  used on input line 2139.
@@ -2412,7 +2412,7 @@ Overfull \hbox (6.30928pt too wide) in paragraph at lines 2139--2140
  [][] 
  []
 
-<../Site/chartsMobile.png, id=1072, 752.8125pt x 1339.0025pt>
+<../Site/chartsMobile.png, id=1077, 752.8125pt x 1339.0025pt>
 File: ../Site/chartsMobile.png Graphic file (type png)
 <use ../Site/chartsMobile.png>
 Package pdftex.def Info: ../Site/chartsMobile.png  used on input line 2143.
@@ -2422,7 +2422,7 @@ Overfull \hbox (6.30928pt too wide) in paragraph at lines 2143--2144
  [][] 
  []
 
-<../Site/profileETAddMobile.png, id=1073, 752.8125pt x 1339.0025pt>
+<../Site/profileETAddMobile.png, id=1078, 752.8125pt x 1339.0025pt>
 File: ../Site/profileETAddMobile.png Graphic file (type png)
 <use ../Site/profileETAddMobile.png>
 Package pdftex.def Info: ../Site/profileETAddMobile.png  used on input line 214
@@ -2435,7 +2435,7 @@ Overfull \hbox (6.30928pt too wide) in paragraph at lines 2147--2148
 
 [68 <../Site/dashboardMobile.png> <../Site/chartsMobile.png> <../Site/profileET
 AddMobile.png>]
-<../Site/contact.png, id=1081, 1445.4pt x 903.375pt>
+<../Site/contact.png, id=1086, 1445.4pt x 903.375pt>
 File: ../Site/contact.png Graphic file (type png)
 <use ../Site/contact.png>
 Package pdftex.def Info: ../Site/contact.png  used on input line 2162.
@@ -2473,22 +2473,27 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [71]
+))
 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2242.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2242.
-(/home/nemo/Work/DashRecours/PFE/Memoir/PFE.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2242.
+[71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2197.
+ (/home/nemo/Work/DashRecours/PFE/Memoir/PFE.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2197.
 
 Package rerunfilecheck Info: File `PFE.out' has not changed.
 (rerunfilecheck)             Checksum: 81A22D9BBBB6A4D75679C68D51490599;5032.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2242.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2197.
  ) 
 Here is how much of TeX's memory you used:
  30889 strings out of 492982
- 580145 string characters out of 6134895
+ 580115 string characters out of 6134895
  722755 words of memory out of 5000000
  33680 multiletter control sequences out of 15000+600000
  632932 words of font info for 124 fonts, out of 8000000 for 9000
@@ -2501,11 +2506,11 @@ r/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/nemo/Work/DashRecours/PFE/Memoir/PFE.pdf (84 pages, 665
-8150 bytes).
+Output written on /home/nemo/Work/DashRecours/PFE/Memoir/PFE.pdf (84 pages, 666
+1331 bytes).
 PDF statistics:
- 1176 PDF objects out of 1200 (max. 8388607)
- 900 compressed objects within 9 object streams
+ 1184 PDF objects out of 1200 (max. 8388607)
+ 907 compressed objects within 10 object streams
  234 named destinations out of 1000 (max. 500000)
  968 words of extra memory for PDF output out of 10000 (max. 10000000)
 

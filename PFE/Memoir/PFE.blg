@@ -9,42 +9,42 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: PFE.bib
 You've used 13 entries,
             2849 wiz_defined-function locations,
-            681 strings with 6464 characters,
-and the built_in function-call counts, 4741 in all, are:
-= -- 464
-> -- 149
-< -- 2
-+ -- 57
-- -- 42
-* -- 184
-:= -- 699
-add.period$ -- 40
+            680 strings with 6382 characters,
+and the built_in function-call counts, 4367 in all, are:
+= -- 418
+> -- 128
+< -- 1
++ -- 49
+- -- 34
+* -- 153
+:= -- 646
+add.period$ -- 39
 call.type$ -- 13
-change.case$ -- 53
+change.case$ -- 49
 chr.to.int$ -- 0
 cite$ -- 13
-duplicate$ -- 156
-empty$ -- 498
-format.name$ -- 42
-if$ -- 1254
+duplicate$ -- 142
+empty$ -- 479
+format.name$ -- 34
+if$ -- 1166
 int.to.chr$ -- 0
 int.to.str$ -- 13
-missing$ -- 17
+missing$ -- 16
 newline$ -- 68
 num.names$ -- 26
-pop$ -- 151
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 43
 quote$ -- 0
-skip$ -- 362
+skip$ -- 349
 stack$ -- 0
-substring$ -- 143
-swap$ -- 24
-text.length$ -- 2
+substring$ -- 111
+swap$ -- 14
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 38
 warning$ -- 0
-while$ -- 33
+while$ -- 30
 width$ -- 15
-write$ -- 135
+write$ -- 131

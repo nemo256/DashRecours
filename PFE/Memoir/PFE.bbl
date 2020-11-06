@@ -25,13 +25,6 @@ Tim Converse, Joyce Park, and Clark Morgan.
 \newblock {\em PHP5 and MySQL bible}, volume 147.
 \newblock John Wiley \& Sons, 2004.
 
-\bibitem{ellson2001graphviz}
-John Ellson, Emden Gansner, Lefteris Koutsofios, Stephen~C North, and Gordon
-  Woodhull.
-\newblock Graphviz—open source graph drawing tools.
-\newblock In {\em International Symposium on Graph Drawing}, pages 483--484.
-  Springer, 2001.
-
 \bibitem{few2006information}
 Stephen Few.
 \newblock {\em Information dashboard design: The effective visual communication
@@ -57,7 +50,7 @@ Jennifer~Niederst Robbins.
 
 \bibitem{roques2017plantuml}
 Arnaud Roques.
-\newblock Plantuml, 2017.
+\newblock Plantuml.
 \newblock URL: \url{https://plantuml.com/}.
 
 \bibitem{schulz2007hacking}
@@ -65,6 +58,12 @@ Kim Schulz.
 \newblock {\em Hacking Vim: a cookbook to get the most out of the latest Vim
   editor}.
 \newblock Packt Publishing Ltd, 2007.
+
+\bibitem{UIS}
+Shaswat Shukla.
+\newblock University information sysytem.
+\newblock URL:
+  \url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}.
 
 \bibitem{supaartagorn2011php}
 Chanchai Supaartagorn.
