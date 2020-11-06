@@ -27,12 +27,12 @@
 \contentsline {section}{\numberline {2}M\IeC {\'e}thodes utilis\IeC {\'e}e}{13}{section.0.2}
 \contentsline {subsection}{\numberline {2.1}UML}{13}{subsection.0.2.1}
 \contentsline {subsection}{\numberline {2.2}PlantUML}{13}{subsection.0.2.2}
-\contentsline {subsection}{\numberline {2.3}PlantUML Previewer}{14}{subsection.0.2.3}
-\contentsline {subsection}{\numberline {2.4}Graphviz}{14}{subsection.0.2.4}
-\contentsline {subsection}{\numberline {2.5}Vim}{15}{subsection.0.2.5}
+\contentsline {subsection}{\numberline {2.3}Graphviz}{13}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}PlantUML Previewer}{14}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}Vim}{14}{subsection.0.2.5}
 \contentsline {section}{\numberline {3}Diagrammes}{15}{section.0.3}
 \contentsline {subsection}{\numberline {3.1}Diagrammes de cas d'utilisation}{15}{subsection.0.3.1}
-\contentsline {subsubsection}{Identification des acteurs}{16}{subsubsection*.16}
+\contentsline {subsubsection}{Identification des acteurs}{15}{subsubsection*.16}
 \contentsline {subsubsection}{Identification des cas d'utilisation et description textuelle}{16}{subsubsection*.17}
 \contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de cas d'utilisation avec descriptions}}{16}{subsubsection*.19}
 \contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quence}{22}{subsection.0.3.2}

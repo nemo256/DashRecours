@@ -700,9 +700,9 @@ Dans ce chapitre, nous avons présenté le problème de la solution actuelle ave
 \vspace{0.2in}
 \uline{L'analyse :} Plutôt que d’apporter une solution, elle met l’accent sur une enquête par rapport à un problème et sur des besoins. Par exemple, si l’on souhaite informatiser le système d’information d’une bibliothèque, comment s’y prendrait-on?
 \\
-Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait parler, d’analyse des besoins (une enquête sur les besoins) ou de l’analyse des objets (une enquête sur les objets du domaine).\textsuperscript{\cite{UIS}}
+Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait parler, d’analyse des besoins (une enquête sur les besoins) ou de l’analyse des objets (une enquête sur les objets du domaine).\textsuperscript{\cite{UIS}\cite{booch2005unified}}
 \\
-\uline{Conception :} La conception apporte une solution théorique aux exigences, mais n’engage pas la mise en œuvre. Par exemple, la conception peut produire une description d’un schéma de base de données et des objets logiciels. Au bout du compte, c’est probable que les résultats de la conception seront mises en œuvre.\textsuperscript{\cite{UIS}}
+\uline{Conception :} La conception apporte une solution théorique aux exigences, mais n’engage pas la mise en œuvre. Par exemple, la conception peut produire une description d’un schéma de base de données et des objets logiciels. Au bout du compte, c’est probable que les résultats de la conception seront mises en œuvre.\textsuperscript{\cite{UIS}\cite{booch2005unified}}
 
 \vspace{-0.1in}
 
@@ -732,17 +732,16 @@ Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait
 \section{Méthodes utilisée}
 
 \subsection{UML}
-Le langage de modélisation unifié (UML) est un langage de modélisation de développement à usage général dans le domaine du génie logiciel qui vise à fournir un moyen standard de visualiser la conception d'un système.
-\\\\
-La création d'UML était à l'origine motivée par le désir de standardiser les systèmes de notation disparates et les approches de conception de logiciels. Il a été développé par Grady Booch, Ivar Jacobson et James Rumbaugh chez Rational Software en 1994–1995, avec un développement ultérieur dirigé par eux jusqu'en 1996.\textsuperscript{\cite{booch2005unified}}
+Le langage de modélisation unifié (UML) est un langage de modélisation de développement à usage général dans le domaine du génie logiciel qui vise à fournir un moyen standard de visualiser la conception d'un système.\textsuperscript{\cite{booch2005unified}}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 4in, height = 2in]{../Images/UMLlogo.png}
-\caption{Unified Modeling Language}
+    \includegraphics[width = 2in, height = 0.95in]{../Images/UMLlogo.png}
+  \caption{Logo UML (Unified Modeling Language)}
 \end{figure}
 
-\vspace{-0.1in}
+\vspace*{-0.3in}
+
 \subsection{PlantUML}
 PlantUML est un outil open source permettant aux utilisateurs de cr\'eer des diagrammes UML \`a partir d'un langage de texte brut. Le langage de PlantUML\textsuperscript{\cite{roques2017plantuml}} est un exemple de langage sp\'ecifique au domaine. Il utilise le logiciel Graphviz pour disposer ses diagrammes. Il a \'et\'e utilis\'e pour permettre aux \'etudiants aveugles de travailler avec UML\@. PlantUML aide \'egalement les ing\'enieurs logiciels aveugles \`a concevoir et lire des diagrammes UML\@.\textsuperscript{\cite{booch2005unified}}
 
@@ -750,9 +749,20 @@ PlantUML est un outil open source permettant aux utilisateurs de cr\'eer des dia
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 3.6in, height = 1.9in]{../Images/plantuml.png}
+    \includegraphics[width = 2in, height = 1.2in]{../Images/plantuml.png}
 \vspace{-0.1in}
-\caption{PlantUML}
+\caption{Logo PlantUML}
+\end{figure}
+
+\vspace*{-0.3in}
+
+\subsection{Graphviz}
+Graphviz est un logiciel de visualisation graphique open source. La visualisation de graphes est un moyen de représenter des informations structurelles sous forme de diagrammes de graphes et de réseaux abstraits. Il a des applications importantes dans les réseaux, la bio-informatique, le génie logiciel, la conception de bases de données et de sites Web, l'apprentissage automatique et les interfaces visuelles pour d'autres domaines techniques.
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width = 1.9in, height = 0.95in]{../Images/GraphvizLogo.png}
+    \caption{Logo Graphviz}
 \end{figure}
 
 \newpage
@@ -762,42 +772,46 @@ Plantuml previewer est un plugin (App) pour Vim\textsuperscript{\cite{vim}} qui 
 \\
 Vous pouvez trouver la description de ces programmes ci-dessous :
 
-\vspace{0.05in}
+\vspace{0.15in}
 
 \begin{figure}[h]
 \centering
     \fbox{\includegraphics[width = 6.6in, height = 3in]{../Images/PlantumlPreviewer.png}}
-    \caption{PlantUML preview example}
+    \caption{Exemple de PlantUML previewer}
 \end{figure}
 
 \vspace{-0.2in}
-\subsection{Graphviz}
-Graphviz est un logiciel de visualisation graphique open source. La visualisation de graphes est un moyen de représenter des informations structurelles sous forme de diagrammes de graphes et de réseaux abstraits. Il a des applications importantes dans les réseaux, la bio-informatique, le génie logiciel, la conception de bases de données et de sites Web, l'apprentissage automatique et les interfaces visuelles pour d'autres domaines techniques.
-
-\begin{figure}[h]
-\centering
-    \includegraphics[width = 4in, height = 2in]{../Images/GraphvizLogo.png}
-    \caption{Graphviz logo}
-\end{figure}
-
-\newpage
 
 \subsection{Vim}
 Vim est le programme le plus important (une contraction de Vi IMproved) est un clone, avec des ajouts, il est conçu pour être utilisé à la fois à partir d'une interface de ligne de commande (TUI) et en tant qu'application autonome dans une interface utilisateur graphique. Vim\textsuperscript{\cite{vim}} est un logiciel gratuit et open-source et est publié sous une licence qui inclut des clauses de charityware, encourageant les utilisateurs qui apprécient le logiciel à envisager de faire un don à des enfants en Ouganda. La licence est compatible avec la Licence Publique Générale GNU grâce à une clause spéciale permettant la distribution de copies modifiées "sous la version 2 de GNU GPL ou toute version ultérieure".\textsuperscript{\cite{schulz2007hacking}}
 
-\vspace{0.2in}
+\vspace{0.25in}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width = 3.5in, height = 2in]{../Images/Vim.png}
-    \caption{Visual Editor iMproved (text editor)}
+    \includegraphics[width = 1.6in, height = 1in]{../Images/Vim.png}
+\caption{Logo Vim}
 \end{figure}
+
+\newpage
 
 \section{Diagrammes}
 
 \subsection{Diagrammes de cas d'utilisation}
 
 Un diagramme de cas d'utilisation dans sa forme la plus simple est une représentation de l'interaction d'un utilisateur avec le système qui montre la relation entre l'utilisateur et les différents cas d'utilisation dans lesquels l'utilisateur est impliqué. Un diagramme de cas d'utilisation peut identifier les différents types d'utilisateurs d'un système et les différents cas d'utilisation et seront souvent accompagnés également d'autres types de diagrammes.\textsuperscript{\cite{UIS}}
+
+Les diagrammes de cas d'utilisation contiennent généralement :
+
+\begin{itemize}
+\item Cas d'utilisation.
+\item Acteurs.
+\item Relations de dépendance, généralisation et association.
+\end{itemize}
+
+Comme tous les autres diagrammes, les diagrammes de cas d'utilisation peuvent contenir des notes et des contraintes.
+\\
+Les diagrammes de cas d'utilisation peuvent également contenir des packages, qui sont utilisés pour regrouper des éléments de votre modèle en blocs plus volumineux. Parfois, vous souhaiterez également placer des instances de cas d'utilisation dans vos diagrammes, en particulier lorsque vous souhaitez visualiser un système d'exécution spécifique.\textsuperscript{\cite{booch2005unified}}
 
 \vspace{0.2in}
 
@@ -807,9 +821,10 @@ Un diagramme de cas d'utilisation dans sa forme la plus simple est une représen
     \caption{Exemple de cas d'utilisation}
 \end{figure}
 
-\newpage
+\vspace*{-0.3in}
 
 \subsubsection{Identification des acteurs}
+
 \begin{itemize}
 \item Utilisateur : peut être un étudiant, un enseignant, un administrateur ou simplement un visiteur.
 \item Administrateur : c'est lui qui va gérer les étudiants et les enseignants (Ajouter, Modifier et Supprimer).
@@ -817,9 +832,11 @@ Un diagramme de cas d'utilisation dans sa forme la plus simple est une représen
 \item Enseignant : il va gérer les recours soumis (refuser ou valider)
 \end{itemize}
 
+\newpage
+
 \subsubsection{Identification des cas d'utilisation et description textuelle}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|}
 \hline
@@ -841,11 +858,9 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Les acteurs, leurs cas d'utilisation avec les messages(Émet, Reçu).}
 \end{table}
 
-\vspace{-0.3in}
-
 \subsubsection{\large{Les diagrammes de cas d'utilisation avec descriptions}}
 
-\vspace{-0.1in}
+\vspace{0.1in}
 
 \begin{figure}[h]
 \centering
@@ -1715,7 +1730,6 @@ Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fi
 \begin{figure}[h]
 \centering
     \includegraphics[width = 1.6in, height = 1in]{../Images/Vim.png}
-\vspace{0.0in}
 \caption{Logo Vim}
 \end{figure}
 
