@@ -11,92 +11,92 @@
 \contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Planification}}{2}{figure.caption.1}
 \contentsline {chapter}{\color {Blue}{Chapitre I : \IeC {\'E}tude G\IeC {\'e}n\IeC {\'e}ral}}{5}{figure.caption.4}
 \contentsline {section}{\numberline {1}Introduction}{6}{section.0.1}
-\contentsline {section}{\numberline {2}Le d\IeC {\'e}veloppement Web}{7}{section.0.2}
-\contentsline {section}{\numberline {3}Outils de d\IeC {\'e}veloppement Web}{8}{section.0.3}
-\contentsline {section}{\numberline {4}\IeC {\'E}tude sur la gestion des recours}{9}{section.0.4}
-\contentsline {subsection}{\numberline {4.1}C'est quoi un recours?}{9}{subsection.0.4.1}
-\contentsline {subsection}{\numberline {4.2}Mod\IeC {\`e}le d\IeC {\textquoteright }un recours}{9}{subsection.0.4.2}
-\contentsline {section}{\numberline {5}La solution actuelle}{10}{section.0.5}
-\contentsline {subsection}{\numberline {5.1}Les points forts}{10}{subsection.0.5.1}
-\contentsline {subsection}{\numberline {5.2}Les points faibles}{10}{subsection.0.5.2}
-\contentsline {section}{\numberline {6}Le brainstorming}{10}{section.0.6}
-\contentsline {subsection}{\numberline {6.1}Introduction}{10}{subsection.0.6.1}
-\contentsline {subsection}{\numberline {6.2}Les r\IeC {\`e}gles du brainstorming}{10}{subsection.0.6.2}
-\contentsline {subsection}{\numberline {6.3}Le brainstorming avec les \IeC {\'e}tudiants}{11}{subsection.0.6.3}
-\contentsline {section}{\numberline {7}La solution propos\IeC {\'e}e}{11}{section.0.7}
-\contentsline {section}{\numberline {8}Conclusion}{11}{section.0.8}
-\contentsline {chapter}{\color {Blue}{Chapitre II : Analyse \& Conception}}{12}{section.0.8}
-\contentsline {section}{\numberline {1}Introduction}{13}{section.0.1}
-\contentsline {subsection}{\numberline {1.1}Objectifs de l\IeC {\textquoteright }analyse}{13}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {1.2}Objectifs de la conception}{13}{subsection.0.1.2}
-\contentsline {section}{\numberline {2}M\IeC {\'e}thodes utilis\IeC {\'e}e}{14}{section.0.2}
-\contentsline {subsection}{\numberline {2.1}UML}{14}{subsection.0.2.1}
-\contentsline {subsection}{\numberline {2.2}PlantUML}{14}{subsection.0.2.2}
-\contentsline {subsection}{\numberline {2.3}PlantUML Previewer}{15}{subsection.0.2.3}
-\contentsline {subsection}{\numberline {2.4}Graphviz}{15}{subsection.0.2.4}
-\contentsline {subsection}{\numberline {2.5}Vim}{16}{subsection.0.2.5}
-\contentsline {section}{\numberline {3}Diagrammes}{16}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}Diagrammes de cas d'utilisation}{16}{subsection.0.3.1}
-\contentsline {subsubsection}{Identification des acteurs}{17}{subsubsection*.16}
-\contentsline {subsubsection}{Identification des cas d'utilisation et description textuelle}{17}{subsubsection*.17}
-\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de cas d'utilisation avec descriptions}}{17}{subsubsection*.19}
-\contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quence}{23}{subsection.0.3.2}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'inscrire>>}{24}{subsubsection*.37}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'authentifier>>}{25}{subsubsection*.39}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>}{26}{subsubsection*.41}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{27}{subsubsection*.43}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{28}{subsubsection*.45}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Modifier un recours>>}{29}{subsubsection*.47}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>}{30}{subsubsection*.49}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>}{31}{subsubsection*.51}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Ajouter un utilisateur>>}{32}{subsubsection*.53}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Modifier un utilisateur>>}{33}{subsubsection*.55}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Supprimer un utilisateur>>}{34}{subsubsection*.57}
-\contentsline {subsection}{\numberline {3.3}Diagrammes d'activit\IeC {\'e}}{35}{subsection.0.3.3}
-\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<S'authentifier>>}{36}{subsubsection*.60}
-\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion d'administration>>}{37}{subsubsection*.62}
-\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion des enseignants>>}{38}{subsubsection*.64}
-\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion des \IeC {\'e}tudiants>>}{39}{subsubsection*.66}
-\contentsline {subsection}{\numberline {3.4}Diagramme de d\IeC {\'e}ploiement}{40}{subsection.0.3.4}
-\contentsline {subsubsection}{Le diagramme de d\IeC {\'e}ploiement}{40}{subsubsection*.68}
-\contentsline {subsection}{\numberline {3.5}Diagrammes des classes}{41}{subsection.0.3.5}
-\contentsline {subsubsection}{Diagramme de classe <<Utilisateur>>}{41}{subsubsection*.70}
-\contentsline {subsubsection}{Diagramme de classe <<Gestion d'administration>>}{42}{subsubsection*.72}
-\contentsline {subsubsection}{Diagramme de classe <<Gestion des enseignants>>}{43}{subsubsection*.74}
-\contentsline {subsubsection}{Diagramme de classe <<Gestion des \IeC {\'e}tudiants>>}{44}{subsubsection*.76}
-\contentsline {section}{\numberline {4}Conclusion}{44}{section.0.4}
-\contentsline {chapter}{\color {Blue}{Chapitre III : R\IeC {\'e}alisation}}{45}{section.0.4}
-\contentsline {section}{\numberline {1}Introduction}{46}{section.0.1}
-\contentsline {section}{\numberline {2}Les langages de programmation utilis\IeC {\'e}s}{46}{section.0.2}
-\contentsline {subsection}{\numberline {2.1}HTML}{46}{subsection.0.2.1}
-\contentsline {subsection}{\numberline {2.2}CSS}{47}{subsection.0.2.2}
-\contentsline {subsection}{\numberline {2.3}Bootstrap}{47}{subsection.0.2.3}
-\contentsline {subsection}{\numberline {2.4}Javascript}{48}{subsection.0.2.4}
-\contentsline {subsection}{\numberline {2.5}PHP}{48}{subsection.0.2.5}
-\contentsline {subsection}{\numberline {2.6}MySQL}{49}{subsection.0.2.6}
-\contentsline {section}{\numberline {3}Les outils utilis\IeC {\'e}s}{49}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}Vim}{49}{subsection.0.3.1}
-\contentsline {subsection}{\numberline {3.2}Mycli}{50}{subsection.0.3.2}
-\contentsline {subsection}{\numberline {3.3}Apache}{50}{subsection.0.3.3}
-\contentsline {subsection}{\numberline {3.4}PhpMyAdmin}{51}{subsection.0.3.4}
-\contentsline {section}{\numberline {4}Architecture}{51}{section*.88}
-\contentsline {section}{\numberline {5}Mat\IeC {\'e}riaux utilis\IeC {\'e}s}{52}{section.0.5}
-\contentsline {subsection}{\numberline {5.1}Environnement mat\IeC {\'e}riel}{52}{subsection.0.5.1}
-\contentsline {subsection}{\numberline {5.2}Signification des abr\IeC {\'e}viations}{52}{subsection.0.5.2}
-\contentsline {section}{\numberline {6}Le site Web}{53}{section.0.6}
-\contentsline {subsection}{\numberline {6.1}Page de connexion}{53}{subsection.0.6.1}
-\contentsline {subsection}{\numberline {6.2}Page d'inscription}{54}{subsection.0.6.2}
-\contentsline {subsection}{\numberline {6.3}Page d'inscription compl\IeC {\`e}te}{55}{subsection.0.6.3}
-\contentsline {subsection}{\numberline {6.4}Page d'accueil}{56}{subsection.0.6.4}
-\contentsline {subsection}{\numberline {6.5}Page de profil pour un \IeC {\'e}tudiant}{57}{subsection.0.6.5}
-\contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{60}{subsection.0.6.6}
-\contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{61}{subsection.0.6.7}
-\contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{63}{subsection.0.6.8}
-\contentsline {subsection}{\numberline {6.9}Page de trafic}{65}{subsection.0.6.9}
-\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{66}{subsection.0.6.10}
-\contentsline {subsection}{\numberline {6.11}Page des graphiques}{67}{subsection.0.6.11}
-\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives (responsive)}{68}{subsection.0.6.12}
-\contentsline {subsection}{\numberline {6.13}Page contactez-nous}{69}{subsection.0.6.13}
-\contentsline {section}{\numberline {7}Conclusion}{69}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{70}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{71}{section.0.7}
+\contentsline {section}{\numberline {2}Le d\IeC {\'e}veloppement Web}{6}{section.0.2}
+\contentsline {section}{\numberline {3}Outils de d\IeC {\'e}veloppement Web}{7}{section.0.3}
+\contentsline {section}{\numberline {4}\IeC {\'E}tude sur la gestion des recours}{8}{section.0.4}
+\contentsline {subsection}{\numberline {4.1}C'est quoi un recours?}{8}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {4.2}Mod\IeC {\`e}le d\IeC {\textquoteright }un recours}{8}{subsection.0.4.2}
+\contentsline {section}{\numberline {5}La solution actuelle}{9}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Les points forts}{9}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {5.2}Les points faibles}{9}{subsection.0.5.2}
+\contentsline {section}{\numberline {6}Le brainstorming}{9}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Introduction}{9}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {6.2}Les r\IeC {\`e}gles du brainstorming}{9}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {6.3}Le brainstorming avec les \IeC {\'e}tudiants}{10}{subsection.0.6.3}
+\contentsline {section}{\numberline {7}La solution propos\IeC {\'e}e}{10}{section.0.7}
+\contentsline {section}{\numberline {8}Conclusion}{10}{section.0.8}
+\contentsline {chapter}{\color {Blue}{Chapitre II : Analyse \& Conception}}{11}{section.0.8}
+\contentsline {section}{\numberline {1}Introduction}{12}{section.0.1}
+\contentsline {subsection}{\numberline {1.1}Objectifs de l\IeC {\textquoteright }analyse}{12}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {1.2}Objectifs de la conception}{12}{subsection.0.1.2}
+\contentsline {section}{\numberline {2}M\IeC {\'e}thodes utilis\IeC {\'e}e}{13}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}UML}{13}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}PlantUML}{13}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.3}PlantUML Previewer}{14}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Graphviz}{14}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}Vim}{15}{subsection.0.2.5}
+\contentsline {section}{\numberline {3}Diagrammes}{15}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}Diagrammes de cas d'utilisation}{15}{subsection.0.3.1}
+\contentsline {subsubsection}{Identification des acteurs}{16}{subsubsection*.16}
+\contentsline {subsubsection}{Identification des cas d'utilisation et description textuelle}{16}{subsubsection*.17}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de cas d'utilisation avec descriptions}}{16}{subsubsection*.19}
+\contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quence}{22}{subsection.0.3.2}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'inscrire>>}{23}{subsubsection*.37}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'authentifier>>}{24}{subsubsection*.39}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>}{25}{subsubsection*.41}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{26}{subsubsection*.43}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{27}{subsubsection*.45}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Modifier un recours>>}{28}{subsubsection*.47}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>}{29}{subsubsection*.49}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>}{30}{subsubsection*.51}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Ajouter un utilisateur>>}{31}{subsubsection*.53}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Modifier un utilisateur>>}{32}{subsubsection*.55}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Supprimer un utilisateur>>}{33}{subsubsection*.57}
+\contentsline {subsection}{\numberline {3.3}Diagrammes d'activit\IeC {\'e}}{34}{subsection.0.3.3}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<S'authentifier>>}{35}{subsubsection*.60}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion d'administration>>}{36}{subsubsection*.62}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion des enseignants>>}{37}{subsubsection*.64}
+\contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion des \IeC {\'e}tudiants>>}{38}{subsubsection*.66}
+\contentsline {subsection}{\numberline {3.4}Diagramme de d\IeC {\'e}ploiement}{39}{subsection.0.3.4}
+\contentsline {subsubsection}{Le diagramme de d\IeC {\'e}ploiement}{39}{subsubsection*.68}
+\contentsline {subsection}{\numberline {3.5}Diagrammes des classes}{40}{subsection.0.3.5}
+\contentsline {subsubsection}{Diagramme de classe <<Utilisateur>>}{40}{subsubsection*.70}
+\contentsline {subsubsection}{Diagramme de classe <<Gestion d'administration>>}{41}{subsubsection*.72}
+\contentsline {subsubsection}{Diagramme de classe <<Gestion des enseignants>>}{42}{subsubsection*.74}
+\contentsline {subsubsection}{Diagramme de classe <<Gestion des \IeC {\'e}tudiants>>}{43}{subsubsection*.76}
+\contentsline {section}{\numberline {4}Conclusion}{43}{section.0.4}
+\contentsline {chapter}{\color {Blue}{Chapitre III : R\IeC {\'e}alisation}}{44}{section.0.4}
+\contentsline {section}{\numberline {1}Introduction}{45}{section.0.1}
+\contentsline {section}{\numberline {2}Les langages de programmation utilis\IeC {\'e}s}{45}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{45}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}CSS}{46}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.3}Bootstrap}{46}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Javascript}{47}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}PHP}{47}{subsection.0.2.5}
+\contentsline {subsection}{\numberline {2.6}MySQL}{48}{subsection.0.2.6}
+\contentsline {section}{\numberline {3}Les outils utilis\IeC {\'e}s}{48}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}Vim}{48}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2}Mycli}{49}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.3}Apache}{49}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {3.4}PhpMyAdmin}{50}{subsection.0.3.4}
+\contentsline {section}{\numberline {4}Architecture}{50}{section*.88}
+\contentsline {section}{\numberline {5}Mat\IeC {\'e}riaux utilis\IeC {\'e}s}{51}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Environnement mat\IeC {\'e}riel}{51}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {5.2}Signification des abr\IeC {\'e}viations}{51}{subsection.0.5.2}
+\contentsline {section}{\numberline {6}Le site Web}{52}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Page de connexion}{52}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {6.2}Page d'inscription}{53}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {6.3}Page d'inscription compl\IeC {\`e}te}{54}{subsection.0.6.3}
+\contentsline {subsection}{\numberline {6.4}Page d'accueil}{55}{subsection.0.6.4}
+\contentsline {subsection}{\numberline {6.5}Page de profil pour un \IeC {\'e}tudiant}{56}{subsection.0.6.5}
+\contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{59}{subsection.0.6.6}
+\contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{60}{subsection.0.6.7}
+\contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{62}{subsection.0.6.8}
+\contentsline {subsection}{\numberline {6.9}Page de trafic}{64}{subsection.0.6.9}
+\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{65}{subsection.0.6.10}
+\contentsline {subsection}{\numberline {6.11}Page des graphiques}{66}{subsection.0.6.11}
+\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives (responsive)}{67}{subsection.0.6.12}
+\contentsline {subsection}{\numberline {6.13}Page contactez-nous}{68}{subsection.0.6.13}
+\contentsline {section}{\numberline {7}Conclusion}{68}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{69}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{70}{section.0.7}
