@@ -41,9 +41,9 @@
 \contentsline {figure}{\numberline {40}{\ignorespaces Diagramme d'activit\IeC {\'e} <<Gestion des \IeC {\'e}tudiants>>\relax }}{39}{figure.caption.67}
 \contentsline {figure}{\numberline {41}{\ignorespaces Diagramme de d\IeC {\'e}ploiement\relax }}{40}{figure.caption.69}
 \contentsline {figure}{\numberline {42}{\ignorespaces Diagramme de classe <<Utilisateur>>\relax }}{41}{figure.caption.71}
-\contentsline {figure}{\numberline {43}{\ignorespaces Diagramme de classe <<Administrateur>>\relax }}{42}{figure.caption.73}
-\contentsline {figure}{\numberline {44}{\ignorespaces Diagramme de classe <<Enseignant>>\relax }}{43}{figure.caption.75}
-\contentsline {figure}{\numberline {45}{\ignorespaces Diagramme de classe <<\IeC {\'E}tudiant>>\relax }}{44}{figure.caption.77}
+\contentsline {figure}{\numberline {43}{\ignorespaces Diagramme de classe <<Gestion d'administration>>\relax }}{42}{figure.caption.73}
+\contentsline {figure}{\numberline {44}{\ignorespaces Diagramme de classe <<Gestion des enseignants>>\relax }}{43}{figure.caption.75}
+\contentsline {figure}{\numberline {45}{\ignorespaces Diagramme de classe <<Gestion des \IeC {\'e}tudiants>>\relax }}{44}{figure.caption.77}
 \contentsline {figure}{\numberline {46}{\ignorespaces Logo HTML\relax }}{46}{figure.caption.78}
 \contentsline {figure}{\numberline {47}{\ignorespaces Logo CSS\relax }}{47}{figure.caption.79}
 \contentsline {figure}{\numberline {48}{\ignorespaces Logo Bootstrap\relax }}{47}{figure.caption.80}
@@ -74,4 +74,5 @@
 \contentsline {figure}{\numberline {73}{\ignorespaces Page de trafic\relax }}{65}{figure.caption.107}
 \contentsline {figure}{\numberline {74}{\ignorespaces Page du tableau de bord\relax }}{66}{figure.caption.108}
 \contentsline {figure}{\numberline {75}{\ignorespaces Page des graphiques\relax }}{67}{figure.caption.109}
-\contentsline {figure}{\numberline {76}{\ignorespaces Page contactez-nous\relax }}{68}{figure.caption.110}
+\contentsline {figure}{\numberline {76}{\ignorespaces Trois figures repr\IeC {\'e}sentant la r\IeC {\'e}activit\IeC {\'e} (responsivity) des pages Web\relax }}{68}{figure.caption.110}
+\contentsline {figure}{\numberline {77}{\ignorespaces Page contactez-nous\relax }}{69}{figure.caption.111}
