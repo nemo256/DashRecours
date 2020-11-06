@@ -69,34 +69,32 @@
 \contentsline {section}{\numberline {1}Introduction}{45}{section.0.1}
 \contentsline {section}{\numberline {2}Les langages de programmation utilis\IeC {\'e}s}{45}{section.0.2}
 \contentsline {subsection}{\numberline {2.1}HTML}{45}{subsection.0.2.1}
-\contentsline {subsection}{\numberline {2.2}CSS}{46}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.2}CSS}{45}{subsection.0.2.2}
 \contentsline {subsection}{\numberline {2.3}Bootstrap}{46}{subsection.0.2.3}
-\contentsline {subsection}{\numberline {2.4}Javascript}{47}{subsection.0.2.4}
-\contentsline {subsection}{\numberline {2.5}PHP}{47}{subsection.0.2.5}
-\contentsline {subsection}{\numberline {2.6}MySQL}{48}{subsection.0.2.6}
-\contentsline {section}{\numberline {3}Les outils utilis\IeC {\'e}s}{48}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}Vim}{48}{subsection.0.3.1}
-\contentsline {subsection}{\numberline {3.2}Mycli}{49}{subsection.0.3.2}
-\contentsline {subsection}{\numberline {3.3}Apache}{49}{subsection.0.3.3}
-\contentsline {subsection}{\numberline {3.4}PhpMyAdmin}{50}{subsection.0.3.4}
-\contentsline {section}{\numberline {4}Architecture}{50}{section*.88}
-\contentsline {section}{\numberline {5}Mat\IeC {\'e}riaux utilis\IeC {\'e}s}{51}{section.0.5}
-\contentsline {subsection}{\numberline {5.1}Environnement mat\IeC {\'e}riel}{51}{subsection.0.5.1}
-\contentsline {subsection}{\numberline {5.2}Signification des abr\IeC {\'e}viations}{51}{subsection.0.5.2}
-\contentsline {section}{\numberline {6}Le site Web}{52}{section.0.6}
-\contentsline {subsection}{\numberline {6.1}Page de connexion}{52}{subsection.0.6.1}
-\contentsline {subsection}{\numberline {6.2}Page d'inscription}{53}{subsection.0.6.2}
-\contentsline {subsection}{\numberline {6.3}Page d'inscription compl\IeC {\`e}te}{54}{subsection.0.6.3}
-\contentsline {subsection}{\numberline {6.4}Page d'accueil}{55}{subsection.0.6.4}
-\contentsline {subsection}{\numberline {6.5}Page de profil pour un \IeC {\'e}tudiant}{56}{subsection.0.6.5}
-\contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{59}{subsection.0.6.6}
-\contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{60}{subsection.0.6.7}
-\contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{62}{subsection.0.6.8}
-\contentsline {subsection}{\numberline {6.9}Page de trafic}{64}{subsection.0.6.9}
-\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{65}{subsection.0.6.10}
-\contentsline {subsection}{\numberline {6.11}Page des graphiques}{66}{subsection.0.6.11}
-\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives (responsive)}{67}{subsection.0.6.12}
-\contentsline {subsection}{\numberline {6.13}Page contactez-nous}{68}{subsection.0.6.13}
-\contentsline {section}{\numberline {7}Conclusion}{68}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{69}{section.0.7}
-\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{70}{section.0.7}
+\contentsline {subsection}{\numberline {2.4}Javascript}{46}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {2.5}PHP}{46}{subsection.0.2.5}
+\contentsline {subsection}{\numberline {2.6}MySQL}{47}{subsection.0.2.6}
+\contentsline {section}{\numberline {3}Les outils utilis\IeC {\'e}s}{47}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}Vim}{47}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2}Apache}{47}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.3}Mycli}{48}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {3.4}PhpMyAdmin}{48}{subsection.0.3.4}
+\contentsline {section}{\numberline {4}Architecture}{48}{section*.88}
+\contentsline {section}{\numberline {5}Environnement mat\IeC {\'e}riel}{49}{section.0.5}
+\contentsline {section}{\numberline {6}Le site Web}{50}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Page de connexion}{50}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {6.2}Page d'inscription}{51}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {6.3}Page d'inscription compl\IeC {\`e}te}{52}{subsection.0.6.3}
+\contentsline {subsection}{\numberline {6.4}Page d'accueil}{53}{subsection.0.6.4}
+\contentsline {subsection}{\numberline {6.5}Page de profil pour un \IeC {\'e}tudiant}{54}{subsection.0.6.5}
+\contentsline {subsection}{\numberline {6.6}Page des param\IeC {\`e}tres}{57}{subsection.0.6.6}
+\contentsline {subsection}{\numberline {6.7}Page de profil pour un enseignant}{58}{subsection.0.6.7}
+\contentsline {subsection}{\numberline {6.8}Page de profil pour un administrateur}{60}{subsection.0.6.8}
+\contentsline {subsection}{\numberline {6.9}Page de trafic}{62}{subsection.0.6.9}
+\contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{63}{subsection.0.6.10}
+\contentsline {subsection}{\numberline {6.11}Page des graphiques}{64}{subsection.0.6.11}
+\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives (responsive)}{65}{subsection.0.6.12}
+\contentsline {subsection}{\numberline {6.13}Page contactez-nous}{66}{subsection.0.6.13}
+\contentsline {section}{\numberline {7}Conclusion}{66}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{67}{section.0.7}
+\contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Bibliographie}}{68}{section.0.7}
