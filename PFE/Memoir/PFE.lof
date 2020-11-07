@@ -9,15 +9,15 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Logo UML (Unified Modeling Language)\relax }}{13}{figure.caption.10}
 \contentsline {figure}{\numberline {9}{\ignorespaces Logo PlantUML\relax }}{13}{figure.caption.11}
 \contentsline {figure}{\numberline {10}{\ignorespaces Logo Graphviz\relax }}{13}{figure.caption.12}
-\contentsline {figure}{\numberline {11}{\ignorespaces Exemple de PlantUML previewer\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces Exemple de PlantUML Previewer\relax }}{14}{figure.caption.13}
 \contentsline {figure}{\numberline {12}{\ignorespaces Logo Vim\relax }}{14}{figure.caption.14}
 \contentsline {figure}{\numberline {13}{\ignorespaces Exemple de cas d'utilisation\relax }}{15}{figure.caption.15}
 \contentsline {figure}{\numberline {14}{\ignorespaces Diagramme de cas d'utilisation pour un Utilisateur\relax }}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagramme de cas d'utilisation pour l'administrateur\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagramme de cas d'utilisation <<Gestion d'administration>>\relax }}{17}{figure.caption.21}
 \contentsline {figure}{\numberline {16}{\ignorespaces Cas d'utilisation <<G\IeC {\'e}rer les \IeC {\'e}tudiants>>\relax }}{18}{figure.caption.22}
-\contentsline {figure}{\numberline {17}{\ignorespaces Diagramme de cas d'utilisation pour l'enseignant\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagramme de cas d'utilisation <<Gestion des enseignants>>\relax }}{18}{figure.caption.24}
 \contentsline {figure}{\numberline {18}{\ignorespaces Cas d'utilisation <<G\IeC {\'e}rer les recours qui on \IeC {\'e}t\IeC {\'e} soumis>>\relax }}{19}{figure.caption.25}
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme de cas d'utilisation pour l'\IeC {\'e}tudiant\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme de cas d'utilisation <<Gestion des \IeC {\'e}tudiants\relax }}{20}{figure.caption.27}
 \contentsline {figure}{\numberline {20}{\ignorespaces Cas d'utilisation <<Modifier un recours>>\relax }}{20}{figure.caption.28}
 \contentsline {figure}{\numberline {21}{\ignorespaces Cas d'utilisation <<Ajouter un recours>>\relax }}{21}{figure.caption.30}
 \contentsline {figure}{\numberline {22}{\ignorespaces Cas d'utilisation <<Supprimer un recours>>\relax }}{21}{figure.caption.32}
@@ -27,7 +27,7 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S'authentifier>>\relax }}{24}{figure.caption.40}
 \contentsline {figure}{\numberline {27}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>\relax }}{25}{figure.caption.42}
 \contentsline {figure}{\numberline {28}{\ignorespaces Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>\relax }}{26}{figure.caption.44}
-\contentsline {figure}{\numberline {29}{\ignorespaces diagramme de s\IeC {\'e}quences <<ajouter un recours>>\relax }}{27}{figure.caption.46}
+\contentsline {figure}{\numberline {29}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Ajouter un recours>>\relax }}{27}{figure.caption.46}
 \contentsline {figure}{\numberline {30}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Modifier un recours>>\relax }}{28}{figure.caption.48}
 \contentsline {figure}{\numberline {31}{\ignorespaces Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>\relax }}{29}{figure.caption.50}
 \contentsline {figure}{\numberline {32}{\ignorespaces Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>\relax }}{30}{figure.caption.52}
@@ -74,5 +74,5 @@
 \contentsline {figure}{\numberline {73}{\ignorespaces Page de trafic\relax }}{62}{figure.caption.107}
 \contentsline {figure}{\numberline {74}{\ignorespaces Page du tableau de bord\relax }}{63}{figure.caption.108}
 \contentsline {figure}{\numberline {75}{\ignorespaces Page des graphiques\relax }}{64}{figure.caption.109}
-\contentsline {figure}{\numberline {76}{\ignorespaces Trois figures repr\IeC {\'e}sentant la r\IeC {\'e}activit\IeC {\'e} (responsivity) des pages Web\relax }}{65}{figure.caption.110}
+\contentsline {figure}{\numberline {76}{\ignorespaces Trois figures repr\IeC {\'e}sentant la r\IeC {\'e}activit\IeC {\'e} des pages Web\relax }}{65}{figure.caption.110}
 \contentsline {figure}{\numberline {77}{\ignorespaces Page contactez-nous\relax }}{66}{figure.caption.111}

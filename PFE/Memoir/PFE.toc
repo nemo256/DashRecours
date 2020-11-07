@@ -35,12 +35,12 @@
 \contentsline {subsubsection}{Identification des acteurs}{15}{subsubsection*.16}
 \contentsline {subsubsection}{Identification des cas d'utilisation et description textuelle}{16}{subsubsection*.17}
 \contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont {Les diagrammes de cas d'utilisation avec descriptions}}{16}{subsubsection*.19}
-\contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quence}{22}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.2}Diagrammes de s\IeC {\'e}quences}{22}{subsection.0.3.2}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'inscrire>>}{23}{subsubsection*.37}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S'authentifier>>}{24}{subsubsection*.39}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\IeC {\'e}rer un recours soumis par un \IeC {\'e}tudiant>>}{25}{subsubsection*.41}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{26}{subsubsection*.43}
-\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<S\IeC {\'e}lectionnez tous les recours>>}{27}{subsubsection*.45}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Ajouter un recours>>}{27}{subsubsection*.45}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Modifier un recours>>}{28}{subsubsection*.47}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<Supprimer un recours>>}{29}{subsubsection*.49}
 \contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences <<G\'erer un utilisateur>>}{30}{subsubsection*.51}
@@ -54,7 +54,7 @@
 \contentsline {subsubsection}{Diagramme d'activit\IeC {\'e} <<Gestion des \IeC {\'e}tudiants>>}{38}{subsubsection*.66}
 \contentsline {subsection}{\numberline {3.4}Diagramme de d\IeC {\'e}ploiement}{39}{subsection.0.3.4}
 \contentsline {subsubsection}{Le diagramme de d\IeC {\'e}ploiement}{39}{subsubsection*.68}
-\contentsline {subsection}{\numberline {3.5}Diagrammes des classes}{40}{subsection.0.3.5}
+\contentsline {subsection}{\numberline {3.5}Diagrammes de classe}{40}{subsection.0.3.5}
 \contentsline {subsubsection}{Diagramme de classe <<Utilisateur>>}{40}{subsubsection*.70}
 \contentsline {subsubsection}{Diagramme de classe <<Gestion d'administration>>}{41}{subsubsection*.72}
 \contentsline {subsubsection}{Diagramme de classe <<Gestion des enseignants>>}{42}{subsubsection*.74}
@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {6.9}Page de trafic}{62}{subsection.0.6.9}
 \contentsline {subsection}{\numberline {6.10}Page du tableau de bord}{63}{subsection.0.6.10}
 \contentsline {subsection}{\numberline {6.11}Page des graphiques}{64}{subsection.0.6.11}
-\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives (responsive)}{65}{subsection.0.6.12}
+\contentsline {subsection}{\numberline {6.12}Les pages Web r\IeC {\'e}actives}{65}{subsection.0.6.12}
 \contentsline {subsection}{\numberline {6.13}Page contactez-nous}{66}{subsection.0.6.13}
 \contentsline {section}{\numberline {7}Conclusion}{66}{section.0.7}
 \contentsline {chapter}{\vspace {-0.12in}\color {Blue}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}}{67}{section.0.7}

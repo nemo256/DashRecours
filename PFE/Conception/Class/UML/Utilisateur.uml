@@ -4,6 +4,8 @@
 
 hide circle
 
+skinparam classAttributeIconSize 0
+
 class Login {
     - Username : string
     - Password : string

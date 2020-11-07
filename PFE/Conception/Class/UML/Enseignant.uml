@@ -4,6 +4,7 @@
 
 hide circle
 
+skinparam classAttributeIconSize 0
 
 class Recours {
     - Explication : string

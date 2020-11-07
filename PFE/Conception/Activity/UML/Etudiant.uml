@@ -2,7 +2,7 @@
 
 !includeurl https://raw.githubusercontent.com/inthepocket/plantuml-styles/master/styles.plantuml!0
 
-title <back:gray><size:36>**Gestion d'étudiant**</size></back>
+title <back:gray><size:36>**Gestion des étudiants**</size></back>
 
 |<size:22>**__Étudiant__**</size>|
 start
