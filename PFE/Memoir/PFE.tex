@@ -21,6 +21,7 @@
 \usepackage[normalem]{ulem}
 \usepackage[none]{hyphenat}
 \usepackage[hidelinks]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \useunder{\uline}{\ul}{}
 
 % No hyphenation (word wrapping) with text justification
@@ -221,18 +222,28 @@
 
        \vspace{0.1in}
 
-       \begin{figure}[h]
-       \hspace{0.29in}
-           \Large{Faculté des Sciences}$
-       \hspace{0.25in}
-       \begin{array}{l}
-       \centering
-           \includegraphics[width = 2.2in, height = 1.4in]{../Images/UnivUMBB.jpg}
-       \end{array}
-       \hspace{-0.2in}
-           $\Large{Département d'informatique}
-       \hspace{-0.8in}
-       \end{figure}
+%       \begin{figure}[h]
+%       \hspace{0.29in}
+%           \Large{Faculté des Sciences}$
+%       \hspace{0.25in}
+%       \begin{array}{l}
+%       \centering
+%           \includegraphics[width = 2.2in, height = 1.4in]{../Images/UnivUMBB.jpg}
+%       \end{array}
+%       \hspace{-0.2in}
+%           $\Large{Département d'informatique}
+%       \hspace{-0.8in}
+%       \end{figure}
+
+    \begin{figure}[h]
+    \centering
+        \includegraphics[width = 1.5in, height = 1in]{../Images/UnivUMBB.jpg}
+    \end{figure}
+     \vspace*{-0.1in}
+    \large{Faculté des Sciences}
+    \\
+    \vspace*{-0.1in}
+    \large{Département d'informatique}
    \end{center}
 
     \hspace{0.2in}
@@ -246,7 +257,7 @@
     2019 / 2020
 
     \hspace{0.2in}
-    \large{\textbf{Spécialité \, :}  Informatique}
+    \large{\textbf{Spécialité \, :}  Ingénierie des systèmes d'information et du logiciel}
 
     \hspace{0.2in}
     \Large{N°de l’Arrêté d’habilitation de la spécialité : arrêté n °872 du 26/07/2016}
@@ -382,7 +393,7 @@ Les universités contemporaines reçoivent beaucoup d’informations et de donn�
 \\\\
 Notre objectif est de créer un tableau de bord qui consiste en l'organisation de plusieurs indicateurs de sa performance, il est efficace d’avoir une vue en temps réel ou différé des enjeux de son activité et de permettre la visualisation de données brutes.
 \\\\
-Aussi l’agrégation de données clés permettant de gagner en efficacité et de prendre les meilleures décisions. Le tableau de bord confirme de façon structurée les impressions et  indique la nécessité d’entreprendre une analyse plus approfondie, en cernant la zone à problème, il oriente des corrections à mener avant d’agir. Le tableau de bord est utilisé aussi afin de permettre la visualisation de données qui rendre les données plus accessibles et compréhensibles, elle donne du sens à ces données.\textsuperscript{\cite{few2006information}}
+  Aussi l’agrégation de données clés permettant de gagner en efficacité et de prendre les meilleures décisions. Le tableau de bord confirme de façon structurée les impressions et  indique la nécessité d’entreprendre une analyse plus approfondie, en cernant la zone à problème, il oriente des corrections à mener avant d’agir. Le tableau de bord est utilisé aussi afin de permettre la visualisation de données qui rendre les données plus accessibles et compréhensibles, elle donne du sens à ces données.\textsuperscript{[4]}
 \\\\
 Pour cela, elle fait appel à différentes représentations visuelles pour la faciliter de comprendre la base de données avec des représentation graphique en deux ou trois dimensions, utilisant des couleurs et des trames qui permettent d'éclaircir la lecture des données de manière plus simple.
 \end{changemargin}
@@ -412,7 +423,7 @@ Contemporary universities receive a lot of information and data concerning stude
 \\\\
 Our goal is to create a dashboard that consists of the organization of several performance indicators, it is effective to have a real-time or deferred view of the challenges of your activity and to allow the visualization of raw data.
 \\\\
-  Also the aggregation of key data to gain efficiency and make the best decisions. The dashboard confirms impressions in a structured way and indicates the need for a more in-depth analysis, by identifying the problem area, it directs corrections to be made before acting. The dashboard is also used to allow data visualization which makes data more accessible and understandable, it gives meaning to this data.\textsuperscript{\cite{few2006information}}
+  Also the aggregation of key data to gain efficiency and make the best decisions. The dashboard confirms impressions in a structured way and indicates the need for a more in-depth analysis, by identifying the problem area, it directs corrections to be made before acting. The dashboard is also used to allow data visualization which makes data more accessible and understandable, it gives meaning to this data.\textsuperscript{[4]}
 \\\\
 To do this, it uses different visual representations to make it easier to understand the database with two or three-dimensional graphical representations, using colors and frames that make it easier to read the data.
 \end{changemargin}
@@ -460,7 +471,7 @@ Keywords : recourses, dashboard, data visualization, graphical representations.
     \vspace{0.5in}
 \end{center}
 \addcontentsline{toc}{chapter}{\vspace{-0.12in}\color{Blue}{Introduction générale}}
-De nos jours, une bonne partie de la population mondiale utilise internet. Le Web est accessible de partout et tout le temps, un site Web est une véritable vitrine virtuelle qui permet d’être visible sur le net et de communiquer en temps réel, c’est un investissement et non une dépense qui facilite la vie des gens, le développement Web réponde aux attentes grandissantes des utilisateurs, et aux tendances en matière de conception, il est amené à maîtriser de multiples outils et technologies au sein de projets parfois très différents. Que ce soit en équipe ou en freelance.\textsuperscript{\cite{berners2001semantic}}
+De nos jours, une bonne partie de la population mondiale utilise internet. Le Web est accessible de partout et tout le temps, un site Web est une véritable vitrine virtuelle qui permet d’être visible sur le net et de communiquer en temps réel, c’est un investissement et non une dépense qui facilite la vie des gens, le développement Web réponde aux attentes grandissantes des utilisateurs, et aux tendances en matière de conception, il est amené à maîtriser de multiples outils et technologies au sein de projets parfois très différents. Que ce soit en équipe ou en freelance.\textsuperscript{[1]}
 \\\\
 \uline{Problématique :} parmi les choses que nous aimerions changer, nous parlons de la manière actuelle de soumettre des recours qui consiste à écrire le recours dans un papier ou en utilisant Google Forms, puis à soumettre le recours pour le traiter, le problème de cette solution est le grand espace mémoire qui occupe la base de données, la perte de données à cause de la dégradation du papier et le traitement prend beaucoup de temps.
 \\\\
@@ -488,7 +499,7 @@ dans cette partie, nous allons présenter l'analyse et la conception de notre so
 \end{center}
 \addcontentsline{toc}{chapter}{\vspace{-0.12in}\color{Blue}{Planification}}
 \hspace*{-0.05in}
-Dans cette partie, nous avons fait la planification de notre projet pour savoir qui fait quoi et faire une répartition des tâches. Cette planification consiste en un diagramme de Gantt et de réseau (utilisé en ordonnancement et en gestion de projet et permettant de visualiser dans le temps les diverses tâches composant un projet), nous avons pris 15 jours de confinement à cause de covid-19 et quelques jours fériés, d'anniversaires et l'eid el adha...
+Dans cette partie, nous avons fait la planification de notre projet pour savoir qui fait quoi et faire une répartition des tâches. Cette planification consiste en un diagramme de Gantt et de réseau (utilisé en ordonnancement et en gestion de projet et permettant de visualiser dans le temps les diverses tâches composant un projet), nous avons pris 15 jours de confinement à cause de covid-19 et quelques jours fériés, d'anniversaires et l'eid el adha...\textsuperscript{[13]}
 \\
 \textbf{\underline{Note :}} Nous avons utilisé ProjectLibre pour établir ces différents schémas.
 \\
@@ -546,7 +557,7 @@ Les universités de nos jours font face à des problèmes en ce qui concerne les
 
 \section{Le développement Web}
 \vspace{0.2in}
-Le développement Web est le travail impliqué dans le développement d'un site Web pour Internet (World Wide Web) ou un intranet (un réseau privé). Le développement Web peut aller du développement d'une simple page statique unique de texte brut à des applications Internet complexes (applications Web), des entreprises électroniques et des services de réseaux sociaux. Une liste plus complète de tâches auxquelles le développement Web se réfère généralement peut inclure l'ingénierie Web, la conception Web, le développement de contenu Web, la liaison client, les scripts côtés clients / côtés serveur, la configuration de la sécurité du serveur Web et du réseau et le développement du commerce électronique.\textsuperscript{\cite{berners2001semantic}}
+Le développement Web est le travail impliqué dans le développement d'un site Web pour Internet (World Wide Web) ou un intranet (un réseau privé). Le développement Web peut aller du développement d'une simple page statique unique de texte brut à des applications Internet complexes (applications Web), des entreprises électroniques et des services de réseaux sociaux. Une liste plus complète de tâches auxquelles le développement Web se réfère généralement peut inclure l'ingénierie Web, la conception Web, le développement de contenu Web, la liaison client, les scripts côtés clients / côtés serveur, la configuration de la sécurité du serveur Web et du réseau et le développement du commerce électronique.\textsuperscript{[1]}
 
 \vspace{0.3in}
 
@@ -560,11 +571,11 @@ Le développement Web est le travail impliqué dans le développement d'un site 
 
 \section{Outils de développement Web}
 \vspace{0.2in}
-Les outils de développement Web (souvent appelés devtools) permettent aux développeurs Web de tester et de déboguer leur code. Ils diffèrent des créateurs de sites Web et des environnements de développement intégrés (IDE) en ce qu'ils ne facilitent pas la création directe d'une page Web, mais plutôt des outils utilisés pour tester l'interface utilisateur d'un site Web ou d'une application Web.\textsuperscript{\cite{berners2001semantic}}
+Les outils de développement Web (souvent appelés devtools) permettent aux développeurs Web de tester et de déboguer leur code. Ils diffèrent des créateurs de sites Web et des environnements de développement intégrés (IDE) en ce qu'ils ne facilitent pas la création directe d'une page Web, mais plutôt des outils utilisés pour tester l'interface utilisateur d'un site Web ou d'une application Web.\textsuperscript{[1]}
 \\\\
 Les outils de développement Web sont des modules complémentaires de navigateur ou des fonctionnalités intégrées dans les navigateurs Web. Les navigateurs Web les plus populaires, tels que Google Chrome, Firefox, Internet Explorer, Safari et Opera, ont des outils intégrés pour aider les développeurs Web, et de nombreux modules complémentaires peuvent être trouvés dans leurs centres de téléchargement de plugins respectifs.
 \\\\
-Les outils de développement Web permettent aux développeurs de travailler avec diverses technologies Web, notamment HTML, CSS, DOM, JavaScript et d'autres composants gérés par le navigateur Web. En raison de la demande croissante des navigateurs Web pour en faire plus, les navigateurs Web populaires ont inclus plus de fonctionnalités destinées aux développeurs.\textsuperscript{\cite{robbins2012learning}\cite{osmani2012learning}}
+Les outils de développement Web permettent aux développeurs de travailler avec diverses technologies Web, notamment HTML, CSS, DOM, JavaScript et d'autres composants gérés par le navigateur Web. En raison de la demande croissante des navigateurs Web pour en faire plus, les navigateurs Web populaires ont inclus plus de fonctionnalités destinées aux développeurs.\textsuperscript{[7][5]}
 \\\\
 Nous allons utiliser la plupart des outils listés ci-dessus.
 \\
@@ -700,9 +711,9 @@ Dans ce chapitre, nous avons présenté le problème de la solution actuelle ave
 \vspace{0.2in}
 \uline{L'analyse :} Plutôt que d’apporter une solution, elle met l’accent sur une enquête par rapport à un problème et sur des besoins. Par exemple, si l’on souhaite informatiser le système d’information d’une bibliothèque, comment s’y prendrait-on?
 \\
-Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait parler, d’analyse des besoins (une enquête sur les besoins) ou de l’analyse des objets (une enquête sur les objets du domaine).\textsuperscript{\cite{UIS}\cite{booch2005unified}}
+Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait parler, d’analyse des besoins (une enquête sur les besoins) ou de l’analyse des objets (une enquête sur les objets du domaine).\textsuperscript{[2][11]}
 \\
-\uline{Conception :} La conception apporte une solution théorique aux exigences, mais n’engage pas la mise en œuvre. Par exemple, la conception peut produire une description d’un schéma de base de données et des objets logiciels. Au bout du compte, c’est probable que les résultats de la conception seront mises en œuvre.\textsuperscript{\cite{UIS}\cite{booch2005unified}}
+\uline{Conception :} La conception apporte une solution théorique aux exigences, mais n’engage pas la mise en œuvre. Par exemple, la conception peut produire une description d’un schéma de base de données et des objets logiciels. Au bout du compte, c’est probable que les résultats de la conception seront mises en œuvre.\textsuperscript{[2][11]}
 
 \vspace{-0.1in}
 
@@ -732,7 +743,7 @@ Le mot <<Analyse>> est un terme général, de manière plus précise on pourrait
 \section{Méthodes utilisée}
 
 \subsection{UML}
-Le langage de modélisation unifié (UML) est un langage de modélisation de développement à usage général dans le domaine du génie logiciel qui vise à fournir un moyen standard de visualiser la conception d'un système.\textsuperscript{\cite{booch2005unified}}
+Le langage de modélisation unifié (UML) est un langage de modélisation de développement à usage général dans le domaine du génie logiciel qui vise à fournir un moyen standard de visualiser la conception d'un système.\textsuperscript{[2]}
 
 \begin{figure}[h]
 \centering
@@ -743,7 +754,7 @@ Le langage de modélisation unifié (UML) est un langage de modélisation de dé
 \vspace*{-0.3in}
 
 \subsection{PlantUML}
-PlantUML est un outil open source permettant aux utilisateurs de cr\'eer des diagrammes UML \`a partir d'un langage de texte brut. Le langage de PlantUML\textsuperscript{\cite{roques2017plantuml}} est un exemple de langage sp\'ecifique au domaine. Il utilise le logiciel Graphviz pour disposer ses diagrammes. Il a \'et\'e utilis\'e pour permettre aux \'etudiants aveugles de travailler avec UML\@. PlantUML aide \'egalement les ing\'enieurs logiciels aveugles \`a concevoir et lire des diagrammes UML\@.\textsuperscript{\cite{booch2005unified}}
+PlantUML est un outil open source permettant aux utilisateurs de cr\'eer des diagrammes UML \`a partir d'un langage de texte brut. Le langage de PlantUML\textsuperscript{[10]} est un exemple de langage sp\'ecifique au domaine. Il utilise le logiciel Graphviz pour disposer ses diagrammes. Il a \'et\'e utilis\'e pour permettre aux \'etudiants aveugles de travailler avec UML\@. PlantUML aide \'egalement les ing\'enieurs logiciels aveugles \`a concevoir et lire des diagrammes UML\@.\textsuperscript{[2]}
 
 \vspace{-0.2in}
 
@@ -768,7 +779,7 @@ Graphviz est un logiciel de visualisation graphique open source. La visualisatio
 \newpage
 
 \subsection{PlantUML Previewer}
-PlantUML Previewer est un plugin (App) pour Vim\textsuperscript{\cite{vim}} qui permet d'afficher un code écrit en Vim et essentiellement de compiler et d'exécuter ce code instantanément dans un navigateur choisi (Chrome, Safari, Firefox...) notez que cela devrait avoir le `open-browser.vim  plugin' installé pour ouvrir le navigateur par défaut et a plus de dépendances comme Graphviz et JAVA et sûrement assez Vim.
+PlantUML Previewer est un plugin (App) pour Vim qui permet d'afficher un code écrit en Vim et essentiellement de compiler et d'exécuter ce code instantanément dans un navigateur choisi (Chrome, Safari, Firefox...) notez que cela devrait avoir le `open-browser.vim  plugin' installé pour ouvrir le navigateur par défaut et a plus de dépendances comme Graphviz et JAVA et sûrement assez Vim.\textsuperscript{[10]}
 \\
 Vous pouvez trouver la description de ces programmes ci-dessous :
 
@@ -783,7 +794,7 @@ Vous pouvez trouver la description de ces programmes ci-dessous :
 \vspace{-0.2in}
 
 \subsection{Vim}
-Vim est le programme le plus important (une contraction de Vi IMproved) est un clone, avec des ajouts, il est conçu pour être utilisé à la fois à partir d'une interface de ligne de commande (TUI) et en tant qu'application autonome dans une interface utilisateur graphique. Vim\textsuperscript{\cite{vim}} est un logiciel gratuit et open-source et est publié sous une licence qui inclut des clauses de charityware, encourageant les utilisateurs qui apprécient le logiciel à envisager de faire un don à des enfants en Ouganda. La licence est compatible avec la Licence Publique Générale GNU grâce à une clause spéciale permettant la distribution de copies modifiées "sous la version 2 de GNU GPL ou toute version ultérieure".\textsuperscript{\cite{schulz2007hacking}}
+Vim est le programme le plus important (une contraction de Vi IMproved) est un clone, avec des ajouts, il est conçu pour être utilisé à la fois à partir d'une interface de ligne de commande (TUI) et en tant qu'application autonome dans une interface utilisateur graphique. Vim est un logiciel gratuit et open-source et est publié sous une licence qui inclut des clauses de charityware, encourageant les utilisateurs qui apprécient le logiciel à envisager de faire un don à des enfants en Ouganda. La licence est compatible avec la Licence Publique Générale GNU grâce à une clause spéciale permettant la distribution de copies modifiées "sous la version 2 de GNU GPL ou toute version ultérieure".\textsuperscript{[8]}
 
 \vspace{0.25in}
 
@@ -799,7 +810,7 @@ Vim est le programme le plus important (une contraction de Vi IMproved) est un c
 
 \subsection{Diagrammes de cas d'utilisation}
 
-Un diagramme de cas d'utilisation dans sa forme la plus simple est une représentation de l'interaction d'un utilisateur avec le système qui montre la relation entre l'utilisateur et les différents cas d'utilisation dans lesquels l'utilisateur est impliqué. Un diagramme de cas d'utilisation peut identifier les différents types d'utilisateurs d'un système et les différents cas d'utilisation et seront souvent accompagnés également d'autres types de diagrammes.\textsuperscript{\cite{UIS}}
+Un diagramme de cas d'utilisation dans sa forme la plus simple est une représentation de l'interaction d'un utilisateur avec le système qui montre la relation entre l'utilisateur et les différents cas d'utilisation dans lesquels l'utilisateur est impliqué. Un diagramme de cas d'utilisation peut identifier les différents types d'utilisateurs d'un système et les différents cas d'utilisation et seront souvent accompagnés également d'autres types de diagrammes.\textsuperscript{[11]}
 
 Les diagrammes de cas d'utilisation contiennent généralement :
 
@@ -811,7 +822,7 @@ Les diagrammes de cas d'utilisation contiennent généralement :
 
 Comme tous les autres diagrammes, les diagrammes de cas d'utilisation peuvent contenir des notes et des contraintes.
 \\
-Les diagrammes de cas d'utilisation peuvent également contenir des packages, qui sont utilisés pour regrouper des éléments de votre modèle en blocs plus volumineux. Parfois, vous souhaiterez également placer des instances de cas d'utilisation dans vos diagrammes, en particulier lorsque vous souhaitez visualiser un système d'exécution spécifique.\textsuperscript{\cite{booch2005unified}}
+Les diagrammes de cas d'utilisation peuvent également contenir des packages, qui sont utilisés pour regrouper des éléments de votre modèle en blocs plus volumineux. Parfois, vous souhaiterez également placer des instances de cas d'utilisation dans vos diagrammes, en particulier lorsque vous souhaitez visualiser un système d'exécution spécifique.\textsuperscript{[2]}
 
 \vspace{0.2in}
 
@@ -998,7 +1009,7 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \caption{Diagramme de cas d'utilisation <<Gestion des étudiants}
 \end{figure}
 
-\vspace{-0.15in}
+\vspace{-0.25in}
 
 \textbf{Description :}
 
@@ -1006,6 +1017,8 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
     \item L'étudiant peut s'inscrire.
     \item L'étudiant choisira d'ajouter, modifier, supprimer ou consulter un recours après l'authentification.
 \end{itemize}
+
+\vspace*{-0.05in}
 
 \textbf{Cas d'utilisation détaillée :}
 
@@ -1158,7 +1171,7 @@ Refuser recours            & Enseignant      & \begin{tabular}[c]{@{}l@{}}Émet 
 
 \subsection{Diagrammes de séquences}
 
-Un diagramme de séquence montre les interactions d'objets organisées en séquence temporelle. Il décrit les objets et les classes impliqués dans le scénario et la séquence de messages échangés entre les objets nécessaires pour exécuter la fonctionnalité du scénario. Les diagrammes de séquence sont généralement associés aux réalisations de cas d'utilisation dans la vue logique du système en cours de développement. Les diagrammes de séquence sont parfois appelés diagrammes d'événements ou scénarios d'événements.\textsuperscript{\cite{UIS}}
+Un diagramme de séquence montre les interactions d'objets organisées en séquence temporelle. Il décrit les objets et les classes impliqués dans le scénario et la séquence de messages échangés entre les objets nécessaires pour exécuter la fonctionnalité du scénario. Les diagrammes de séquence sont généralement associés aux réalisations de cas d'utilisation dans la vue logique du système en cours de développement. Les diagrammes de séquence sont parfois appelés diagrammes d'événements ou scénarios d'événements.\textsuperscript{[11]}
 
 \vspace{0.2in}
 
@@ -1503,7 +1516,7 @@ Les flèches vont du début à la fin et représentent l'ordre dans lequel les a
 
 \subsection{Diagramme de déploiement}
 
-Un diagramme de déploiement dans le langage de modélisation unifié modélise le déploiement physique des artefacts sur les nœuds. Pour décrire un site Web, par exemple, un diagramme de déploiement montrerait quels composants matériels <<nœuds>> existent (par exemple, un serveur Web, un serveur d’applications et un serveur de base de données), sur quels composants logiciels <<artefacts>> s’exécutent chaque nœud (par exemple, application Web, base de données), et comment les différentes pièces sont connectées (par exemple JDBC, REST, RMI).\textsuperscript{\cite{UIS}}
+Un diagramme de déploiement dans le langage de modélisation unifié modélise le déploiement physique des artefacts sur les nœuds. Pour décrire un site Web, par exemple, un diagramme de déploiement montrerait quels composants matériels <<nœuds>> existent (par exemple, un serveur Web, un serveur d’applications et un serveur de base de données), sur quels composants logiciels <<artefacts>> s’exécutent chaque nœud (par exemple, application Web, base de données), et comment les différentes pièces sont connectées (par exemple JDBC, REST, RMI).\textsuperscript{[11]}
 \\
 Les nœuds apparaissent sous forme de cases et les artefacts alloués à chaque nœud apparaissent sous forme de rectangles dans les cases. Les nœuds peuvent avoir des sous-nœuds, qui apparaissent comme des boîtes imbriquées. Un seul nœud dans un diagramme de déploiement peut représenter conceptuellement plusieurs nœuds physiques, tels qu'un cluster de serveurs de base de données.
 
@@ -1525,7 +1538,7 @@ Les nœuds apparaissent sous forme de cases et les artefacts alloués à chaque 
 
 En génie logiciel, un diagramme de classes dans le langage de modélisation unifié (UML) est un type de diagramme de structure statique qui décrit la structure d'un système en montrant les classes du système, leurs attributs, opérations (ou méthodes) et les relations entre les objets.
 \\\\
-Le diagramme de classes est le principal bloc de construction de la modélisation orientée objet. Il est utilisé pour la modélisation conceptuelle générale de la structure de l'application et pour la modélisation détaillée traduisant les modèles en code de programmation. Les diagrammes de classes peuvent également être utilisés pour la modélisation des données. Les classes d'un diagramme de classes représentent à la fois les éléments principaux, les interactions dans l'application et les classes à programmer.\textsuperscript{\cite{UIS}}
+Le diagramme de classes est le principal bloc de construction de la modélisation orientée objet. Il est utilisé pour la modélisation conceptuelle générale de la structure de l'application et pour la modélisation détaillée traduisant les modèles en code de programmation. Les diagrammes de classes peuvent également être utilisés pour la modélisation des données. Les classes d'un diagramme de classes représentent à la fois les éléments principaux, les interactions dans l'application et les classes à programmer.\textsuperscript{[11]}
 
 \vspace{0.1in}
 
@@ -1636,7 +1649,7 @@ Nous allons creuser profondément dans le backend et le frontend et comment nous
 
 \subsection{HTML}
 
-Hyper Text Markup Language (HTML) est le langage de balisage standard pour les documents conçus pour être affichés dans un navigateur Web. Il peut être assisté par des technologies telles que les feuilles de style en cascade (CSS) et des langages de script tels que JavaScript.\textsuperscript{\cite{robbins2012learning}}
+Hyper Text Markup Language (HTML) est le langage de balisage standard pour les documents conçus pour être affichés dans un navigateur Web. Il peut être assisté par des technologies telles que les feuilles de style en cascade (CSS) et des langages de script tels que JavaScript.\textsuperscript{[7]}
 
 \vspace{0.05in}
 
@@ -1650,7 +1663,7 @@ Hyper Text Markup Language (HTML) est le langage de balisage standard pour les d
 
 \subsection{CSS}
 
-Cascading Style Sheets (CSS) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit dans un langage de balisage comme HTML. CSS est une technologie de base du World Wide Web, avec HTML et JavaScript.\textsuperscript{\cite{robbins2012learning}}
+Cascading Style Sheets (CSS) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit dans un langage de balisage comme HTML. CSS est une technologie de base du World Wide Web, avec HTML et JavaScript.\textsuperscript{[7]}
 
 \vspace{-0.02in}
 
@@ -1679,7 +1692,7 @@ Bootstrap est un framework CSS gratuit et open-source destiné au développement
 
 \subsection{Javascript}
 
-JavaScript, souvent abrégé en JS, est un langage de programmation conforme à la spécification ECMAScript. JavaScript est de haut niveau, souvent compilé juste à temps et multi-paradigme. Il a une syntaxe entre crochets, un typage dynamique, une orientation d'objet basée sur un prototype et des fonctions de première classe.\textsuperscript{\cite{robbins2012learning}\cite{osmani2012learning}}
+JavaScript, souvent abrégé en JS, est un langage de programmation conforme à la spécification ECMAScript. JavaScript est de haut niveau, souvent compilé juste à temps et multi-paradigme. Il a une syntaxe entre crochets, un typage dynamique, une orientation d'objet basée sur un prototype et des fonctions de première classe.\textsuperscript{[5][7]}
 \\
 Nous avons utilisé javascript principalement pour la validation des utilisateurs côté client et certaines animations pour un site Web plus beau.
 
@@ -1693,7 +1706,7 @@ Nous avons utilisé javascript principalement pour la validation des utilisateur
 
 \subsection{PHP}
 
-PHP est un langage de script à usage général qui est particulièrement adapté au développement Web. Il a été créé à l'origine par le programmeur danois-canadien Rasmus Lerdorf en 1994, l'implémentation de référence PHP est maintenant produite par The PHP Group. PHP signifiait à l'origine <<Personal Home Page>>, mais maintenant cela signifie <<Hypertext Preprocessor>>.\textsuperscript{\cite{prettyman2016learn}\cite{supaartagorn2011php}\cite{converse2004php5}}
+PHP est un langage de script à usage général qui est particulièrement adapté au développement Web. Il a été créé à l'origine par le programmeur danois-canadien Rasmus Lerdorf en 1994, l'implémentation de référence PHP est maintenant produite par The PHP Group. PHP signifiait à l'origine <<Personal Home Page>>, mais maintenant cela signifie <<Hypertext Preprocessor>>.\textsuperscript{[3][6][9]}
 \\
 Il a été utilisé pour manipuler le code HTML CSS et MySQL pour établir des relations entre la base de données et la page Web principale.
 
@@ -1710,7 +1723,7 @@ Il a été utilisé pour manipuler le code HTML CSS et MySQL pour établir des r
 
 \subsection{MySQL}
 
-MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Son nom est une combinaison de "My", le nom de la fille du co-fondateur Michael Widenius, et "SQL", l'abréviation de Structured Query Language. Une base de données relationnelle organise les données en une ou plusieurs tables de données dans lesquelles les types de données peuvent être liés les uns aux autres, ces relations aident à structurer les données.\textsuperscript{\cite{converse2004php5}}
+MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Son nom est une combinaison de "My", le nom de la fille du co-fondateur Michael Widenius, et "SQL", l'abréviation de Structured Query Language. Une base de données relationnelle organise les données en une ou plusieurs tables de données dans lesquelles les types de données peuvent être liés les uns aux autres, ces relations aident à structurer les données.\textsuperscript{[3][14]}
 
 \begin{figure}[h]
 \centering
@@ -1725,7 +1738,7 @@ MySQL est un système de gestion de base de données relationnelle (SGBDR) open 
 
 \subsection{Vim}
 
-Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fiable qui aide beaucoup en termes de flux de travail et pour couronner le tout, il a divers plugins qui aident tellement avec tout travail qui doit être fait, et pour cette section du développement Web, nous avons utilisé des plugins comme Syntastic pour générer des erreurs de syntaxe en temps réel et YouCompletMe pour une auto-complétion de code facile, également Emmet pour générer des extraits (Code Snippets) comme des balises HTML en très peu de clics de clavier, et bien d'autres plugins...\textsuperscript{\cite{vim}\cite{schulz2007hacking}}
+Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fiable qui aide beaucoup en termes de flux de travail et pour couronner le tout, il a divers plugins qui aident tellement avec tout travail qui doit être fait, et pour cette section du développement Web, nous avons utilisé des plugins comme Syntastic pour générer des erreurs de syntaxe en temps réel et YouCompletMe pour une auto-complétion de code facile, également Emmet pour générer des extraits (Code Snippets) comme des balises HTML en très peu de clics de clavier, et bien d'autres plugins...\textsuperscript{[8]}
 
 \begin{figure}[h]
 \centering
@@ -1737,7 +1750,7 @@ Vim, l'éditeur de texte de choix, c'est un éditeur de texte très rapide et fi
 
 \subsection{Apache}
 
-Le serveur HTTP Apache\textsuperscript{\cite{hadoop}}, familièrement appelé Apache, est un logiciel de serveur Web multiplateforme gratuit et open source, publié sous les termes de la licence Apache 2.0.
+Le serveur HTTP Apache, familièrement appelé Apache, est un logiciel de serveur Web multiplateforme gratuit et open source, publié sous les termes de la licence Apache 2.0.
 \\
 Utilisé pour afficher notre page Web dans un navigateur (Firefox principalement) pour configurer l'hébergement local (Localhost).
 
@@ -1765,7 +1778,7 @@ MyCLI est une interface de ligne de commande pour MySQL, MariaDB et Percona avec
 
 \subsection{PhpMyAdmin}
 
-PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et MariaDB, en tant qu'application Web portable écrite principalement en PHP, elle est devenue l'un des outils d'administration MySQL les plus populaires, en particulier pour l'hébergement Web.\textsuperscript{\cite{prettyman2016learn}\cite{supaartagorn2011php}\cite{converse2004php5}}
+PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et MariaDB, en tant qu'application Web portable écrite principalement en PHP, elle est devenue l'un des outils d'administration MySQL les plus populaires, en particulier pour l'hébergement Web.\textsuperscript{[3][6][9]}
 
 \begin{figure}[h]
 \centering
@@ -1777,7 +1790,7 @@ PhpMyAdmin est un outil d'administration gratuit et open source pour MySQL et Ma
 
 Pour nous aider à construire un site Web bien formé, nous avons choisi d'adopter MVC :
 \\
-Model - View - Controller (généralement connu sous le nom de MVC) est un modèle de conception de logiciel couramment utilisé pour développer des interfaces utilisateur qui divise la logique de programme associée en trois éléments inter-connectés. Ceci est fait pour séparer les représentations internes des informations de la manière dont les informations sont présentées et acceptées par l'utilisateur. Ce type de motif est utilisé pour concevoir la mise en page de la page.\textsuperscript{\cite{supaartagorn2011php}}
+Model - View - Controller (généralement connu sous le nom de MVC) est un modèle de conception de logiciel couramment utilisé pour développer des interfaces utilisateur qui divise la logique de programme associée en trois éléments inter-connectés. Ceci est fait pour séparer les représentations internes des informations de la manière dont les informations sont présentées et acceptées par l'utilisateur. Ce type de motif est utilisé pour concevoir la mise en page de la page.\textsuperscript{[9]}
 \\
 vous pouvez voir les relations du modèle et de la vue et du contrôleur dans la figure ci-dessous. <<Figure 56>>
 
@@ -1818,7 +1831,7 @@ Voici les matériaux que nous avons utilisés pour créer le site Web avec githu
 
 \vspace{0.2in}
 
-Ceci est la première page avec laquelle tout type d'utilisateur va être accueilli, et donc ici nous pouvons identifier les utilisateurs soit par leur `Nom d'utilisateur' ou leur `Email' et `Mot de passe' évidemment pour des raisons de sécurité, sinon si l'utilisateur ne s'est pas encore enregistré, il peut cliquer sur créer un compte et s'inscrire.
+Ceci est la première page avec laquelle tout type d'utilisateur va être accueilli, et donc ici nous pouvons identifier les utilisateurs soit par leur `Nom d'utilisateur' ou leur `Email' et `Mot de passe' évidemment pour des raisons de sécurité, sinon si l'utilisateur ne s'est pas encore enregistré, il peut cliquer sur créer un compte et s'inscrire.\textsuperscript{[17]}
 \\\\
 Les champs d'entrée sont sécurisés à l'aide d'instructions SQL préparées et le mot de passe est haché puis comparé à son équivalent dans la base de données pour vérifier et authentifier l'utilisateur concerné.
 
@@ -1901,7 +1914,7 @@ et une autre pour voir le flux de trafic des recours.
 Les quatre figures suivantes porteront sur la manière dont un étudiant interagit avec le site, dès qu'un étudiant entre dans cette page, il lui sera présenté une liste de ses recours et certains de leurs détails (module, enseignant concerné, statut...) comme le montre la première figure <<Figure 62>>, un étudiant peut également supprimer ou effectuer une action comme indiqué ci-dessous :
 
 \begin{itemize}
-  \item \textbf{Ajouter / Modifier :} un élève peut (ajouter, modifier) un recours en remplissant quelques entrées, il peut également télécharger un fichier (code c, c++, asm, js, photo, pdf...) qui est lié au recours pour un recours plus fort, l'enseignant concerné doit être un enseignant valide déjà inscrit. <<Figure 63-64>>
+  \item \textbf{Ajouter / Modifier :} un élève peut (ajouter, modifier) un recours en remplissant quelques entrées, il peut également télécharger un fichier\textsuperscript{[15]} (code c, c++, asm, js, photo, pdf...) qui est lié au recours pour un recours plus fort, l'enseignant concerné doit être un enseignant valide déjà inscrit. <<Figure 63-64>>
   \item \textbf{Consulter :} ici un étudiant peut consulter tous les détails concernant le recours choisi avec des liens rapides pour le modifier ou le supprimer. <<Figure 65>>
 \end{itemize}
 \textbf{\uline{Remarque :}} un étudiant ne peut modifier que les recours ayant le statut "En Cours".
@@ -2095,6 +2108,8 @@ Chaque carte qui contient un graphique est interactive avec des fonctionnalités
   \item \textbf{Animations.}
 \end{itemize}
 
+\textbf{Note :} Nous avons utilisé chartJS pour afficher tous ces graphiques.\textsuperscript{[13]}
+
 \vspace{0.3in}
 
 \begin{figure}[H]
@@ -2109,7 +2124,7 @@ Chaque carte qui contient un graphique est interactive avec des fonctionnalités
 
 La conception Web réactive (Responsive Web design RWD) est une approche de la conception Web qui rend les pages Web bien rendre sur une variété d’appareils et de fenêtres ou de tailles d’écran. Des travaux récents considèrent également la proximité du spectateur comme faisant partie du contexte d’affichage comme une extension pour RWD. Le contenu, la conception et les performances sont nécessaires pour assurer la convivialité et la satisfaction.
 \\\\
-Dans ce monde moderne, les téléphones mobiles sont utilisés plus que n’importe quel appareil pour accéder à Internet. La plupart des étudiants vont accéder à notre site Web via smartphone, et pour cela nous avons adopté une conception Web réactive pour notre site Web pour le rendre d’une manière compatible avec les tables qui s’étendent de gauche à droite et les cartes qui sautent lorsque les fenêtres redimensionner et une interface globale jolie pour les smartphones.
+Dans ce monde moderne, les téléphones mobiles sont utilisés plus que n’importe quel appareil pour accéder à Internet. La plupart des étudiants vont accéder à notre site Web via smartphone, et pour cela nous avons adopté une conception Web réactive pour notre site Web pour le rendre d’une manière compatible avec les tables qui s’étendent de gauche à droite et les cartes qui sautent lorsque les fenêtres redimensionner et une interface globale jolie pour les smartphones.\textsuperscript{[16]}
 
 \vspace{0.8in}
 
@@ -2170,17 +2185,126 @@ En conclusion, nous devons avouer que rétrospectivement nous somme satisfaits d
 \\\\
 C'est grâce a ce projet que nous avons eu l'opportunité de rumuler les connaissances théorique avec celle de la pratique, ceci permet également de rentrer dans la vie active et découvrir plus précisément le milieu professionnel, ce projet consiste à réaliser un tableaux de bord pour le suivi des recours des étudiants du département d’informatique avec un espace dédié aux étudiants et un autre dédié à l'administration, et aussi aux enseignants et voila une explication de notre parcours a réalisé cette application, dans une première partie on a fait une étude générale et on a fixé nos objectifs, une fois nos objectifs sont fixés nous avons enchaîné avec la conception afin de bien mener notre projet. Puis nous avons entamé la phase d’implémentation de l’application Web au cours de laquelle nous nous sommes familiarisés avec les langages de programmation. Ensuite les choix de conception et puis l'impl\'ementation de l’application et pour la fin on a fais les testes de validation et d'intégration.
 \\\\
-Enfin, nous avons réussi à réaliser une grande partie de ce que nous avons prévu si ce n'est la totalité de ce que nous avons conceptualisé et nous espérons que notre site Web pourra aider dans le système actuel de gestion des recours et peut être mis en œuvre dans notre université.
+Enfin, nous avons réussi à réaliser une grande partie de ce que nous avons prévu si ce n'est la totalité de ce que nous avons conceptualisé et nous espérons que notre site Web pourra aider dans le système actuel de gestion des recours et peut être mis en œuvre dans notre université, maintenant nous avons des nouveaux objectifs, mais nous aimerons bien développer notre projet dans le futur et faire une application mobile qui traite tout types de recours (nouveaux bacheliers, recours d'orientation...) dans toutes les facultés.
 
 \newpage
-
-\cftaddtitleline{toc}{part}{\vspace{-0.12in}\color{Blue}{Bibliographie}}{}
 
 \def\thispagestyle#1{}
 \thispagestyle{empty}
 \pagestyle{empty}
-\bibliography{PFE}
-\bibliographystyle{plainurl}
+
+\begin{center}
+    {\color{Blue} \rule{5.5in}{1.4mm} }\\
+    \vspace{0.1in}
+    \scshape{\fontsize{34}{46}{\bfseries{\color{Blue}{Bibliographie}}}}
+    \\
+    \vspace{0.5in}
+\end{center}
+\addcontentsline{toc}{part}{\vspace{-0.12in}\color{Blue}{Bibliographie}}
+\renewcommand{\ULdepth}{1.8pt}
+
+{[1]} \quad Berners-Lee, T. and Hendler, J. and Lassila, O. (2012). The semantic web. \textit{Scientific}
+\\
+\hspace*{0.38in}
+\textit{american}, 284(5), 34-43.
+\\\\
+{[2]} \quad Booch, G. (2005). The unified modeling language user guide. Pearson Education India.
+\\\\
+{[3]} \quad Converse, T. and Park, J. and Morgan, C. (2004). PHP5 and MySQL bible. Vol. 147,
+\\
+\hspace*{0.38in}
+John Wiley \& Sons.
+\\\\
+{[4]} \quad Few, S. (2006). Information dashboard design: The effective visual communication of data.
+\\
+\hspace*{0.38in}
+O'Reilly Media, Inc.
+\\\\
+{[5]} \quad Osmani, A. (2012). Learning JavaScript Design Patterns: A JavaScript and jQuery 
+\\
+\hspace*{0.38in}
+Developer's Guide. O'Reilly Media, Inc.
+\\\\
+{[6]} \quad Prettyman, S. (2016). Learn PHP 7. Springer.
+\\\\
+{[7]} \quad Robbins, J.N. (2012). Learning web design: A beginner's guide to HTML, CSS, JavaScript,
+\\
+\hspace*{0.38in}
+and web graphics. O'Reilly Media, Inc.
+\\\\
+{[8]} \quad Schulz, K. (2007). Hacking Vim: a cookbook to get the most out of the latest Vim editor.
+\\
+\hspace*{0.38in}
+Packt Publishing Ltd.
+\\\\
+{[9]} \quad Supaartagorn, C. (2011). PHP Framework for database management based on MVC pattern.
+\\
+\hspace*{0.38in}
+International Journal of Computer Science \& Information Technology (IJCSIT),
+\\
+\hspace*{0.38in}
+3(2), 251-258.
+\\\\
+
+\newpage
+
+\def\thispagestyle#1{}
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{center}
+    {\color{Blue} \rule{5.5in}{1.4mm} }\\
+    \vspace{0.1in}
+    \scshape{\fontsize{34}{46}{\bfseries{\color{Blue}{Webographie}}}}
+    \\
+    \vspace{0.5in}
+\end{center}
+\addcontentsline{toc}{part}{\vspace{-0.12in}\color{Blue}{Webographie}}
+\renewcommand{\ULdepth}{1.8pt}
+
+{[10]} \quad \textbf{[}Comment nous avons codé les diagrammes UML\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://plantuml.com}}} \, consulté le 10/03/2020
+\\
+{[11]} \quad \textbf{[}Un projet proche du nôtre\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}}}
+\\
+\hspace*{0.36in}
+\, consulté le 07/04/2020
+\\
+{[12]} \quad \textbf{[}Obtenu quelques réponses sur projectlibre\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.projectlibre.com/wiki/projectlibre-documentation}}}
+\\
+\hspace*{0.36in}
+\, consulté le 10/03/2020
+\\
+{[13]} \quad \textbf{[}Comment nous avons généré tous nos graphiques\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.chartjs.org/docs/latest/}}} \, consulté le 28/05/2020
+\\
+{[14]} \quad \textbf{[}Documentation de MySQL\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://dev.mysql.com/doc/refman/8.0/en/}}} \, consulté le 01/06/2020
+\\
+{[15]} \quad \textbf{[}Téléchargement de fichier php\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.w3schools.com/php/php_file_upload.asp}}} \, consulté le 10/06/2020
+\\
+{[16]} \quad \textbf{[}Site Web réactive\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.w3schools.com/whatis/whatis_responsive.asp}}}
+\\
+\hspace*{0.36in}
+\, consulté le 20/06/2020
+\\
+{[17]} \quad \textbf{[}Système de connexion PHP MySQL\textbf{]}\\
+\hspace*{0.43in}
+\textcolor{blue}{\uline{\url{https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php}}}
+\\
+\hspace*{0.36in}
+\, consulté le 29/05/2020
 
 
 \end{document}

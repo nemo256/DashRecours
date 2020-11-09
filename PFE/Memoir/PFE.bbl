@@ -1,74 +1,67 @@
+\newcommand{\noopsort}[1]{}
 \begin{thebibliography}{10}
 
-\bibitem{hadoop}
-{Apache Software Foundation}.
-\newblock Hadoop, 2010.
-\newblock URL: \url{https://hadoop.apache.org}.
+\bibitem{few2006information}
+Few, S. (2006)
+Information dashboard design: The effective visual communication of data,
+O'Reilly Media, Inc., .
 
 \bibitem{berners2001semantic}
-Tim Berners-Lee, James Hendler, and Ora Lassila.
-\newblock The semantic web.
-\newblock {\em Scientific american}, 284(5):34--43, 2001.
-
-\bibitem{booch2005unified}
-Grady Booch.
-\newblock {\em The unified modeling language user guide}.
-\newblock Pearson Education India, 2005.
-
-\bibitem{vim}
-{Bram Moolenaar}.
-\newblock Vim, 2019.
-\newblock URL: \url{https://www.vim.org/}.
-
-\bibitem{converse2004php5}
-Tim Converse, Joyce Park, and Clark Morgan.
-\newblock {\em PHP5 and MySQL bible}, volume 147.
-\newblock John Wiley \& Sons, 2004.
-
-\bibitem{few2006information}
-Stephen Few.
-\newblock {\em Information dashboard design: The effective visual communication
-  of data}.
-\newblock O'Reilly Media, Inc., 2006.
-
-\bibitem{osmani2012learning}
-Addy Osmani.
-\newblock {\em Learning JavaScript Design Patterns: A JavaScript and jQuery
-  Developer's Guide}.
-\newblock " O'Reilly Media, Inc.", 2012.
-
-\bibitem{prettyman2016learn}
-Steve Prettyman.
-\newblock {\em Learn PHP 7}.
-\newblock Springer, 2016.
+Berners-Lee, T., Hendler, J., and Lassila, O. (2001)
+The semantic web.
+{\em Scientific american,} {\bf 284}(5), 34--43.
 
 \bibitem{robbins2012learning}
-Jennifer~Niederst Robbins.
-\newblock {\em Learning web design: A beginner's guide to HTML, CSS,
-  JavaScript, and web graphics}.
-\newblock " O'Reilly Media, Inc.", 2012.
+Robbins, J.~N. (2012)
+Learning web design: A beginner's guide to HTML, CSS, JavaScript, and web
+  graphics,
+" O'Reilly Media, Inc.", .
 
-\bibitem{roques2017plantuml}
-Arnaud Roques.
-\newblock Plantuml, 2017.
-\newblock URL: \url{https://plantuml.com/}.
-
-\bibitem{schulz2007hacking}
-Kim Schulz.
-\newblock {\em Hacking Vim: a cookbook to get the most out of the latest Vim
-  editor}.
-\newblock Packt Publishing Ltd, 2007.
+\bibitem{osmani2012learning}
+Osmani, A. (2012)
+Learning JavaScript Design Patterns: A JavaScript and jQuery Developer's Guide,
+" O'Reilly Media, Inc.", .
 
 \bibitem{UIS}
-Shaswat Shukla.
-\newblock University information sysytem, 2014.
-\newblock URL:
-  \url{https://www.academia.edu/9385119/UML_diagram_for_University_Information_System}.
+Shukla, S.
+University Information Sysytem. (2014).
+
+\bibitem{booch2005unified}
+Booch, G. (2005)
+The unified modeling language user guide,
+Pearson Education India, .
+
+\bibitem{roques2017plantuml}
+Roques, A.
+PlantUML. (2017).
+
+\bibitem{vim}
+{Bram Moolenaar}
+Vim. (2019).
+
+\bibitem{schulz2007hacking}
+Schulz, K. (2007)
+Hacking Vim: a cookbook to get the most out of the latest Vim editor,
+Packt Publishing Ltd, .
+
+\bibitem{prettyman2016learn}
+Prettyman, S. (2016)
+Learn PHP 7,
+Springer, .
 
 \bibitem{supaartagorn2011php}
-Chanchai Supaartagorn.
-\newblock Php framework for database management based on mvc pattern.
-\newblock {\em International Journal of Computer Science \& Information
-  Technology (IJCSIT)}, 3(2):251--258, 2011.
+Supaartagorn, C. (2011)
+PHP Framework for database management based on MVC pattern.
+{\em International Journal of Computer Science \& Information Technology
+  (IJCSIT),} {\bf 3}(2), 251--258.
+
+\bibitem{converse2004php5}
+Converse, T., Park, J., and Morgan, C. (2004)
+PHP5 and MySQL bible, Vol. 147,
+John Wiley \& Sons, .
+
+\bibitem{hadoop}
+{Apache Software Foundation}
+Hadoop. (2010).
 
 \end{thebibliography}
