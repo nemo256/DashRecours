@@ -6,7 +6,7 @@ hide footbox
 left to right direction
 
 actor "Utilisateur" as USER #black
-actor "Administration" as AD #yellow
+actor "Administrateur" as AD #yellow
 actor "Enseignant" as ENS #yellow
 actor "Étudiant" as ET #yellow
 
