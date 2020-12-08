@@ -158,6 +158,9 @@ else
   <link rel="stylesheet" href="./Plugins/css/responsive.bootstrap4.min.css">
   <!-- summernote -->
   <link rel="stylesheet" href="./Plugins/css/summernote-bs4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="./Plugins/css/select2.min.css">
+  <link rel="stylesheet" href="./Plugins/css/select2-bootstrap4.min.css">
 </head>
 
 <!-- For multiple new options when selecting between users (registerFULL.php) -->

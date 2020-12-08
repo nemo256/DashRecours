@@ -94,6 +94,7 @@ create table `recours` (
   `idens` bigint not null,
   `emailens` text not null,
   `module` text not null,
+  `semestre` enum('Impair', 'Paire') not null,
   `typeE` enum('Examin', 'Test') not null,
   `description` mediumtext,
   `status` enum('En Cours', 'Valid&eacute;', 'Refus&eacute;') default 'En Cours' not null,

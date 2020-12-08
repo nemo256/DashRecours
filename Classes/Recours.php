@@ -82,10 +82,10 @@ class recours extends database
     $result = $statement->fetchALL()[0];
     if (empty($result))
       redirect (
-        $GLOBALS['MSG']['IE'] . '<span class="ml-3">(Enseignant not found)</span>', 
+        $GLOBALS['MSG']['IE'] . '<span class="ml-3">(Enseignant pas trouvé)</span>', 
         'warning', 
         $GLOBALS['LOC']['P'], 
-        '?mod='.$this->info['module'].'&descc='.$this->info['desc']
+        '?'
       );
     else
       $this->info['idens'] = $result['id'];
@@ -114,7 +114,7 @@ class recours extends database
   // Inserting a recours! //
   public function insert()
   {
-    $query = "insert into recours (idet, idens, emailens, module, typeE, description, attachment, dateR) values (?,?,?,?,?,?,?,?)";
+    $query = "insert into recours (idet, idens, emailens, module, semestre, typeE, description, attachment, dateR) values (?,?,?,?,?,?,?,?,?)";
     // Using prepared statements will increase security
     // against sql injection attacks!
     $statement = $this->connect()->prepare($query);
@@ -123,6 +123,7 @@ class recours extends database
       $this->info['idens'],
       $this->info['emailens'],
       $this->info['module'],
+      $this->info['semestre'],
       $this->info['typeE'],
       $this->info['desc'],
       $this->info['attachment'],
@@ -140,37 +141,23 @@ class recours extends database
   // Updating a recours! //
   public function update()
   {
-    if (!empty($this->info['attachment']))
-      $query = "update recours set idet = ?, idens = ?, emailens = ?, module = ?, typeE = ?, description = ?, attachment = ?, dateR = ? where id = ?";
-    else
-      $query = "update recours set idet = ?, idens = ?, emailens = ?, module = ?, typeE = ?, description = ?, dateR = ? where id = ?";
-    // Using prepared statements will increase security
-    // against sql injection attacks!
-    $statement = $this->connect()->prepare($query);
-    if (!empty($this->info['attachment']))
-      $statement->execute([
-        $this->info['idet'],
-        $this->info['idens'],
-        $this->info['emailens'],
-        $this->info['module'],
-        $this->info['typeE'],
-        $this->info['desc'],
-        $this->info['attachment'],
-        $this->info['dateR'],
-        $this->info['id']
-      ]);
+    if (!isset($this->info['attachment']))
+      $this->info['attachment'] = '';
 
-    else
-      $statement->execute([
-        $this->info['idet'],
-        $this->info['idens'],
-        $this->info['emailens'],
-        $this->info['module'],
-        $this->info['typeE'],
-        $this->info['desc'],
-        $this->info['dateR'],
-        $this->info['id']
-      ]);
+    $query = "update recours set idet = ?, idens = ?, emailens = ?, module = ?, semestre = ?, typeE = ?, description = ?, attachment = ?, dateR = ? where id = ?";
+    $statement = $this->connect()->prepare($query);
+    $statement->execute([
+      $this->info['idet'],
+      $this->info['idens'],
+      $this->info['emailens'],
+      $this->info['module'],
+      $this->info['semestre'],
+      $this->info['typeE'],
+      $this->info['desc'],
+      $this->info['attachment'],
+      $this->info['dateR'],
+      $this->info['id']
+    ]);
 
     redirect (
       $GLOBALS['MSG']['RU'],

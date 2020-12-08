@@ -42,6 +42,8 @@
 <script src="./Plugins/js/dataTables.bootstrap4.min.js"></script>
 <script src="./Plugins/js/dataTables.responsive.min.js"></script>
 <script src="./Plugins/js/responsive.bootstrap4.min.js"></script>
+<!-- Select2 -->
+<script src="./Plugins/js/select2.full.min.js"></script>
 <!-- AdminLTE App -->
 <script src="./Plugins/js/adminlte.min.js"></script>
 <!-- bs-custom-file-input -->
@@ -69,6 +71,18 @@ $('input[type="file"]').change(function(e) {
 });
 
 $(function () {
+
+  //Initialize Select2 Elements
+  $('.select2').select2()
+  $('.select2bs4').select2({
+    theme: 'bootstrap4',
+    minimumResultsForSearch: -1
+  })
+  $('.js-module').select2({
+    placeholder: "Nom du module",
+    allowClear: true,
+    theme: 'bootstrap4'
+  })
 
   // DATA TABLE
 

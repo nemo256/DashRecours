@@ -13,6 +13,7 @@ if (isset($_POST['submitET']))
 
     'emailens' => $_POST['emailens'],
     'module' => $_POST['module'],
+    'semestre' => $_POST['semestre'],
     'typeE' => $_POST['typeE'],
     'desc' => $_POST['desc'],
     'status' => 'En Cours',
@@ -58,5 +59,6 @@ else
     '?accessDenied'
   );
 }
+
 
 ?>

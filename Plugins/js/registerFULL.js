@@ -30,6 +30,10 @@ function printSuccess(element, error) {
   element.className = 'form-control is-valid'
 }
 
+function printSuccessSelect(element, error) {
+  error.innerText = ''
+}
+
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
@@ -106,7 +110,7 @@ form.addEventListener('submit', (e) => {
   {
     // Not working because of ajax (ISSUE) X
     if (TU.options[TU.selectedIndex].value == 'Etudiant' || TU.options[TU.selectedIndex].value == 'Enseignant' || TU.options[TU.selectedIndex].value == 'Administrateur')
-      printSuccess(TU, errorTU)
+      printSuccessSelect(TU, errorTU)
     else
       printError(e, TU, errorTU, "Type d'utilisateur non valide!")
   }

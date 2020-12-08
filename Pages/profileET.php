@@ -259,21 +259,45 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
       <div class="tab-pane" id="AR">
 
       <form id="formET" action="./Include/profileET.inc.php" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-        <i class="fas fa-book mr-1"></i>
-          <label>Module<span class="text-red ml-1">*</span></label>
-          <input type="text" name="module" id="module" class="form-control" placeholder="Nom du module" value="<?=$_GET['mod']?>">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+            <i class="fas fa-book mr-1"></i>
+              <label>Module<span class="text-red ml-1">*</span></label>
+              <select name="module" id="module" class="form-control js-module" style="width: 100%;">
+                <option value="<?=$_GET['mod']?>"><?=$_GET['mod']?></option>
+
+<?php
+$modules = file('./Data/Modules.txt');
+  foreach ($modules as $line): ?>
+    <option value="<?php echo $line; ?>"><?php echo $line; ?></option>
+<?php endforeach; ?>
+
+              </select>
+            </div>
+            <div id="errorModule" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+            <i class="fas fa-tags mr-1"></i>
+              <label>Semestre<span class="text-red ml-1">*</span></label>
+              <select name="semestre" id="semestre" class="form-control select2bs4" style="width: 100%;">
+                <option value="Impair">Impair</option>
+                <option value="Paire">Paire</option>
+              </select>
+            </div>
+            <div id="errorSemestre" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
+          </div>
         </div>
-        <div id="errorModule" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
               <i class="fas fa-file mr-1"></i>
               <label>Type<span class="text-red ml-1">*</span></label>
-                <select name="typeE" id="typeE" class="form-control select2" style="width: 100%;">
-                <option value="Examin">Examin</option>
-                <option value="Test">Test</option>
+                <select name="typeE" id="typeE" class="form-control select2bs4" style="width: 100%;">
+                  <option value="Examin">Examen</option>
+                  <option value="Test">Test</option>
                 </select>
             </div>
           <div id="errorTypeE" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
@@ -300,7 +324,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
         <div class="form-group">
         <i class="fas fa-align-left mr-1"></i>
           <label>Description</label>
-          <textarea name="desc" id="desc" class="form-control" rows="3" placeholder="Enter ..."><?=$_GET['descc']?></textarea>
+          <textarea name="desc" id="desc" class="form-control" rows="3" placeholder="Entrer..."><?=$_GET['descc']?></textarea>
         </div>
         <div id="errorDesc" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 
@@ -317,20 +341,44 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
       <div class="tab-pane active" id="MR">
 
         <form id="formET2" action="./Include/profileET.inc.php?update=<?=$idrec?>" method="post" enctype="multipart/form-data">
-          <div class="form-group">
-          <i class="fas fa-book mr-1"></i>
-            <label>Module<span class="text-red ml-1">*</span></label>
-            <input type="text" name="module" id="module2" class="form-control" placeholder="Nom du module" value="<?=$module?>">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+            <i class="fas fa-book mr-1"></i>
+              <label>Module<span class="text-red ml-1">*</span></label>
+              <select name="module" id="module" class="form-control js-module" style="width: 100%;">
+                <option value="<?=$module?>"><?=$module?></option>
+
+<?php
+$modules = file('./Data/Modules.txt');
+  foreach ($modules as $line): ?>
+    <option value="<?php echo $line; ?>"><?php echo $line; ?></option>
+<?php endforeach; ?>
+
+              </select>
+            </div>
+            <div id="errorModule2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
           </div>
-          <div id="errorModule2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
+          <div class="col-sm-6">
+            <div class="form-group">
+            <i class="fas fa-tags mr-1"></i>
+              <label>Semestre<span class="text-red ml-1">*</span></label>
+              <select name="semestre" id="semestre2" class="form-control select2bs4" style="width: 100%;">
+                <option value="Impair">Impair</option>
+                <option value="Paire">Paire</option>
+              </select>
+            </div>
+            <div id="errorSemestre2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
+          </div>
+        </div>
 
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <i class="fas fa-file mr-1"></i>
                 <label>Type<span class="text-red ml-1">*</span></label>
-                  <select name="typeE" id="typeE2" class="form-control select2" style="width: 100%;">
-                  <option <?php if (!strcmp($typeE, 'Examin')) echo 'selected'; ?>>Examin</option>
+                  <select name="typeE" id="typeE2" class="form-control select2bs4" style="width: 100%;">
+                  <option <?php if (!strcmp($typeE, 'Examin')) echo 'selected'; ?>>Examen</option>
                   <option <?php if (!strcmp($typeE, 'Test')) echo 'selected'; ?>>Test</option>
                   </select>
               </div>
@@ -358,7 +406,7 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]))
           <div class="form-group">
           <i class="fas fa-align-left mr-1"></i>
             <label>Description</label>
-            <textarea name="desc" id="desc2" class="form-control" rows="3" placeholder="Enter ..."><?=$desc?></textarea>
+            <textarea name="desc" id="desc2" class="form-control" rows="3" placeholder="Entrer..."><?=$desc?></textarea>
           </div>
           <div id="errorDesc2" class="text-red text-sm ml-1 mb-2" style="margin-top: -12px"></div>
 

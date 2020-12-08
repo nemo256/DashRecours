@@ -4,6 +4,7 @@ const module = document.getElementById('module')
 const typeE = document.getElementById('typeE')
 const emailens = document.getElementById('emailens')
 const desc = document.getElementById('desc')
+const semestre = document.getElementById('semestre')
 const form = document.getElementById('formET')
 
 // Modifier un recours
@@ -11,18 +12,21 @@ const module2 = document.getElementById('module2')
 const typeE2 = document.getElementById('typeE2')
 const emailens2 = document.getElementById('emailens2')
 const desc2 = document.getElementById('desc2')
+const semestre2 = document.getElementById('semestre2')
 const form2 = document.getElementById('formET2')
 
 // Errors: 
 const errorModule = document.getElementById('errorModule')
 const errorTypeE = document.getElementById('errorTypeE')
 const errorEmailens = document.getElementById('errorEmailens')
+const errorSemestre = document.getElementById('errorSemestre')
 const errorDesc = document.getElementById('errorDesc')
 
 // Modifier un recours
 const errorModule2 = document.getElementById('errorModule2')
 const errorTypeE2 = document.getElementById('errorTypeE2')
 const errorEmailens2 = document.getElementById('errorEmailens2')
+const errorSemestre2 = document.getElementById('errorSemestre2')
 const errorDesc2 = document.getElementById('errorDesc2')
 
 function printError(e, element, error, errorMessage) {
@@ -34,6 +38,10 @@ function printError(e, element, error, errorMessage) {
 function printSuccess(element, error) {
   error.innerText = ''
   element.className = 'form-control is-valid'
+}
+
+function printSuccessSelect(element, error) {
+  error.innerText = ''
 }
 
 function isEmail(email) {
@@ -50,14 +58,19 @@ form.addEventListener('submit', (e) => {
   else if (module.value.length > 15)
     printError(e, module, errorModule, 'Module est trop long')
   else
-    printSuccess(module, errorModule)
+    printSuccessSelect(module, errorModule)
+
+  if (semestre.value === '' || semestre.value == null)
+    printError(e, semestre, errorSemestre, 'Semestre est nécessaire')
+  else
+    printSuccessSelect(semestre, errorSemestre)
 
   if (typeE.value === '' || typeE.value == null)
     printError(e, typeE, errorTypeE, 'Type est nécessaire')
   else if (typeE.value == 'Examin')
-    printSuccess(typeE, errorTypeE)
+    printSuccessSelect(typeE, errorTypeE)
   else if (typeE.value == 'Test')
-    printSuccess(typeE, errorTypeE)
+    printSuccessSelect(typeE, errorTypeE)
   else
     printError(e, typeE, errorTypeE, 'Type invalide')
 
@@ -66,7 +79,7 @@ form.addEventListener('submit', (e) => {
   else if (!isEmail(emailens.value))
     printError(e, emailens, errorEmailens, 'Email invalide')
   else
-    printSuccess(emailens, errorEmailens)
+    printSuccessSelect(emailens, errorEmailens)
 
 })
 
@@ -81,14 +94,19 @@ form2.addEventListener('submit', (e) => {
   else if (module2.value.length > 15)
     printError(e, module2, errorModule2, 'Module est trop long')
   else
-    printSuccess(module2, errorModule2)
+    printSuccessSelect(module2, errorModule2)
+
+  if (semestre2.value === '' || semestre2.value == null)
+    printError(e, semestre2, errorSemestre2, 'Semestre est nécessaire')
+  else
+    printSuccessSelect(semestre2, errorSemestre2)
 
   if (typeE2.value === '' || typeE2.value == null)
     printError(e, typeE2, errorTypeE2, 'Type est nécessaire')
   else if (typeE2.value == 'Examin')
-    printSuccess(typeE2, errorTypeE2)
+    printSuccessSelect(typeE2, errorTypeE2)
   else if (typeE2.value == 'Test')
-    printSuccess(typeE2, errorTypeE2)
+    printSuccessSelect(typeE2, errorTypeE2)
   else
     printError(e, typeE2, errorTypeE2, 'Type invalide')
 
@@ -97,7 +115,7 @@ form2.addEventListener('submit', (e) => {
   else if (!isEmail(emailens2.value))
     printError(e, emailens2, errorEmailens2, 'Email invalide')
   else
-    printSuccess(emailens2, errorEmailens2)
+    printSuccessSelect(emailens2, errorEmailens2)
 
 })
 

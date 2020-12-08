@@ -127,7 +127,7 @@ endif;
         <div id="errorTel" class="text-red text-sm ml-1 mb-2" style="margin-top: -10px"></div>
 
         <div class="form-group">
-          <label>Type Utilisateur<span class="text-red ml-1">*</span></label>
+          <label>Type d'utilisateur<span class="text-red ml-1">*</span></label>
           <select name="TU" id="select" class="form-control select2bs4">
             <option selected="selected" value="">Choisissez le type d'utilisateur</option>
             <option value="Etudiant">Etudiant</option>
