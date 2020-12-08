@@ -7,37 +7,42 @@ hide circle
 skinparam classAttributeIconSize 0
 
 class Administrateur {
+    - id_admin : int
     - Poste : string
     --
-    .. Gestion étudiants ..
+    .. Gestion des étudiants ..
     - ajouterÉtudiant() : void
     - modifierÉtudiant() : void
     - supprimerÉtudiant() : void
-    .. Gestion enseignants ..
+    .. Gestion des enseignants ..
     - ajouterEnseignant() : void
     - modifierEnseignant() : void
     - supprimerEnseignant() : void
 }
 
 class Étudiant {
+    - id_etudiant : int
+    + Matricule : long
     + Sexe : string {Male | Female}
-    + Age : int {age >= 17}
-    + Addresse : string
+    + DateDeNaissance : date
+    + AddresseEmail : string
     + NumTel : long
-    + Spécialité : SPC {Enum}
-    - Note : double
+    + Spécialité : Speciality {Enum}
 
-    + setNote(n : double) : void
-    + getNote() : double
+    - ajouterRecours(R : Recours) : bool
+    - modifierRecours(R : Recours) : bool
+    - supprimerRecours(R : Recours) : bool
+    - consulterRecours() : Recours
     - inscrire() : void
     - accéderPlateforme() : void
 }
 
 class Enseignant {
-    - Addresse : string
+    - id_enseignant : int
+    - AddresseEmail : string
     - NumTel : long
 
-    - validerRecours() : bool                                          
+    - validerRecours() : bool
     - refuserRecours() : bool
     - inscrire() : void
     - accéderPlateforme() : void
@@ -53,10 +58,21 @@ enum Speciality <<Énumération>> {
     M1 - TI
 }
 
+class Recours {
+    - id_recours : int
+    - Explication : string
+    - Type d'erreur : string
+    - Fichier : string
+
+    + afficheLesRecours() : void
+    + chercherLesRecours() : void
+}
+
 hide Speciality methods
 
-Administrateur "1" -- "1..*  " Étudiant
-Administrateur "1    " -- "1..*" Enseignant
-Étudiant .left.> Speciality : <<use>>
+Étudiant "*" -left- "*" Administrateur : Gestion des étudiants
+Enseignant "*" -right- "*" Administrateur : Gestion des enseignant
+Administrateur "1..*" -down-> "*" Recours : consulte
+Étudiant .down.> Speciality : <<use>>
 
 @enduml

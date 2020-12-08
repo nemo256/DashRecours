@@ -7,20 +7,27 @@ hide circle
 skinparam classAttributeIconSize 0
 
 class Recours {
+    - id_recours : int
     - Explication : string
     - Type d'erreur : string
     - Fichier : string
-    - Type de test {Examin ou Devoir}
 }
 
 class Enseignant {
-    - Addresse : string
+    - id_enseignant : int
+    - AddresseEmail : string
     - NumTel : long
 
     - validerRecours() : bool
     - refuserRecours() : bool
     - inscrire() : void
     - accéderPlateforme() : void
+}
+
+class Module {
+    - id_module : int
+    - lib_module : int
+    - Type de test {Examin ou Devoir}
 }
 
 class Diplôme {
@@ -41,8 +48,9 @@ hide Diplôme methods
 hide Recours methods
 
 
-Enseignant "1 " -up- "1..*" Recours
+Enseignant "1 " -up-> "1..*" Recours : manipule
 Enseignant *-- "1" Diplôme
+Enseignant "1..*" -right-> "1..*" Module : ensigne
 Diplôme .right.> TypeD : <<use>>
 
 

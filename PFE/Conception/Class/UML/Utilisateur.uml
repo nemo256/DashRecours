@@ -7,6 +7,7 @@ hide circle
 skinparam classAttributeIconSize 0
 
 class Login {
+    - id_login : int
     - Username : string
     - Password : string
 
@@ -14,6 +15,7 @@ class Login {
 }
 
 interface "<size:14><<Utilisateur>></size>" {
+    - id_user : int
     + Nom : string
     + Prénom : string
     + Email : string
@@ -24,18 +26,86 @@ interface "<size:14><<Utilisateur>></size>" {
     - consulterActualités() : void
 }
 
+class Enseignant {
+    - id_enseignant : int
+    - AddresseEmail : string
+    - NumTel : long
+
+    - validerRecours() : bool
+    - refuserRecours() : bool
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
+class Administrateur {
+    - id_admin : int
+    - Poste : string
+    --
+    .. Gestion des étudiants ..
+    - ajouterÉtudiant() : void
+    - modifierÉtudiant() : void
+    - supprimerÉtudiant() : void
+    .. Gestion des enseignants ..
+    - ajouterEnseignant() : void
+    - modifierEnseignant() : void
+    - supprimerEnseignant() : void
+}
+
+class Étudiant {
+    - id_etudiant : int
+    + Matricule : long
+    + Sexe : string {Male | Female}
+    + DateDeNaissance : date
+    + AddresseEmail : string
+    + NumTel : long
+    + Spécialité : Speciality {Enum}
+
+    - ajouterRecours(R : Recours) : bool
+    - modifierRecours(R : Recours) : bool
+    - supprimerRecours(R : Recours) : bool
+    - consulterRecours() : Recours
+    - inscrire() : void
+    - accéderPlateforme() : void
+}
+
 class Role {
+    - id_role : int
     - Description : string
+}
+
+class Recours {
+    - id_recours : int
+    - Explication : string
+    - Type d'erreur : string
+    - Fichier : string
+}
+
+class Module {
+    - id_module : int
+    - lib_module : int
+    - Type de test {Examin ou Devoir}
+}
+
+class Note {
+    - id_note : int
+    - note : float
 }
 
 note left of Role : Niveau de permission\npour chaque Utilisateur.
 
 
-"<size:14><<Utilisateur>></size>" *-left- Login
-"<size:14><<Utilisateur>></size>" "1 " -up-> "0..*" Role
+"<size:14><<Utilisateur>></size>" *-left- "1" Login
+"<size:14><<Utilisateur>></size>" "*" <-down- "0..1" Role : attribué
 "<size:14><<Utilisateur>></size>" <|-right- Étudiant
 "<size:14><<Utilisateur>></size>" <|-- Enseignant
 "<size:14><<Utilisateur>></size>" <|-- Administrateur
+Étudiant "*" -left- "*" Administrateur : Gestion des étudiants
+Enseignant "*" -right- "*" Administrateur : Gestion des enseignant
+Recours "1..*  " <-down- "1" Étudiant : gére
+Recours "1..*" <-down- "1" Enseignant : manipule
+Recours "*" <-down- "1..*" Administrateur : consulte
+Module "1..*" <-down- "1 " Recours : concerne
+Note "1" <-right- "*" Module : possède
 
 
 @enduml
